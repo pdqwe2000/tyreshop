@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyre Shop", "Tyre Shop\Tyre Shop.csproj", "{848914E5-7BCA-4439-A042-70E4DC3C6AB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{848914E5-7BCA-4439-A042-70E4DC3C6AB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{848914E5-7BCA-4439-A042-70E4DC3C6AB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{848914E5-7BCA-4439-A042-70E4DC3C6AB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{848914E5-7BCA-4439-A042-70E4DC3C6AB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A90D4C93-B6EC-4D34-802E-45139EC9EC8A}
+	EndGlobalSection
+EndGlobal

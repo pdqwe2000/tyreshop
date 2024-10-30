@@ -1,0 +1,12 @@
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\obj\Debug\Tyre Shop.csproj.AssemblyReference.cache
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\obj\Debug\Tyre Shop.csproj.CoreCompileInputs.cache
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\bin\Debug\Tyre Shop.exe.config
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\bin\Debug\Tyre Shop.exe
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\bin\Debug\Tyre Shop.pdb
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\obj\Debug\Tyre Shop.exe
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\obj\Debug\Tyre Shop.pdb
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\obj\Debug\Tyre Shop.csproj.Up2Date
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\obj\Debug\Tyre_Shop.source.interfaces.Form1.resources
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\obj\Debug\Tyre Shop.csproj.GenerateResource.cache
