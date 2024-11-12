@@ -30,3 +30,7 @@ C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\bin\Debug\Sy
 C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\bin\Debug\System.ValueTuple.xml
 C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\obj\Debug\Tyre_Shop.source.interfaces.Signup.resources
 C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\obj\Debug\Tyre_Shop.source.interfaces.Dashboard.resources
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\obj\Debug\Tyre_Shop.source.interfaces.Dashboard_Admin.resources
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\obj\Debug\Tyre_Shop.source.interfaces.Main.resources
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\obj\Debug\Tyre_Shop.source.interfaces.UC_Login.resources
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\obj\Debug\Tyre_Shop.source.interfaces.UC_Signup.resources

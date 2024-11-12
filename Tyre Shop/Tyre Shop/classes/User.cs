@@ -12,11 +12,12 @@ namespace Tyre_Shop.classes
     {
         public string Nome { get; set; }
         public string Senha { get; set; }  // Idealmente, use uma senha hash em um sistema real para segurança
-
-        public User(string nome, string senha)
+        public bool Admin { get; set; }
+        public User(string nome, string senha, bool admin)
         {
             Nome = nome;
             Senha = senha;
+            Admin = admin;
         }
     }
     

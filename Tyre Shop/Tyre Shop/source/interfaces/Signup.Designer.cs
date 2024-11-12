@@ -33,43 +33,54 @@
             this.lb_name = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.bt_signup = new System.Windows.Forms.Button();
+            this.cb_admin = new System.Windows.Forms.CheckBox();
+            this.lb_login = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // Tb_UserSignup
             // 
-            this.Tb_UserSignup.Location = new System.Drawing.Point(265, 163);
+            this.Tb_UserSignup.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Tb_UserSignup.Location = new System.Drawing.Point(319, 99);
             this.Tb_UserSignup.Name = "Tb_UserSignup";
             this.Tb_UserSignup.Size = new System.Drawing.Size(270, 26);
             this.Tb_UserSignup.TabIndex = 0;
+            this.Tb_UserSignup.TextChanged += new System.EventHandler(this.Tb_UserSignup_TextChanged);
             // 
             // Tb_PassSignup
             // 
-            this.Tb_PassSignup.Location = new System.Drawing.Point(265, 228);
+            this.Tb_PassSignup.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Tb_PassSignup.Location = new System.Drawing.Point(319, 164);
             this.Tb_PassSignup.Name = "Tb_PassSignup";
             this.Tb_PassSignup.Size = new System.Drawing.Size(270, 26);
             this.Tb_PassSignup.TabIndex = 1;
+            this.Tb_PassSignup.TextChanged += new System.EventHandler(this.Tb_PassSignup_TextChanged);
             // 
             // lb_name
             // 
+            this.lb_name.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb_name.AutoSize = true;
-            this.lb_name.Location = new System.Drawing.Point(261, 138);
+            this.lb_name.Location = new System.Drawing.Point(315, 74);
             this.lb_name.Name = "lb_name";
             this.lb_name.Size = new System.Drawing.Size(43, 20);
             this.lb_name.TabIndex = 2;
             this.lb_name.Text = "User";
+            this.lb_name.Click += new System.EventHandler(this.lb_name_Click);
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(261, 203);
+            this.label1.Location = new System.Drawing.Point(315, 139);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 20);
             this.label1.TabIndex = 3;
             this.label1.Text = "Pass";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // bt_signup
             // 
-            this.bt_signup.Location = new System.Drawing.Point(265, 283);
+            this.bt_signup.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bt_signup.Location = new System.Drawing.Point(319, 226);
             this.bt_signup.Name = "bt_signup";
             this.bt_signup.Size = new System.Drawing.Size(270, 40);
             this.bt_signup.TabIndex = 4;
@@ -77,11 +88,37 @@
             this.bt_signup.UseVisualStyleBackColor = true;
             this.bt_signup.Click += new System.EventHandler(this.bt_signup_Click);
             // 
+            // cb_admin
+            // 
+            this.cb_admin.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cb_admin.AutoSize = true;
+            this.cb_admin.Location = new System.Drawing.Point(319, 196);
+            this.cb_admin.Name = "cb_admin";
+            this.cb_admin.Size = new System.Drawing.Size(80, 24);
+            this.cb_admin.TabIndex = 5;
+            this.cb_admin.Text = "Admin";
+            this.cb_admin.UseVisualStyleBackColor = true;
+            this.cb_admin.CheckedChanged += new System.EventHandler(this.cb_admin_CheckedChanged);
+            // 
+            // lb_login
+            // 
+            this.lb_login.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lb_login.AutoSize = true;
+            this.lb_login.Location = new System.Drawing.Point(421, 269);
+            this.lb_login.Name = "lb_login";
+            this.lb_login.Size = new System.Drawing.Size(48, 20);
+            this.lb_login.TabIndex = 6;
+            this.lb_login.TabStop = true;
+            this.lb_login.Text = "Login";
+            this.lb_login.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lb_login_LinkClicked);
+            // 
             // Signup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(909, 336);
+            this.Controls.Add(this.lb_login);
+            this.Controls.Add(this.cb_admin);
             this.Controls.Add(this.bt_signup);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lb_name);
@@ -89,7 +126,6 @@
             this.Controls.Add(this.Tb_UserSignup);
             this.Name = "Signup";
             this.Text = "Signup";
-            
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -102,5 +138,7 @@
         private System.Windows.Forms.Label lb_name;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button bt_signup;
+        private System.Windows.Forms.CheckBox cb_admin;
+        private System.Windows.Forms.LinkLabel lb_login;
     }
 }

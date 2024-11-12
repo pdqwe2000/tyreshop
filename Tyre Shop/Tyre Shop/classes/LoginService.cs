@@ -11,9 +11,9 @@ namespace Tyre_Shop.classes
     {
         private UserRepo repositorio = new UserRepo();
 
-        public bool Login(string nome, string senha)
+        public User Login(string nome, string senha, bool admin)
         {
-            int res = 0;
+            
             // Carrega a lista de usuários do arquivo
             List<User> usuarios = repositorio.LoadUsers();
 
@@ -23,18 +23,18 @@ namespace Tyre_Shop.classes
                 if (usuario.Nome == nome && usuario.Senha == senha)
                 {
                     MessageBox.Show("Login bem-sucedido!");
-                    return true;
+                    return usuario;
                 }
             }
           
             MessageBox.Show("Nome de usuário ou senha incorretos.");
-            return false;
+            return null;
         }
 
-        public void SignupUser(string nome, string senha)
+        public void SignupUser(string nome, string senha, bool admin)
         {
             List<User> usuarios = repositorio.LoadUsers();
-            User novoUsuario = new User(nome, senha);
+            User novoUsuario = new User(nome, senha, admin);
             usuarios.Add(novoUsuario);
             repositorio.SaveUser(usuarios);
             MessageBox.Show("User Created");

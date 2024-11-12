@@ -26,5 +26,10 @@ namespace Tyre_Shop.source.interfaces
         {
 
         }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

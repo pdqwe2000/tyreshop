@@ -1,10 +1,17 @@
 [
   {
     "Nome": "pp",
-    "Senha": "123"
+    "Senha": "123",
+    "Admin": true
   },
   {
     "Nome": "dd",
-    "Senha": "123"
+    "Senha": "123",
+    "Admin": false
+  },
+  {
+    "Nome": "",
+    "Senha": "",
+    "Admin": false
   }
 ]

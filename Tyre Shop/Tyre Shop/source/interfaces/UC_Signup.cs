@@ -11,16 +11,16 @@ using Tyre_Shop.classes;
 
 namespace Tyre_Shop.source.interfaces
 {
-    public partial class Signup : Form
+    public partial class UC_Signup : UserControl
     {
-        public Signup()
+        public UC_Signup()
         {
             InitializeComponent();
         }
 
         private void bt_signup_Click(object sender, EventArgs e)
         {
-            int counter=0;
+            int counter = 0;
             UserRepo repositorio = new UserRepo();
             LoginService loginservice = new LoginService();
 
@@ -32,7 +32,7 @@ namespace Tyre_Shop.source.interfaces
                 if (usuario.Nome == Tb_UserSignup.Text)
                 {
                     MessageBox.Show("User Already In Use!");
-                    counter=1;
+                    counter = 1;
                 }
             }
             if (counter == 0)
@@ -43,35 +43,6 @@ namespace Tyre_Shop.source.interfaces
         }
 
         private void lb_login_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            this.Close();
-
-            new Login().ShowDialog();
-            
-        
-        }
-
-        private void cb_admin_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lb_name_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Tb_PassSignup_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Tb_UserSignup_TextChanged(object sender, EventArgs e)
         {
 
         }
