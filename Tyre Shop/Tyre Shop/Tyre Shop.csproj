@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{848914E5-7BCA-4439-A042-70E4DC3C6AB5}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>Tyre_Shop</RootNamespace>
     <AssemblyName>Tyre Shop</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -43,15 +43,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="classes\Client.cs" />
-    <Compile Include="classes\LoginService.cs" />
-    <Compile Include="classes\Sell.cs" />
-    <Compile Include="classes\Shop.cs" />
-    <Compile Include="classes\Tyre.cs" />
-    <Compile Include="classes\Stock.cs" />
-    <Compile Include="classes\User.cs" />
-    <Compile Include="classes\UserRepo.cs" />
+    <Compile Include="models\Client.cs" />
+    <Compile Include="models\Auth\LoginService.cs" />
+    <Compile Include="models\Quality.cs" />
+    <Compile Include="models\Sell.cs" />
+    <Compile Include="models\Shop.cs" />
+    <Compile Include="models\Tyre.cs" />
+    <Compile Include="models\Stock.cs" />
+    <Compile Include="models\Auth\User.cs" />
+    <Compile Include="models\Auth\UserRepo.cs" />
     <Compile Include="main.cs" />
+    <Compile Include="models\TyreJson.cs" />
     <Compile Include="source\interfaces\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>

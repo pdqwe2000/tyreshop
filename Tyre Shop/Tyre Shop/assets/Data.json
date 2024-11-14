@@ -1,7 +1,20 @@
-{
-  "Brand": "Goodyear",
-  "Model": "Eagle F1",
-  "Size": "225/45R17",
-  "Quality": "A",
-  "Price": 120.50
-}
+[
+  {
+    "Id": 4,
+    "Brand": "Michelin",
+    "Model": "X123",
+    "Size": "205/55R16",
+    "Quality": "AAA",
+    "Price": 100,
+    "Quantity": 12
+  },
+  {
+    "Id": 4,
+    "Brand": "Pirelli",
+    "Model": "P400",
+    "Size": "195/65R15",
+    "Quality": "A",
+    "Price": 80,
+    "Quantity": 10
+  }
+]
