@@ -7,7 +7,7 @@ using Tyre_Shop.models;
 
 namespace Tyre_Shop.classes
 {
-    public class Tyre
+    public abstract class Tyre
     {
         public int Id { get;  set; }
         public string Brand { get;  set; }
@@ -29,7 +29,7 @@ namespace Tyre_Shop.classes
             this.Quality = quality;
             this.Price = price;
         }
-        
+        public abstract bool AlgoAbastrato();
 
     }
 }

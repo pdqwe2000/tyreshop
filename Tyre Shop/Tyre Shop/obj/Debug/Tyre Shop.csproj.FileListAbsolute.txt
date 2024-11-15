@@ -34,3 +34,39 @@ C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\obj\Debug\Ty
 C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\obj\Debug\Tyre_Shop.source.interfaces.Main.resources
 C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\obj\Debug\Tyre_Shop.source.interfaces.UC_Login.resources
 C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\obj\Debug\Tyre_Shop.source.interfaces.UC_Signup.resources
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\bin\Debug\Tyre Shop.exe.config
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\bin\Debug\Tyre Shop.exe
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\bin\Debug\Tyre Shop.pdb
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\bin\Debug\System.Buffers.dll
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\bin\Debug\System.Memory.dll
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\bin\Debug\System.Text.Json.dll
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\bin\Debug\System.ValueTuple.dll
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\bin\Debug\System.Buffers.xml
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\bin\Debug\System.Memory.xml
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\bin\Debug\System.Text.Json.xml
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\bin\Debug\System.ValueTuple.xml
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\obj\Debug\Tyre Shop.csproj.AssemblyReference.cache
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\obj\Debug\Tyre_Shop.source.interfaces.Dashboard.resources
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\obj\Debug\Tyre_Shop.source.interfaces.Dashboard_Admin.resources
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\obj\Debug\Tyre_Shop.source.interfaces.Login.resources
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\obj\Debug\Tyre_Shop.source.interfaces.Main.resources
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\obj\Debug\Tyre_Shop.source.interfaces.Signup.resources
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\obj\Debug\Tyre_Shop.source.interfaces.UC_Login.resources
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\obj\Debug\Tyre_Shop.source.interfaces.UC_Signup.resources
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\obj\Debug\Tyre Shop.csproj.GenerateResource.cache
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\obj\Debug\Tyre Shop.csproj.CoreCompileInputs.cache
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\obj\Debug\Tyre Shop.csproj.Up2Date
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\obj\Debug\Tyre Shop.exe
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\obj\Debug\Tyre Shop.pdb

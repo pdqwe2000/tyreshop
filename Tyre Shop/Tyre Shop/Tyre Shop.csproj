@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="models\Client.cs" />
     <Compile Include="models\Auth\LoginService.cs" />
+    <Compile Include="models\Pessoa.cs" />
     <Compile Include="models\Quality.cs" />
     <Compile Include="models\Sell.cs" />
     <Compile Include="models\Shop.cs" />

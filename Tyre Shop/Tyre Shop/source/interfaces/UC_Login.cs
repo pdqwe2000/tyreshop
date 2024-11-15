@@ -28,15 +28,23 @@ namespace Tyre_Shop.source.interfaces
             string pass = tb_pass.Text;
             bool admin = false;
             res = loginService.Login(name, pass, admin);
-            if (res.Admin == false)
+            try
             {
-                Dashboard dashboard = new Dashboard();
-                dashboard.ShowDialog();
+                if (res.Admin == false)
+                {
+                    Dashboard dashboard = new Dashboard();
+                    dashboard.ShowDialog();
+                }
+                else if (res.Admin == true)
+                {
+                    Dashboard_Admin dashboard_admin = new Dashboard_Admin();
+                    dashboard_admin.ShowDialog();
+                }
             }
-            else if (res.Admin == true)
+            catch (Exception ex)
             {
-                Dashboard_Admin dashboard_admin = new Dashboard_Admin();
-                dashboard_admin.ShowDialog();
+                MessageBox.Show(ex.Message);
+                throw;
             }
 
 

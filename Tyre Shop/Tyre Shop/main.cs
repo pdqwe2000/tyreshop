@@ -49,6 +49,9 @@ namespace Tyre_Shop
            // Stock stock = new Stock();
             shop.LoadStockFromJson();
 
+            Tyre tyre1 = new Tyre();
+            tyre1.Brand = "PT";
+
 
             // Criando alguns produtos
             Tyre tyreA = new Tyre(1, "Continental", "ContiSportContact2", "235/45/17", Quality.AA, 120);
