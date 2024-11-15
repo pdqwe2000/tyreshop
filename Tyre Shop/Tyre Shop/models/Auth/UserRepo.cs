@@ -14,14 +14,9 @@ namespace Tyre_Shop.classes
 {
     public class UserRepo
     {
-        public static string rootPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(Assembly.GetExecutingAssembly().Location).FullName).FullName).FullName;
-        public static string path = Path.Combine(rootPath, "assets", "Users.json");
+        private static string rootPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(Assembly.GetExecutingAssembly().Location).FullName).FullName).FullName;
+        private static string path = Path.Combine(rootPath, "assets", "Users.json");
 
-        //public static string MainFolderPath = "models";
-
-        //public static string path = Path.Combine(MainFolderPath, "Users.json");
-
-        //Tyre Shop\assets\
 
         // Método para salvar lista de usuários em um arquivo JSON
         public void SaveUser(List<User> usuarios)

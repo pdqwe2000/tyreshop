@@ -65,7 +65,7 @@ namespace Tyre_Shop
             shop.ShowStock();
 
             // Criando cliente
-            Client cliente1 = new Client("João Silva", "99999-9999");
+            Client cliente1 = new Client("João Silva", "99999-9999", false);
 
             // Realizando uma venda
             Dictionary<Tyre, int> produtosParaVenda = new Dictionary<Tyre, int>

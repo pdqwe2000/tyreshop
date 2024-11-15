@@ -5,17 +5,17 @@ using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
+using Tyre_Shop.models;
 
 namespace Tyre_Shop.classes
 {
-    public class User
+    public class User:Person
     {
-        public string Nome { get; set; }
-        public string Senha { get; set; }  // Idealmente, use uma senha hash em um sistema real para segurança
+        
+        public string Senha { get; set; } 
         public bool Admin { get; set; }
-        public User(string nome, string senha, bool admin)
+        public User(string name, string phone, string senha, bool admin) :base(name,phone) 
         {
-            Nome = nome;
             Senha = senha;
             Admin = admin;
         }

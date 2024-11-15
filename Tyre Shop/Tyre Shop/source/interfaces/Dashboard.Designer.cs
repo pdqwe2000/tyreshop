@@ -32,6 +32,7 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.changeUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sellToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newSellToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,7 +40,6 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contactUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportProblemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.changeUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,19 +71,25 @@
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(184, 34);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
             this.toolStripMenuItem1.Text = "Open Bd";
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(184, 34);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.saveToolStripMenuItem.Text = "Save";
+            // 
+            // changeUserToolStripMenuItem
+            // 
+            this.changeUserToolStripMenuItem.Name = "changeUserToolStripMenuItem";
+            this.changeUserToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.changeUserToolStripMenuItem.Text = "Change User";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(184, 34);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // sellToolStripMenuItem
@@ -94,17 +100,18 @@
             this.sellToolStripMenuItem.Name = "sellToolStripMenuItem";
             this.sellToolStripMenuItem.Size = new System.Drawing.Size(55, 29);
             this.sellToolStripMenuItem.Text = "Sell";
+            this.sellToolStripMenuItem.Click += new System.EventHandler(this.sellToolStripMenuItem_Click);
             // 
             // newSellToolStripMenuItem
             // 
             this.newSellToolStripMenuItem.Name = "newSellToolStripMenuItem";
-            this.newSellToolStripMenuItem.Size = new System.Drawing.Size(181, 34);
+            this.newSellToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.newSellToolStripMenuItem.Text = "New Sell";
             // 
             // editSelToolStripMenuItem
             // 
             this.editSelToolStripMenuItem.Name = "editSelToolStripMenuItem";
-            this.editSelToolStripMenuItem.Size = new System.Drawing.Size(181, 34);
+            this.editSelToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.editSelToolStripMenuItem.Text = "Edit Sell";
             // 
             // helpToolStripMenuItem
@@ -127,12 +134,6 @@
             this.reportProblemToolStripMenuItem.Name = "reportProblemToolStripMenuItem";
             this.reportProblemToolStripMenuItem.Size = new System.Drawing.Size(239, 34);
             this.reportProblemToolStripMenuItem.Text = "Report Problem";
-            // 
-            // changeUserToolStripMenuItem
-            // 
-            this.changeUserToolStripMenuItem.Name = "changeUserToolStripMenuItem";
-            this.changeUserToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.changeUserToolStripMenuItem.Text = "Change User";
             // 
             // Dashboard
             // 

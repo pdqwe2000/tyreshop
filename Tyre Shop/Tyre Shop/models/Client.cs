@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tyre_Shop.models;
 
 namespace Tyre_Shop.classes
 {
-    internal class Client
+    public class Client:Person
     {
-        public string Name { get; private set; }
-        public string Phone { get; private set; }
+        private bool Empresa { get;  set; }
 
-        public Client(string name, string phone)
+        public Client(string name, string phone, bool empresa):base(name,phone)
         {
-            Name = name;
-            Phone = phone;
+            Empresa = empresa;
+          
         }
 
         public override string ToString()
