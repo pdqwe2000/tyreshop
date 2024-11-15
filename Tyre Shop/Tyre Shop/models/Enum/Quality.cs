@@ -1,5 +1,6 @@
 ﻿namespace Tyre_Shop.models
 {
+    //Enum used For Tyre Quality
     public enum Quality
     {
         AAA=100,
