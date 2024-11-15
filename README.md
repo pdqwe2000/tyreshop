@@ -17,24 +17,19 @@ Licenciatura em Engenharia de Sistemas Informáticos (*regime pós-laboral*) 202
 [src/](./src/)  Código da solução desenvolvida 
 
 ## Introdução
-Este projeto foi desenvolvido como parte do programa das disciplinas de Laboratórios de Informática e Programação Imperativa.
-A aplicação resultante tem como objetivo a gestão e monitorização de pacientes, visando promover hábitos alimentares saudáveis.
+Este projeto foi desenvolvido como parte do programa da disciplina de Programação Orientada a Objetos.
+A aplicação resultante tem como objetivo a Gestão de uma Oficina de Pneus.
 ## Objetivo
-Este projeto visa desenvolver uma solução para manipular os dados dos pacientes de um gabinete de nutrição, utilizando o paradigma de programação imperativa. A aplicação será responsável por várias funcionalidades, incluindo:
-- Registo e controlo de informações alimentares dos pacientes.
-- Monitoração da adesão a uma dieta saudável.
-- Análise e acompanhamento do progresso nutricional.
+Este projeto visa desenvolver uma solução para manipular os stocks e venda de pneus, utilizando o paradigma da Programação Orientada a Objetos. A aplicação será responsável por várias funcionalidades, incluindo:
+- Registo de vendas.
+- Criação e manipulação de usuários.
+- Manipulação de stocks.
+- Monitorização de Funcionários.
 
 ## Estrutura do Projeto
--   [doc/](./doc)
+-   [doc/](./Tyre_Shop/Tyre_Shop/doc)
 
     -   Contém a documentação do projeto.
-        -   [html/](./doc/html/)
-            -   Local onde a documentação gerada pelo Doxygen é armazenada.
-        -   [Doxyfile](./doc/Doxyfile)
-            -   Ficheiro de configuração do Doxygen para a geração da documentação.
-        -   [n-04-doc.pdf](./doc/n-04-doc.pdf)
-            -   Relatório do projeto da aplicação informática.
         -   [n-04-refman.pdf](./doc/n-04-refman.pdf)
             -   Documentação do projeto da aplicação informática.
 -   [data/](./data)
