@@ -5,16 +5,22 @@ namespace Tyre_Shop.classes
 {
     internal class Shop
     {
+        #region Properties
+
         private Stock stock;
         private List<Sell> sellings;
         private int nextIdSell = 1;
+        #endregion
 
+        #region Constructors
         public Shop()
         {
             stock = new Stock();
             sellings = new List<Sell>();
         }
+        #endregion
 
+        #region Methods
         public void LoadStockFromJson()
         {
             stock.LoadStockFromJson();
@@ -76,6 +82,7 @@ namespace Tyre_Shop.classes
                 Console.WriteLine(sell);
             }
         }
+        #endregion
     }
 }
 

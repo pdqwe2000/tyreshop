@@ -6,7 +6,7 @@ namespace Tyre_Shop.classes
     // This class represents a User in the Tyre Shop system, inheriting from the Person class.
     public class User : Person
     {
-        #region Gets_Sets
+        #region Properties
         // Property to store the user's password.
         public string Password { get; set; }
 
@@ -29,7 +29,8 @@ namespace Tyre_Shop.classes
             Password = pass;       // Assigns the password to the user.
             Admin = admin;       // Sets whether the user is an administrator or not.
         }
-        #endregion
+      
         public User() { }
+        #endregion
     }
 }

@@ -7,10 +7,12 @@ namespace Tyre_Shop.classes
     // It interacts with the UserRepo class to load, save, and validate user data.  
     public class LoginService
     {
+        #region Properties
         // Instance of UserRepo to handle user data persistence.  
         private UserRepo repos = new UserRepo();
+        #endregion
 
-
+        #region Methods
         /// <summary>  
         /// Handles user login by verifying the username and password.  
         /// </summary>  
@@ -61,5 +63,6 @@ namespace Tyre_Shop.classes
             // Displays a success message indicating the user was created.  
             MessageBox.Show("User Created");
         }
+        #endregion
     }
 }

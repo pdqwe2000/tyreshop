@@ -10,17 +10,22 @@ namespace Tyre_Shop.classes
     // It provides methods to save and load user data to and from a JSON file.  
     public class UserRepo
     {
+        #region Properties
+
         // Root path of the application, determined dynamically based on the location of the executing assembly.  
         private static string rootPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(Assembly.GetExecutingAssembly().Location).FullName).FullName).FullName;
 
         // Path to the JSON file where user data is stored.  
         private static string path = Path.Combine(rootPath, "assets", "Users.json");
+        #endregion
+
+        #region Methods
 
         /// <summary>  
         /// Method to save a list of users to a JSON file.  
         /// </summary>  
         /// <param name="usuarios">List of Users to save in JSON.</param>  
-       
+
         public void SaveUser(List<User> usuarios)
         {
             // Serializes the list of users into a JSON-formatted string.  
@@ -53,5 +58,6 @@ namespace Tyre_Shop.classes
             // Deserializes the JSON string into a list of User objects and returns it.  
             return System.Text.Json.JsonSerializer.Deserialize<List<User>>(jsonString);
         }
+        #endregion
     }
 }

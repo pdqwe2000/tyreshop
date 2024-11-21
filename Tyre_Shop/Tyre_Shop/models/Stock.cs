@@ -6,12 +6,19 @@ using Tyre_Shop.classes;
 
 public class Stock
 {
+    #region Properties
     private Dictionary<Tyre, int> tyresInStock;
     string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\assets\Data.json");
+    #endregion
+
+    #region Constructors
     public Stock()
     {
         tyresInStock = new Dictionary<Tyre, int>();
     }
+    #endregion
+
+    #region Methods
 
     public void LoadStockFromJson()
     {
@@ -89,46 +96,47 @@ public class Stock
             Console.WriteLine($"Produto: {tyre.Key.Brand} - Quantidade: {tyre.Value}");
         }
     }
+    #endregion
 }
 
-    //public void AddTyre(Tyre tyre, int quantidade)
-    //{
-    //    if (tyresInStock.ContainsKey(tyre))
-    //    {
-    //        tyresInStock[tyre] += quantidade;
-    //    }
-    //    else
-    //    {
-    //        tyresInStock[tyre] = quantidade;
-    //    }
-    //}
+//public void AddTyre(Tyre tyre, int quantidade)
+//{
+//    if (tyresInStock.ContainsKey(tyre))
+//    {
+//        tyresInStock[tyre] += quantidade;
+//    }
+//    else
+//    {
+//        tyresInStock[tyre] = quantidade;
+//    }
+//}
 
-    //public bool RemoveTyre(Tyre tyre, int quantidade)
-    //{
-    //    if (tyresInStock.ContainsKey(tyre) && tyresInStock[tyre] >= quantidade)
-    //    {
-    //        tyresInStock[tyre] -= quantidade;
-    //        return true;
-    //    }
+//public bool RemoveTyre(Tyre tyre, int quantidade)
+//{
+//    if (tyresInStock.ContainsKey(tyre) && tyresInStock[tyre] >= quantidade)
+//    {
+//        tyresInStock[tyre] -= quantidade;
+//        return true;
+//    }
 
-    //    Console.WriteLine($"Estoque insuficiente para o produto: {tyre.Brand}");
-    //    return false;
-    //}
+//    Console.WriteLine($"Estoque insuficiente para o produto: {tyre.Brand}");
+//    return false;
+//}
 
-    //public int VerifyQuantity(Tyre tyre)
-    //{
-    //    if (tyresInStock.ContainsKey(tyre))
-    //    {
-    //        return tyresInStock[tyre];
-    //    }
+//public int VerifyQuantity(Tyre tyre)
+//{
+//    if (tyresInStock.ContainsKey(tyre))
+//    {
+//        return tyresInStock[tyre];
+//    }
 
-    //    return 0;
-    //}
+//    return 0;
+//}
 
-    //public void ShowTyres()
-    //{
-    //    foreach (var tyre in tyresInStock)
-    //    {
-    //        Console.WriteLine($"Produto: {tyre.Key.Brand} - Quantidade: {tyre.Value}");
-    //    }
-    //}
+//public void ShowTyres()
+//{
+//    foreach (var tyre in tyresInStock)
+//    {
+//        Console.WriteLine($"Produto: {tyre.Key.Brand} - Quantidade: {tyre.Value}");
+//    }
+//}

@@ -2,5 +2,7 @@
 
 public class TyreJson : Tyre
 {
+    #region Properties
     public int Quantity { get; set; }
+    #endregion
 }

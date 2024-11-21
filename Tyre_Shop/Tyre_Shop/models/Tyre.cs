@@ -5,6 +5,7 @@ namespace Tyre_Shop.classes
     // This class represents a Tyre entity in the Tyre Shop system.
     public class Tyre
     {
+        #region Properties
         // Unique identifier for the tyre.
         public int Id { get; set; }
 
@@ -22,7 +23,9 @@ namespace Tyre_Shop.classes
 
         // Price of the tyre in the system.
         public int Price { get; set; }
+        #endregion
 
+        #region Constructors
         // Default constructor for creating a Tyre object with no initial data.
         public Tyre()
         {
@@ -38,5 +41,6 @@ namespace Tyre_Shop.classes
             this.Quality = quality;// Assigns the tyre's quality.
             this.Price = price;    // Assigns the tyre's price.
         }
+        #endregion
     }
 }
