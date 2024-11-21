@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Tyre_Shop.source.interfaces;
 
 namespace Tyre_Shop.models
 {
