@@ -35,6 +35,8 @@
             this.lb_name = new System.Windows.Forms.Label();
             this.Tb_PassSignup = new System.Windows.Forms.TextBox();
             this.Tb_UserSignup = new System.Windows.Forms.TextBox();
+            this.LB_phone = new System.Windows.Forms.Label();
+            this.TB_phone = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lb_login
@@ -85,7 +87,7 @@
             // 
             this.lb_name.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb_name.AutoSize = true;
-            this.lb_name.Location = new System.Drawing.Point(154, 98);
+            this.lb_name.Location = new System.Drawing.Point(154, 55);
             this.lb_name.Name = "lb_name";
             this.lb_name.Size = new System.Drawing.Size(43, 20);
             this.lb_name.TabIndex = 9;
@@ -104,15 +106,35 @@
             // Tb_UserSignup
             // 
             this.Tb_UserSignup.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Tb_UserSignup.Location = new System.Drawing.Point(158, 123);
+            this.Tb_UserSignup.Location = new System.Drawing.Point(158, 80);
             this.Tb_UserSignup.Name = "Tb_UserSignup";
             this.Tb_UserSignup.Size = new System.Drawing.Size(270, 26);
             this.Tb_UserSignup.TabIndex = 7;
+            // 
+            // LB_phone
+            // 
+            this.LB_phone.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LB_phone.AutoSize = true;
+            this.LB_phone.Location = new System.Drawing.Point(154, 109);
+            this.LB_phone.Name = "LB_phone";
+            this.LB_phone.Size = new System.Drawing.Size(55, 20);
+            this.LB_phone.TabIndex = 15;
+            this.LB_phone.Text = "Phone";
+            // 
+            // TB_phone
+            // 
+            this.TB_phone.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TB_phone.Location = new System.Drawing.Point(158, 134);
+            this.TB_phone.Name = "TB_phone";
+            this.TB_phone.Size = new System.Drawing.Size(270, 26);
+            this.TB_phone.TabIndex = 14;
             // 
             // UC_Signup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.LB_phone);
+            this.Controls.Add(this.TB_phone);
             this.Controls.Add(this.lb_login);
             this.Controls.Add(this.cb_admin);
             this.Controls.Add(this.bt_signup);
@@ -136,5 +158,7 @@
         private System.Windows.Forms.Label lb_name;
         private System.Windows.Forms.TextBox Tb_PassSignup;
         private System.Windows.Forms.TextBox Tb_UserSignup;
+        private System.Windows.Forms.Label LB_phone;
+        private System.Windows.Forms.TextBox TB_phone;
     }
 }

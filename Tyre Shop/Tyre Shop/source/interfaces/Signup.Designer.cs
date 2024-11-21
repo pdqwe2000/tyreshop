@@ -35,12 +35,14 @@
             this.bt_signup = new System.Windows.Forms.Button();
             this.cb_admin = new System.Windows.Forms.CheckBox();
             this.lb_login = new System.Windows.Forms.LinkLabel();
+            this.lb_phone = new System.Windows.Forms.Label();
+            this.TB_phone = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Tb_UserSignup
             // 
             this.Tb_UserSignup.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Tb_UserSignup.Location = new System.Drawing.Point(319, 99);
+            this.Tb_UserSignup.Location = new System.Drawing.Point(319, 56);
             this.Tb_UserSignup.Name = "Tb_UserSignup";
             this.Tb_UserSignup.Size = new System.Drawing.Size(270, 26);
             this.Tb_UserSignup.TabIndex = 0;
@@ -59,7 +61,7 @@
             // 
             this.lb_name.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb_name.AutoSize = true;
-            this.lb_name.Location = new System.Drawing.Point(315, 74);
+            this.lb_name.Location = new System.Drawing.Point(315, 31);
             this.lb_name.Name = "lb_name";
             this.lb_name.Size = new System.Drawing.Size(43, 20);
             this.lb_name.TabIndex = 2;
@@ -112,11 +114,32 @@
             this.lb_login.Text = "Login";
             this.lb_login.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lb_login_LinkClicked);
             // 
+            // lb_phone
+            // 
+            this.lb_phone.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lb_phone.AutoSize = true;
+            this.lb_phone.Location = new System.Drawing.Point(315, 85);
+            this.lb_phone.Name = "lb_phone";
+            this.lb_phone.Size = new System.Drawing.Size(55, 20);
+            this.lb_phone.TabIndex = 8;
+            this.lb_phone.Text = "Phone";
+            this.lb_phone.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // TB_phone
+            // 
+            this.TB_phone.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TB_phone.Location = new System.Drawing.Point(319, 110);
+            this.TB_phone.Name = "TB_phone";
+            this.TB_phone.Size = new System.Drawing.Size(270, 26);
+            this.TB_phone.TabIndex = 7;
+            // 
             // Signup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(909, 336);
+            this.Controls.Add(this.lb_phone);
+            this.Controls.Add(this.TB_phone);
             this.Controls.Add(this.lb_login);
             this.Controls.Add(this.cb_admin);
             this.Controls.Add(this.bt_signup);
@@ -140,5 +163,7 @@
         private System.Windows.Forms.Button bt_signup;
         private System.Windows.Forms.CheckBox cb_admin;
         private System.Windows.Forms.LinkLabel lb_login;
+        private System.Windows.Forms.Label lb_phone;
+        private System.Windows.Forms.TextBox TB_phone;
     }
 }

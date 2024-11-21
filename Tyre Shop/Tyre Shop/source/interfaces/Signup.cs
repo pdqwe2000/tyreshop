@@ -29,7 +29,7 @@ namespace Tyre_Shop.source.interfaces
             // Verifica se o usuário existe e a senha está correta
             foreach (User usuario in usuarios)
             {
-                if (usuario.Nome == Tb_UserSignup.Text)
+                if (usuario.Name == Tb_UserSignup.Text)
                 {
                     MessageBox.Show("User Already In Use!");
                     counter=1;
@@ -37,7 +37,7 @@ namespace Tyre_Shop.source.interfaces
             }
             if (counter == 0)
             {
-                loginservice.SignupUser(Tb_UserSignup.Text, Tb_PassSignup.Text, cb_admin.Checked);
+                loginservice.SignupUser(Tb_UserSignup.Text, TB_phone.Text,Tb_PassSignup.Text, cb_admin.Checked);
 
             }
         }
@@ -72,6 +72,11 @@ namespace Tyre_Shop.source.interfaces
         }
 
         private void Tb_UserSignup_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tyre_Shop.classes;
 
@@ -29,7 +23,7 @@ namespace Tyre_Shop.source.interfaces
             // Verifica se o usuário existe e a senha está correta
             foreach (User usuario in usuarios)
             {
-                if (usuario.Nome == Tb_UserSignup.Text)
+                if (usuario.Name == Tb_UserSignup.Text)
                 {
                     MessageBox.Show("User Already In Use!");
                     counter = 1;
@@ -37,7 +31,7 @@ namespace Tyre_Shop.source.interfaces
             }
             if (counter == 0)
             {
-                loginservice.SignupUser(Tb_UserSignup.Text, Tb_PassSignup.Text, cb_admin.Checked);
+                loginservice.SignupUser(Tb_UserSignup.Text,TB_phone.Text ,Tb_PassSignup.Text, cb_admin.Checked);
 
             }
         }

@@ -1,17 +1,14 @@
 [
   {
-    "Nome": "pp",
-    "Senha": "123",
+    "Name": "pp",
+    "Phone": "1111",
+    "Password": "123",
     "Admin": true
   },
   {
-    "Nome": "dd",
-    "Senha": "123",
-    "Admin": false
-  },
-  {
-    "Nome": "",
-    "Senha": "",
+    "Name": "dd",
+    "Phone": "1111",
+    "Password": "123",
     "Admin": false
   }
 ]

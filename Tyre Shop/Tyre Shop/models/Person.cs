@@ -22,10 +22,11 @@ namespace Tyre_Shop.models
         #endregion
 
         // Constructor to initialize a Person object with a name and phone number.
-        public Person(string nome, string phone)
+        public Person(string name, string phone)
         {
-            Name = nome;      // Assigns the given name to the Name property.
+            Name = name;      // Assigns the given name to the Name property.
             Phone = phone;    // Assigns the given phone number to the Phone property.
         }
+        public Person() { }
     }
 }

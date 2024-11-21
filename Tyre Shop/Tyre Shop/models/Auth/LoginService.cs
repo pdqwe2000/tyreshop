@@ -12,7 +12,8 @@ namespace Tyre_Shop.classes
     public class LoginService
     {
         // Instance of UserRepo to handle user data persistence.  
-        private UserRepo repositorio = new UserRepo();
+        private UserRepo repos = new UserRepo();
+
 
         /// <summary>  
         /// Handles user login by verifying the username and password.  
@@ -24,12 +25,12 @@ namespace Tyre_Shop.classes
         public User Login(string nome, string senha, bool admin)
         {
             // Loads the list of users from the JSON file.  
-            List<User> usuarios = repositorio.LoadUsers();
+            List<User> users = repos.LoadUsers();
 
             // Iterates through the list of users to find a match for username and password.  
-            foreach (User usuario in usuarios)
+            foreach (User usuario in users)
             {
-                if (usuario.Nome == nome && usuario.Senha == senha)
+                if (usuario.Name == nome && usuario.Password == senha)
                 {
                     MessageBox.Show("Login bem-sucedido!");  // Displays a success message.  
                     return usuario;  // Returns the authenticated user.  
@@ -47,19 +48,19 @@ namespace Tyre_Shop.classes
         /// <param name="nome">The username of the new user.</param>  
         /// <param name="senha">The password for the new user.</param>  
         /// <param name="admin">Specifies whether the new user is an admin.</param>  
-        public void SignupUser(string nome, string senha, bool admin)
+        public void SignupUser(string nome,string phone, string senha, bool admin)
         {
             // Loads the existing users from the JSON file.  
-            List<User> usuarios = repositorio.LoadUsers();
+            List<User> users = repos.LoadUsers();
 
             // Creates a new User object with the provided details.  
-            User novoUsuario = new User(nome, senha, admin);
+            User novoUsuario = new User(nome,phone, senha, admin);
 
             // Adds the new user to the list.  
-            usuarios.Add(novoUsuario);
+            users.Add(novoUsuario);
 
             // Saves the updated user list back to the JSON file.  
-            repositorio.SaveUser(usuarios);
+            repos.SaveUser(users);
 
             // Displays a success message indicating the user was created.  
             MessageBox.Show("User Created");
