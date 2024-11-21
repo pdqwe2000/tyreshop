@@ -87,7 +87,7 @@
             // 
             this.lb_name.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb_name.AutoSize = true;
-            this.lb_name.Location = new System.Drawing.Point(154, 55);
+            this.lb_name.Location = new System.Drawing.Point(154, 48);
             this.lb_name.Name = "lb_name";
             this.lb_name.Size = new System.Drawing.Size(43, 20);
             this.lb_name.TabIndex = 9;
@@ -106,7 +106,7 @@
             // Tb_UserSignup
             // 
             this.Tb_UserSignup.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Tb_UserSignup.Location = new System.Drawing.Point(158, 80);
+            this.Tb_UserSignup.Location = new System.Drawing.Point(158, 73);
             this.Tb_UserSignup.Name = "Tb_UserSignup";
             this.Tb_UserSignup.Size = new System.Drawing.Size(270, 26);
             this.Tb_UserSignup.TabIndex = 7;
@@ -115,7 +115,7 @@
             // 
             this.LB_phone.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LB_phone.AutoSize = true;
-            this.LB_phone.Location = new System.Drawing.Point(154, 109);
+            this.LB_phone.Location = new System.Drawing.Point(154, 106);
             this.LB_phone.Name = "LB_phone";
             this.LB_phone.Size = new System.Drawing.Size(55, 20);
             this.LB_phone.TabIndex = 15;
@@ -124,7 +124,7 @@
             // TB_phone
             // 
             this.TB_phone.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TB_phone.Location = new System.Drawing.Point(158, 134);
+            this.TB_phone.Location = new System.Drawing.Point(158, 131);
             this.TB_phone.Name = "TB_phone";
             this.TB_phone.Size = new System.Drawing.Size(270, 26);
             this.TB_phone.TabIndex = 14;

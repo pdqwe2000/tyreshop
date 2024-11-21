@@ -34,3 +34,39 @@ C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Tyre_S
 C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Tyre_Shop.csproj.Up2Date
 C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Tyre Shop.exe
 C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Tyre Shop.pdb
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Debug\Tyre Shop.exe.config
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Debug\Tyre Shop.exe
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Debug\Tyre Shop.pdb
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Debug\System.Buffers.dll
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Debug\System.Memory.dll
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Debug\System.Text.Json.dll
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Debug\System.ValueTuple.dll
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Debug\System.Buffers.xml
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Debug\System.Memory.xml
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Debug\System.Text.Json.xml
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Debug\System.ValueTuple.xml
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Tyre_Shop.csproj.AssemblyReference.cache
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Tyre_Shop.source.interfaces.Dashboard.resources
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Tyre_Shop.source.interfaces.Dashboard_Admin.resources
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Tyre_Shop.source.interfaces.Login.resources
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Tyre_Shop.source.interfaces.Main.resources
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Tyre_Shop.source.interfaces.Signup.resources
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Tyre_Shop.source.interfaces.UC_Login.resources
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Tyre_Shop.source.interfaces.UC_Signup.resources
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Tyre_Shop.csproj.GenerateResource.cache
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Tyre_Shop.csproj.CoreCompileInputs.cache
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Tyre_Shop.csproj.Up2Date
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Tyre Shop.exe
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Tyre Shop.pdb

@@ -8,19 +8,14 @@ namespace Tyre_Shop.classes
         #region Properties
         // Unique identifier for the tyre.
         public int Id { get; set; }
-
         // Brand of the tyre (e.g., Michelin, Bridgestone).
         public string Brand { get; set; }
-
         // Model of the tyre (e.g., Pilot Sport 4, Turanza T005).
         public string Model { get; set; }
-
         // Size of the tyre (e.g., 205/55 R16).
         public string Size { get; set; }
-
         // Quality of the tyre, represented by an enum (e.g., AAA, AA, etc.).
         public Quality Quality { get; set; }
-
         // Price of the tyre in the system.
         public int Price { get; set; }
         #endregion
@@ -30,7 +25,6 @@ namespace Tyre_Shop.classes
         public Tyre()
         {
         }
-
         // Parameterized constructor to create a Tyre object with specific details.
         public Tyre(int id, string brand, string model, string size, Quality quality, int price)
         {

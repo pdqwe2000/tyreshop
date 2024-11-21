@@ -11,10 +11,8 @@ namespace Tyre_Shop.classes
     public class UserRepo
     {
         #region Properties
-
         // Root path of the application, determined dynamically based on the location of the executing assembly.  
         private static string rootPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(Assembly.GetExecutingAssembly().Location).FullName).FullName).FullName;
-
         // Path to the JSON file where user data is stored.  
         private static string path = Path.Combine(rootPath, "assets", "Users.json");
         #endregion

@@ -1,20 +1,92 @@
 [
   {
-    "Id": 4,
+    "Id": 1,
     "Brand": "Michelin",
     "Model": "X123",
     "Size": "205/55R16",
     "Quality": "AAA",
     "Price": 100,
-    "Quantity": 12
+    "Quantity": 14
   },
   {
-    "Id": 4,
+    "Id": 2,
     "Brand": "Pirelli",
     "Model": "P400",
     "Size": "195/65R15",
     "Quality": "A",
     "Price": 80,
     "Quantity": 10
+  },
+  {
+    "Id": 3,
+    "Brand": "Bridgestone",
+    "Model": "Turanza T001",
+    "Size": "215/60R16",
+    "Quality": "AA",
+    "Price": 95,
+    "Quantity": 20
+  },
+  {
+    "Id": 4,
+    "Brand": "Goodyear",
+    "Model": "EfficientGrip",
+    "Size": "225/50R17",
+    "Quality": "AAA",
+    "Price": 110,
+    "Quantity": 12
+  },
+  {
+    "Id": 5,
+    "Brand": "Continental",
+    "Model": "PremiumContact 5",
+    "Size": "205/55R16",
+    "Quality": "AA",
+    "Price": 105,
+    "Quantity": 8
+  },
+  {
+    "Id": 6,
+    "Brand": "Dunlop",
+    "Model": "SP Sport FM800",
+    "Size": "195/55R16",
+    "Quality": "A",
+    "Price": 75,
+    "Quantity": 18
+  },
+  {
+    "Id": 7,
+    "Brand": "Hankook",
+    "Model": "Ventus Prime 3",
+    "Size": "225/45R17",
+    "Quality": "AAA",
+    "Price": 115,
+    "Quantity": 10
+  },
+  {
+    "Id": 8,
+    "Brand": "Yokohama",
+    "Model": "BluEarth-A AE50",
+    "Size": "185/60R15",
+    "Quality": "A",
+    "Price": 70,
+    "Quantity": 25
+  },
+  {
+    "Id": 9,
+    "Brand": "Nexen",
+    "Model": "N'Fera SU1",
+    "Size": "235/55R18",
+    "Quality": "AA",
+    "Price": 90,
+    "Quantity": 15
+  },
+  {
+    "Id": 10,
+    "Brand": "Firestone",
+    "Model": "Roadhawk",
+    "Size": "215/55R17",
+    "Quality": "A",
+    "Price": 85,
+    "Quantity": 20
   }
 ]

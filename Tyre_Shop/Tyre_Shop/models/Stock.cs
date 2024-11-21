@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Reflection;
 using Newtonsoft.Json;
 using Tyre_Shop.classes;
 
@@ -8,7 +9,10 @@ public class Stock
 {
     #region Properties
     private Dictionary<Tyre, int> tyresInStock;
-    string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\assets\Data.json");
+    // Root path of the application, determined dynamically based on the location of the executing assembly.  
+    private static string rootPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(Assembly.GetExecutingAssembly().Location).FullName).FullName).FullName;
+    // Path to the JSON file where user data is stored.  
+    private static string path = Path.Combine(rootPath, "assets", "Data.json");
     #endregion
 
     #region Constructors
@@ -93,7 +97,7 @@ public class Stock
     {
         foreach (var tyre in tyresInStock)
         {
-            Console.WriteLine($"Produto: {tyre.Key.Brand} - Quantidade: {tyre.Value}");
+            Console.WriteLine($"Produto: {tyre.Key.Brand} {tyre.Key.Model} Medida: {tyre.Key.Size} Qualidade: {tyre.Key.Quality} - Quantidade: {tyre.Value} Preço: {tyre.Key.Price} ");
         }
     }
     #endregion

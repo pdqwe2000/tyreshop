@@ -6,6 +6,7 @@ using Newtonsoft.Json;
 using Tyre_Shop.classes;
 using Tyre_Shop.source.interfaces;
 using Tyre_Shop.models;
+using System.Reflection;
 
 namespace Tyre_Shop
 {
@@ -57,9 +58,13 @@ namespace Tyre_Shop
             Tyre tyre1 = new Tyre();
             tyre1.Brand = "PT";
 
+            // Displaying the current stock.  
+            shop.ShowStock();
+
             // Creating sample tyres for the stock.  
-            Tyre tyreA = new Tyre(1, "Continental", "ContiSportContact2", "235/45/17", Quality.AA, 120);
-            Tyre TyreB = new Tyre(2, "Michelin", "Primacy4", "235/45/17", Quality.AA, 120);
+            Tyre tyreA = new Tyre(5, "Continental", "PremiumContact 5", "205/55R16", Quality.AA, 105);
+            Tyre TyreB = new Tyre(1, "Michelin", "X123", "205/55R16", Quality.AA, 110);
+
 
             // Adding tyres to the shop's stock.  
             shop.AddTyreToStock(tyreA, 11);
@@ -85,19 +90,15 @@ namespace Tyre_Shop
             // Displaying the stock after the sale.  
             shop.ShowStock();
 
-            Console.ReadLine();
 
-            // Path to the JSON file containing tyre data.  
-            string caminhoArquivo = @"C:\\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre Shop\Tyre Shop\assets\Data.json";
-
+            // Root path of the application, determined dynamically based on the location of the executing assembly.  
+            string rootPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(Assembly.GetExecutingAssembly().Location).FullName).FullName).FullName;
+            // Path to the JSON file where user data is stored.  
+            string caminhoArquivo = Path.Combine(rootPath, "assets", "Data.json");
             // Checking if the JSON file exists and reading its content.  
             if (File.Exists(caminhoArquivo))
             {
                 string conteudoJson = File.ReadAllText(caminhoArquivo);
-
-                // Deserializing a single tyre object from the JSON file.  
-                Tyre tyre = JsonConvert.DeserializeObject<Tyre>(conteudoJson);
-                Console.WriteLine($"Brand: {tyre.Brand}, Model: {tyre.Model}, Size: {tyre.Size}, Quality: {tyre.Quality}, Price: {tyre.Price}");
 
                 // Deserializing a list of tyres from the JSON file if it contains an array.  
                 List<Tyre> listTyres = JsonConvert.DeserializeObject<List<Tyre>>(conteudoJson);

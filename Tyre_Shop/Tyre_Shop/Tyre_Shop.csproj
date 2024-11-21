@@ -45,56 +45,56 @@
   <ItemGroup>
     <Compile Include="models\Client.cs" />
     <Compile Include="models\Auth\LoginService.cs" />
-    <Compile Include="models\Person.cs" />
+    <Compile Include="models\Parents\Person.cs" />
     <Compile Include="models\Enum\Quality.cs" />
     <Compile Include="models\Sell.cs" />
     <Compile Include="models\Shop.cs" />
-    <Compile Include="models\Tyre.cs" />
+    <Compile Include="models\Parents\Tyre.cs" />
     <Compile Include="models\Stock.cs" />
     <Compile Include="models\Auth\User.cs" />
     <Compile Include="models\Auth\UserRepo.cs" />
     <Compile Include="main.cs" />
     <Compile Include="models\TyreJson.cs" />
-    <Compile Include="source\interfaces\Dashboard.cs">
+    <Compile Include="src\interfaces\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="source\interfaces\Dashboard.Designer.cs">
+    <Compile Include="src\interfaces\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="source\interfaces\Dashboard_Admin.cs">
+    <Compile Include="src\interfaces\Dashboard_Admin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="source\interfaces\Dashboard_Admin.Designer.cs">
+    <Compile Include="src\interfaces\Dashboard_Admin.Designer.cs">
       <DependentUpon>Dashboard_Admin.cs</DependentUpon>
     </Compile>
-    <Compile Include="source\interfaces\Login.cs">
+    <Compile Include="src\interfaces\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="source\interfaces\Login.Designer.cs">
+    <Compile Include="src\interfaces\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="source\interfaces\Main.cs">
+    <Compile Include="src\interfaces\Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="source\interfaces\Main.Designer.cs">
+    <Compile Include="src\interfaces\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="source\interfaces\Signup.cs">
+    <Compile Include="src\interfaces\Signup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="source\interfaces\Signup.Designer.cs">
+    <Compile Include="src\interfaces\Signup.Designer.cs">
       <DependentUpon>Signup.cs</DependentUpon>
     </Compile>
-    <Compile Include="source\interfaces\UC_Login.cs">
+    <Compile Include="src\interfaces\UC_Login.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="source\interfaces\UC_Login.Designer.cs">
+    <Compile Include="src\interfaces\UC_Login.Designer.cs">
       <DependentUpon>UC_Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="source\interfaces\UC_Signup.cs">
+    <Compile Include="src\interfaces\UC_Signup.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="source\interfaces\UC_Signup.Designer.cs">
+    <Compile Include="src\interfaces\UC_Signup.Designer.cs">
       <DependentUpon>UC_Signup.cs</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -137,25 +137,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="source\interfaces\Dashboard.resx">
+    <EmbeddedResource Include="src\interfaces\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="source\interfaces\Dashboard_Admin.resx">
+    <EmbeddedResource Include="src\interfaces\Dashboard_Admin.resx">
       <DependentUpon>Dashboard_Admin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="source\interfaces\Login.resx">
+    <EmbeddedResource Include="src\interfaces\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="source\interfaces\Main.resx">
+    <EmbeddedResource Include="src\interfaces\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="source\interfaces\Signup.resx">
+    <EmbeddedResource Include="src\interfaces\Signup.resx">
       <DependentUpon>Signup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="source\interfaces\UC_Login.resx">
+    <EmbeddedResource Include="src\interfaces\UC_Login.resx">
       <DependentUpon>UC_Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="source\interfaces\UC_Signup.resx">
+    <EmbeddedResource Include="src\interfaces\UC_Signup.resx">
       <DependentUpon>UC_Signup.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
