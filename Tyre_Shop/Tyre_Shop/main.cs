@@ -94,14 +94,14 @@ namespace Tyre_Shop
             // Root path of the application, determined dynamically based on the location of the executing assembly.  
             string rootPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(Assembly.GetExecutingAssembly().Location).FullName).FullName).FullName;
             // Path to the JSON file where user data is stored.  
-            string caminhoArquivo = Path.Combine(rootPath, "assets", "Data.json");
+            string filePath = Path.Combine(rootPath, "assets", "Data.json");
             // Checking if the JSON file exists and reading its content.  
-            if (File.Exists(caminhoArquivo))
+            if (File.Exists(filePath))
             {
-                string conteudoJson = File.ReadAllText(caminhoArquivo);
+                string contentJson = File.ReadAllText(filePath);
 
                 // Deserializing a list of tyres from the JSON file if it contains an array.  
-                List<Tyre> listTyres = JsonConvert.DeserializeObject<List<Tyre>>(conteudoJson);
+                List<Tyre> listTyres = JsonConvert.DeserializeObject<List<Tyre>>(contentJson);
                 foreach (var t in listTyres)
                 {
                     Console.WriteLine($"Brand: {t.Brand}, Model: {t.Model}, Size: {t.Size}, Quality: {t.Quality}, Price: {t.Price}");
@@ -110,7 +110,7 @@ namespace Tyre_Shop
             else
             {
                 // Displaying a message if the JSON file is not found.  
-                Console.WriteLine("Arquivo JSON não encontrado.");
+                Console.WriteLine("JSON Not Found.");
             }
 
             // Waiting for the user to close the console.  

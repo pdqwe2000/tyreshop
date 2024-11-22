@@ -26,27 +26,27 @@ namespace Tyre_Shop.classes
             stock.LoadStockFromJson();
         }
 
-        public void AddTyreToStock(Tyre tyre, int quantidade)
+        public void AddTyreToStock(Tyre tyre, int quantity)
         {
-            stock.AddTyre(tyre, quantidade);
-            Console.WriteLine($"Produto {tyre.Brand} adicionado ao estoque. Quantidade: {quantidade}");
+            stock.AddTyre(tyre,quantity);
+            Console.WriteLine($"Product {tyre.Brand} Added To Stock. Quantity: {quantity}");
         }
 
-        public void MakeSell(Client client, Dictionary<Tyre, int> produtosParaVenda)
+        public void MakeSell(Client client, Dictionary<Tyre, int> productsToSell)
         {
-            Sell novaVenda = new Sell(nextIdSell, client);
+            Sell newSell = new Sell(nextIdSell, client);
             bool sellMade = true;
 
-            foreach (var item in produtosParaVenda)
+            foreach (var item in productsToSell)
             {
                 Tyre tyre = item.Key;
-                int quantidade = item.Value;
+                int quantity = item.Value;
 
-                if (stock.RemoveTyre(tyre, quantidade))
+                if (stock.RemoveTyre(tyre,quantity))
                 {
-                    for (int i = 0; i < quantidade; i++)
+                    for (int i = 0; i < quantity; i++)
                     {
-                        novaVenda.AddTyre(tyre);
+                        newSell.AddTyre(tyre);
                     }
                 }
                 else
@@ -58,25 +58,25 @@ namespace Tyre_Shop.classes
 
             if (sellMade)
             {
-                sellings.Add(novaVenda);
+                sellings.Add(newSell);
                 nextIdSell++;
-                Console.WriteLine($"Venda realizada com sucesso! {novaVenda}");
+                Console.WriteLine($"Sold! {newSell}");
             }
             else
             {
-                Console.WriteLine("Venda não realizada devido à falta de estoque.");
+                Console.WriteLine("Impossible To Finish Sell, Out Of Stock.");
             }
         }
 
         public void ShowStock()
         {
-            Console.WriteLine("Estoque atual:");
+            Console.WriteLine("Stock:");
             stock.ShowTyres();
         }
 
         public void ShowSellings()
         {
-            Console.WriteLine("Vendas realizadas:");
+            Console.WriteLine("Sellings Made:");
             foreach (var sell in sellings)
             {
                 Console.WriteLine(sell);

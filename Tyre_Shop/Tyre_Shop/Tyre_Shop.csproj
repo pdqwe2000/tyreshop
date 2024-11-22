@@ -47,12 +47,13 @@
     <Compile Include="models\Auth\LoginService.cs" />
     <Compile Include="models\Parents\Person.cs" />
     <Compile Include="models\Enum\Quality.cs" />
+    <Compile Include="models\Repos\TyreRepo.cs" />
+    <Compile Include="models\Repos\UserRepo.cs" />
     <Compile Include="models\Sell.cs" />
     <Compile Include="models\Shop.cs" />
     <Compile Include="models\Parents\Tyre.cs" />
     <Compile Include="models\Stock.cs" />
     <Compile Include="models\Auth\User.cs" />
-    <Compile Include="models\Auth\UserRepo.cs" />
     <Compile Include="main.cs" />
     <Compile Include="models\TyreJson.cs" />
     <Compile Include="src\interfaces\Dashboard.cs">
@@ -159,5 +160,6 @@
       <DependentUpon>UC_Signup.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

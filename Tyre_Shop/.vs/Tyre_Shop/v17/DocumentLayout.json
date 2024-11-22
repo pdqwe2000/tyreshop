@@ -1,42 +1,58 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\",
+  "WorkspaceRootPath": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\pedro duarte\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\pedro duarte\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\models\\parents\\tyre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\models\\parents\\tyre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\pedro duarte\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\models\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\models\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\pedro duarte\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\models\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\tyre_shop\\models\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\models\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\pedro duarte\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\assets\\data.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\fujimota\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\models\\repos\\tyrerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\models\\repos\\tyrerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\tyre_shop\\models\\auth\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\models\\auth\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\tyre_shop\\models\\parents\\tyre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\models\\parents\\tyre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\tyre_shop\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\tyre_shop\\models\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\models\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\fujimota\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\models\\repos\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\models\\repos\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\fujimota\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\assets\\data.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\assets\\data.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\pedro duarte\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\models\\sell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\models\\sell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\fujimota\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\assets\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\assets\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\pedro duarte\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\models\\auth\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\models\\auth\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\fujimota\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\models\\tyrejson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\models\\tyrejson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\pedro duarte\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\models\\auth\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\fujimota\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\models\\enum\\quality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\models\\enum\\quality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\tyre_shop\\models\\auth\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\models\\auth\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\pedro duarte\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\models\\auth\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\models\\auth\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\tyre_shop\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,137 +62,191 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Auth\\UserRepo.cs",
-              "RelativeDocumentMoniker": "Tyre_Shop\\models\\Auth\\UserRepo.cs",
-              "ToolTip": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Auth\\UserRepo.cs",
-              "RelativeToolTip": "Tyre_Shop\\models\\Auth\\UserRepo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "main.cs",
+              "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\main.cs",
+              "RelativeDocumentMoniker": "Tyre_Shop\\main.cs",
+              "ToolTip": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\main.cs",
+              "RelativeToolTip": "Tyre_Shop\\main.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAEwEAAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T20:21:07.426Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Auth\\User.cs",
-              "RelativeDocumentMoniker": "Tyre_Shop\\models\\Auth\\User.cs",
-              "ToolTip": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Auth\\User.cs",
-              "RelativeToolTip": "Tyre_Shop\\models\\Auth\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T20:21:06.844Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LoginService.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Auth\\LoginService.cs",
-              "RelativeDocumentMoniker": "Tyre_Shop\\models\\Auth\\LoginService.cs",
-              "ToolTip": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Auth\\LoginService.cs",
-              "RelativeToolTip": "Tyre_Shop\\models\\Auth\\LoginService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T20:21:06.161Z",
+              "WhenOpened": "2024-11-21T20:39:36.502Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Stock.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Stock.cs",
-              "RelativeDocumentMoniker": "Tyre_Shop\\models\\Stock.cs",
-              "ToolTip": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Stock.cs",
-              "RelativeToolTip": "Tyre_Shop\\models\\Stock.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAewGMAAAAMAAAAAAAAAA==",
+              "Title": "Tyre.cs",
+              "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Parents\\Tyre.cs",
+              "RelativeDocumentMoniker": "Tyre_Shop\\models\\Parents\\Tyre.cs",
+              "ToolTip": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Parents\\Tyre.cs",
+              "RelativeToolTip": "Tyre_Shop\\models\\Parents\\Tyre.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA8wBMAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T20:33:40.525Z",
+              "WhenOpened": "2024-11-21T23:22:02.813Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Auth\\User.cs",
+              "RelativeDocumentMoniker": "Tyre_Shop\\models\\Auth\\User.cs",
+              "ToolTip": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Auth\\User.cs",
+              "RelativeToolTip": "Tyre_Shop\\models\\Auth\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T23:22:22.181Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginService.cs",
+              "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Auth\\LoginService.cs",
+              "RelativeDocumentMoniker": "Tyre_Shop\\models\\Auth\\LoginService.cs",
+              "ToolTip": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Auth\\LoginService.cs",
+              "RelativeToolTip": "Tyre_Shop\\models\\Auth\\LoginService.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAgwAsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T23:24:59.078Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Stock.cs",
+              "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Stock.cs",
+              "RelativeDocumentMoniker": "Tyre_Shop\\models\\Stock.cs",
+              "ToolTip": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Stock.cs",
+              "RelativeToolTip": "Tyre_Shop\\models\\Stock.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAgwEwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T23:21:48.844Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Tyre.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Parents\\Tyre.cs",
-              "RelativeDocumentMoniker": "Tyre_Shop\\models\\Parents\\Tyre.cs",
-              "ToolTip": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Parents\\Tyre.cs",
-              "RelativeToolTip": "Tyre_Shop\\models\\Parents\\Tyre.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAWwBoAAAAIAAAAAAAAAA==",
+              "Title": "TyreRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Repos\\TyreRepo.cs",
+              "RelativeDocumentMoniker": "Tyre_Shop\\models\\Repos\\TyreRepo.cs",
+              "ToolTip": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Repos\\TyreRepo.cs",
+              "RelativeToolTip": "Tyre_Shop\\models\\Repos\\TyreRepo.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAUwBkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T19:17:33.873Z",
+              "WhenOpened": "2024-11-21T23:30:12.338Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Repos\\UserRepo.cs",
+              "RelativeDocumentMoniker": "Tyre_Shop\\models\\Repos\\UserRepo.cs",
+              "ToolTip": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Repos\\UserRepo.cs",
+              "RelativeToolTip": "Tyre_Shop\\models\\Repos\\UserRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T23:30:14.737Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Shop.cs",
+              "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Shop.cs",
+              "RelativeDocumentMoniker": "Tyre_Shop\\models\\Shop.cs",
+              "ToolTip": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Shop.cs",
+              "RelativeToolTip": "Tyre_Shop\\models\\Shop.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T23:21:46.614Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "main.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\main.cs",
-              "RelativeDocumentMoniker": "Tyre_Shop\\main.cs",
-              "ToolTip": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\main.cs",
-              "RelativeToolTip": "Tyre_Shop\\main.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAnwEEAAABUAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "TyreJson.cs",
+              "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\TyreJson.cs",
+              "RelativeDocumentMoniker": "Tyre_Shop\\models\\TyreJson.cs",
+              "ToolTip": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\TyreJson.cs",
+              "RelativeToolTip": "Tyre_Shop\\models\\TyreJson.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T20:39:36.502Z",
+              "WhenOpened": "2024-11-22T00:22:40.431Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Data.json",
-              "DocumentMoniker": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\assets\\Data.json",
-              "RelativeDocumentMoniker": "Tyre_Shop\\assets\\Data.json",
-              "ToolTip": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\assets\\Data.json",
-              "RelativeToolTip": "Tyre_Shop\\assets\\Data.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAPAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "Quality.cs",
+              "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Enum\\Quality.cs",
+              "RelativeDocumentMoniker": "Tyre_Shop\\models\\Enum\\Quality.cs",
+              "ToolTip": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Enum\\Quality.cs",
+              "RelativeToolTip": "Tyre_Shop\\models\\Enum\\Quality.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T00:11:24.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Users.json",
+              "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\assets\\Users.json",
+              "RelativeDocumentMoniker": "Tyre_Shop\\assets\\Users.json",
+              "ToolTip": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\assets\\Users.json",
+              "RelativeToolTip": "Tyre_Shop\\assets\\Users.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-21T20:39:10.998Z",
+              "WhenOpened": "2024-11-22T00:11:05.592Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Sell.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Sell.cs",
-              "RelativeDocumentMoniker": "Tyre_Shop\\models\\Sell.cs",
-              "ToolTip": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Sell.cs",
-              "RelativeToolTip": "Tyre_Shop\\models\\Sell.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T21:13:25.555Z",
+              "DocumentIndex": 7,
+              "Title": "Data.json",
+              "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\assets\\Data.json",
+              "RelativeDocumentMoniker": "Tyre_Shop\\assets\\Data.json",
+              "ToolTip": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\assets\\Data.json",
+              "RelativeToolTip": "Tyre_Shop\\assets\\Data.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-21T23:51:57.883Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Shop.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Shop.cs",
-              "RelativeDocumentMoniker": "Tyre_Shop\\models\\Shop.cs",
-              "ToolTip": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Shop.cs",
-              "RelativeToolTip": "Tyre_Shop\\models\\Shop.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAkwEcAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Client.cs",
+              "RelativeDocumentMoniker": "Tyre_Shop\\models\\Client.cs",
+              "ToolTip": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Client.cs",
+              "RelativeToolTip": "Tyre_Shop\\models\\Client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T20:45:41.521Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-21T23:21:58.498Z"
             }
           ]
         }

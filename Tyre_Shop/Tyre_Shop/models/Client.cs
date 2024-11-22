@@ -13,7 +13,7 @@ namespace Tyre_Shop.classes
     {
         #region Properties
         // Private property to indicate whether the client is a company (true) or an individual (false).
-        private bool Empresa { get; set; }
+        private bool Business { get; set; }
 
         #endregion
 
@@ -21,9 +21,9 @@ namespace Tyre_Shop.classes
 
         // Constructor to initialize a Client object with the given details.  
         // Calls the base constructor of the Person class to set common properties (name and phone).  
-        public Client(string name, string phone, bool empresa) : base(name, phone)
+        public Client(string name, string phone, bool business) : base(name, phone)
         {
-            Empresa = empresa;  // Sets whether the client is a company or an individual.
+            Business = business;  // Sets whether the client is a company or an individual.
         }
         #endregion
 
@@ -33,7 +33,7 @@ namespace Tyre_Shop.classes
         // Displays the client's name and phone number in a formatted string.  
         public override string ToString()
         {
-            return $"{Name} - Telefone: {Phone}";
+            return $"Name: {Name} - Phone: {Phone} Is Business: {Business}";
         }
         #endregion
     }

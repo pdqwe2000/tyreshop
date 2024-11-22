@@ -34,7 +34,7 @@ namespace Tyre_Shop.classes
 
         public override string ToString()
         {
-            return $"Venda #{Id} - Cliente: {Client.Name} - Data: {SellDate} - Valor Total: {TotalPrice:C}";
+            return $"Selling #{Id} - Client: {Client.Name} - Date: {SellDate} - Total: {TotalPrice}E";
         }
         #endregion
     }
