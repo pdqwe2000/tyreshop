@@ -63,7 +63,7 @@ namespace Tyre_Shop
 
             // Creating sample tyres for the stock.  
             Tyre tyreA = new Tyre(5, "Continental", "PremiumContact 5", "205/55R16", Quality.AA, 105);
-            Tyre TyreB = new Tyre(1, "Michelin", "X123", "205/55R16", Quality.AA, 110);
+            Tyre TyreB = new Tyre(1, "Michelin", "X123", "205/55R16", Quality.AAA, 110);
 
 
             // Adding tyres to the shop's stock.  
