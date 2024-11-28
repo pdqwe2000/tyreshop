@@ -3,6 +3,7 @@ using System.IO;
 using System.Reflection;
 using System.Text.Json;
 using System.Windows.Forms;
+using Tyre_Shop.models.Data;
 
 
 namespace Tyre_Shop.classes
@@ -12,10 +13,12 @@ namespace Tyre_Shop.classes
     public class UserRepo
     {
         #region Properties
+
+        private readonly string _usersFilePath = Fpm.Instance.UsersFilePath; // Path to the users data file
         // Root path of the application, determined dynamically based on the location of the executing assembly.  
-        private static string rootPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(Assembly.GetExecutingAssembly().Location).FullName).FullName).FullName;
-        // Path to the JSON file where user data is stored.  
-        private static string path = Path.Combine(rootPath, "assets", "Users.json");
+        //private static string rootPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(Assembly.GetExecutingAssembly().Location).FullName).FullName).FullName;
+        //// Path to the JSON file where user data is stored.  
+        //private static string _usersFilePath = Path.Combine(rootPath, "assets", "Users.json");
         #endregion
 
         #region Methods
@@ -34,7 +37,7 @@ namespace Tyre_Shop.classes
             });
 
             // Writes the JSON string to the file specified by the path variable.  
-            File.WriteAllText(path, jsonString);
+            File.WriteAllText(_usersFilePath, jsonString);
         }
 
         /// <summary>  
@@ -44,7 +47,7 @@ namespace Tyre_Shop.classes
         public List<User> LoadUsers()
         {
             // Checks if the JSON file exists at the specified path.  
-            if (!File.Exists(path))
+            if (!File.Exists(_usersFilePath))
             {
                 // Displays a message box if the file does not exist and returns an empty list of users.  
                 MessageBox.Show("Wrong Path!");
@@ -52,7 +55,7 @@ namespace Tyre_Shop.classes
             }
 
             // Reads the content of the JSON file into a string.  
-            string jsonString = File.ReadAllText(path);
+            string jsonString = File.ReadAllText(_usersFilePath);
 
             // Deserializes the JSON string into a list of User objects and returns it.  
             return System.Text.Json.JsonSerializer.Deserialize<List<User>>(jsonString);
