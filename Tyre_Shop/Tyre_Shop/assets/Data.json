@@ -1,6 +1,6 @@
 [
   {
-    "Quantity": 38,
+    "Quantity": 10,
     "Id": 1,
     "Brand": "Michelin",
     "Model": "X123",
@@ -18,12 +18,21 @@
     "Price": 80
   },
   {
-    "Quantity": 20,
+    "Quantity": 9,
     "Id": 5,
     "Brand": "Continental",
     "Model": "PremiumContact 5",
     "Size": "205/55R16",
     "Quality": 90,
     "Price": 105
+  },
+  {
+    "Quantity": 11,
+    "Id": 1,
+    "Brand": "Michelin",
+    "Model": "X123",
+    "Size": "205/55R16",
+    "Quality": 90,
+    "Price": 110
   }
 ]

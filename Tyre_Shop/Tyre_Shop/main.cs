@@ -63,7 +63,7 @@ namespace Tyre_Shop
 
             // Creating sample tyres for the stock.  
             Tyre tyreA = new Tyre(5, "Continental", "PremiumContact 5", "205/55R16", Quality.AA, 105);
-            Tyre TyreB = new Tyre(1, "Michelin", "X123", "205/55R16", Quality.AAA, 110);
+            Tyre TyreB = new Tyre(1, "Michelin", "X123", "205/55R16", Quality.AA, 110);
 
 
             // Adding tyres to the shop's stock.  
@@ -90,6 +90,16 @@ namespace Tyre_Shop
             // Displaying the stock after the sale.  
             shop.ShowStock();
 
+            Tyre Tyrec = new Tyre(1, "Michelin", "X123", "205/55R16", Quality.AA, 110);
+            Dictionary<Tyre, int> produtosParaVenda1 = new Dictionary<Tyre, int>
+            {
+                { Tyrec, 4 }
+            };
+            shop.MakeSell(cliente1, produtosParaVenda1);
+            // Displaying the list of completed sales.  
+            shop.ShowSellings();
+
+            shop.ShowStock();
 
             // Root path of the application, determined dynamically based on the location of the executing assembly.  
             string rootPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(Assembly.GetExecutingAssembly().Location).FullName).FullName).FullName;
