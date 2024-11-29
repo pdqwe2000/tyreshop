@@ -43,11 +43,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="models\Client.cs" />
     <Compile Include="models\Auth\LoginService.cs" />
     <Compile Include="models\Data\Fpm.cs" />
     <Compile Include="models\Abstract\Person.cs" />
     <Compile Include="models\Enum\Quality.cs" />
+    <Compile Include="models\Interfaces\Ilogin.cs" />
     <Compile Include="models\Repos\TyreRepo.cs" />
     <Compile Include="models\Repos\UserRepo.cs" />
     <Compile Include="models\Sell.cs" />

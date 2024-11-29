@@ -89,7 +89,7 @@ namespace Tyre_Shop.models.Data
 
                 // Set default file names
                 UsersFileName = "users.json";
-                DataFileName = "dashboard.json";
+                DataFileName = "Data.json";
             }
             catch (Exception ex)
             {

@@ -8,18 +8,38 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tyre_Shop.classes;
+using Tyre_Shop.models.Interfaces;
 
 namespace Tyre_Shop.source.interfaces
 {
-    public partial class Login : Form
+    public partial class Login : Form,Ilogin
     {
+        /// <summary>
+        /// Gets the entered username from the input field.
+        /// </summary>
+        public string User => tb_user.Text;
+
+        /// <summary>
+        /// Gets the entered password from the input field.
+        /// </summary>
+        public string Password => tb_pass.Text;
         public Login()
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// Handles the login process asynchronously.
+        /// </summary>
+        public async void HandleLoginAsync()
+        {
+            LoginController controller = new LoginController(this);
+            await controller.HandleLoginAsync();
+        }
 
         private void bt_login_Click(object sender, EventArgs e)
         {
+            HandleLoginAsync();
+
             User res;
             LoginService loginService = new LoginService();
 
@@ -43,27 +63,25 @@ namespace Tyre_Shop.source.interfaces
 
         private void lb_registar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            new Signup().ShowDialog();
+            NavigateToRegister();
         }
 
-        private void lb_pass_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Handles the key down event for the password input field to trigger the login process on Enter key press.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tb_pass_KeyDown(object sender, KeyEventArgs e)
         {
-
+            if (e.KeyCode == Keys.Enter)
+            {
+                //HandleLoginAsync();
+            }
         }
-
-        private void lb_user_Click(object sender, EventArgs e)
+        public void NavigateToRegister()
         {
-
-        }
-
-        private void tb_pass_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tb_user_TextChanged(object sender, EventArgs e)
-        {
-
+            new Signup().Show();
+            Hide();
         }
     }
 }

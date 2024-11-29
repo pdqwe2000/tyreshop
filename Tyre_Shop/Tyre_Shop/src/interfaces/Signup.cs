@@ -44,41 +44,15 @@ namespace Tyre_Shop.source.interfaces
 
         private void lb_login_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Close();
-
-            new Login().ShowDialog();
-            
-        
+            NavigateToLogin();        
         }
 
-        private void cb_admin_CheckedChanged(object sender, EventArgs e)
+
+
+        public void NavigateToLogin()
         {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lb_name_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Tb_PassSignup_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Tb_UserSignup_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
+            new Login().Show();
+            Hide();
         }
     }
 }

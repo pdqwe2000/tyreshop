@@ -46,7 +46,6 @@
             this.Tb_UserSignup.Name = "Tb_UserSignup";
             this.Tb_UserSignup.Size = new System.Drawing.Size(270, 26);
             this.Tb_UserSignup.TabIndex = 0;
-            this.Tb_UserSignup.TextChanged += new System.EventHandler(this.Tb_UserSignup_TextChanged);
             // 
             // Tb_PassSignup
             // 
@@ -55,7 +54,6 @@
             this.Tb_PassSignup.Name = "Tb_PassSignup";
             this.Tb_PassSignup.Size = new System.Drawing.Size(270, 26);
             this.Tb_PassSignup.TabIndex = 1;
-            this.Tb_PassSignup.TextChanged += new System.EventHandler(this.Tb_PassSignup_TextChanged);
             // 
             // lb_name
             // 
@@ -66,7 +64,6 @@
             this.lb_name.Size = new System.Drawing.Size(43, 20);
             this.lb_name.TabIndex = 2;
             this.lb_name.Text = "User";
-            this.lb_name.Click += new System.EventHandler(this.lb_name_Click);
             // 
             // label1
             // 
@@ -77,7 +74,6 @@
             this.label1.Size = new System.Drawing.Size(44, 20);
             this.label1.TabIndex = 3;
             this.label1.Text = "Pass";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // bt_signup
             // 
@@ -100,7 +96,6 @@
             this.cb_admin.TabIndex = 5;
             this.cb_admin.Text = "Admin";
             this.cb_admin.UseVisualStyleBackColor = true;
-            this.cb_admin.CheckedChanged += new System.EventHandler(this.cb_admin_CheckedChanged);
             // 
             // lb_login
             // 
@@ -123,7 +118,6 @@
             this.lb_phone.Size = new System.Drawing.Size(55, 20);
             this.lb_phone.TabIndex = 8;
             this.lb_phone.Text = "Phone";
-            this.lb_phone.Click += new System.EventHandler(this.label2_Click);
             // 
             // TB_phone
             // 

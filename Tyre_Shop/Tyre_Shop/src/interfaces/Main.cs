@@ -19,14 +19,18 @@ namespace Tyre_Shop.source.interfaces
 
         private void bt_login_Click(object sender, EventArgs e)
         {
-            uC_Login1.Show();
-            uC_Login1.BringToFront();
+            //uC_Login1.Show();
+            //uC_Login1.BringToFront();
+            NavigateToLogin();
+            
         }
 
         private void bt_signup_Click(object sender, EventArgs e)
         {
-            uC_Signup1.Show();
-            uC_Signup1.BringToFront();
+            NavigateToRegister();
+            //uC_Signup1.Show();
+            //uC_Signup1.BringToFront();
+            
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -41,6 +45,17 @@ namespace Tyre_Shop.source.interfaces
         private void uC_Login1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        public void NavigateToRegister()
+        {
+            new Signup().Show();
+            Hide();
+        }
+        public void NavigateToLogin()
+        {
+            new Login().Show();
+            Hide();
         }
     }
 }
