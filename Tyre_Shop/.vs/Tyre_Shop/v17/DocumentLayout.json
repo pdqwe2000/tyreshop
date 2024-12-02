@@ -3,52 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\pedro duarte\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\tyre_shop\\src\\interfaces\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\src\\interfaces\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\tyre_shop\\src\\interfaces\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\src\\interfaces\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\pedro duarte\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\pedro duarte\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\models\\interfaces\\iregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\models\\interfaces\\iregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\tyre_shop\\models\\repos\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\models\\repos\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\pedro duarte\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\src\\interfaces\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\src\\interfaces\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\tyre_shop\\src\\interfaces\\signup.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\src\\interfaces\\signup.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\pedro duarte\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\src\\interfaces\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\src\\interfaces\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\pedro duarte\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\models\\interfaces\\ilogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\models\\interfaces\\ilogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\pedro duarte\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\src\\interfaces\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\src\\interfaces\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\pedro duarte\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\src\\interfaces\\signup.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\src\\interfaces\\signup.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\pedro duarte\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\src\\interfaces\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\src\\interfaces\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\pedro duarte\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\src\\interfaces\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\src\\interfaces\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\pedro duarte\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\src\\interfaces\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\src\\interfaces\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\pedro duarte\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\models\\repos\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\models\\repos\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\tyre_shop\\models\\data\\fpm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\models\\data\\fpm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\pedro duarte\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\src\\interfaces\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\src\\interfaces\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\pedro duarte\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\src\\interfaces\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\src\\interfaces\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,127 +50,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Fpm.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Data\\Fpm.cs",
-              "RelativeDocumentMoniker": "Tyre_Shop\\models\\Data\\Fpm.cs",
-              "ToolTip": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Data\\Fpm.cs",
-              "RelativeToolTip": "Tyre_Shop\\models\\Data\\Fpm.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAWwC8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T20:25:58.963Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UserRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Repos\\UserRepo.cs",
-              "RelativeDocumentMoniker": "Tyre_Shop\\models\\Repos\\UserRepo.cs",
-              "ToolTip": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Repos\\UserRepo.cs",
-              "RelativeToolTip": "Tyre_Shop\\models\\Repos\\UserRepo.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAwD0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T23:30:14.737Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Ilogin.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Interfaces\\Ilogin.cs",
-              "RelativeDocumentMoniker": "Tyre_Shop\\models\\Interfaces\\Ilogin.cs",
-              "ToolTip": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Interfaces\\Ilogin.cs",
-              "RelativeToolTip": "Tyre_Shop\\models\\Interfaces\\Ilogin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T23:49:07.165Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\src\\interfaces\\Login.cs",
               "RelativeDocumentMoniker": "Tyre_Shop\\src\\interfaces\\Login.cs",
               "ToolTip": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\src\\interfaces\\Login.cs",
               "RelativeToolTip": "Tyre_Shop\\src\\interfaces\\Login.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwCkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAtwIYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T23:42:26.547Z",
+              "WhenOpened": "2024-12-02T21:06:08.055Z",
               "IsPinned": true,
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "Tyre_Shop\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "Tyre_Shop\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T00:33:10.24Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Login.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\src\\interfaces\\Login.Designer.cs",
-              "RelativeDocumentMoniker": "Tyre_Shop\\src\\interfaces\\Login.Designer.cs",
-              "ToolTip": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\src\\interfaces\\Login.Designer.cs",
-              "RelativeToolTip": "Tyre_Shop\\src\\interfaces\\Login.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T00:25:55.456Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Signup.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\src\\interfaces\\Signup.Designer.cs",
-              "RelativeDocumentMoniker": "Tyre_Shop\\src\\interfaces\\Signup.Designer.cs",
-              "ToolTip": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\src\\interfaces\\Signup.Designer.cs",
-              "RelativeToolTip": "Tyre_Shop\\src\\interfaces\\Signup.Designer.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAYwCwAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T00:23:49.788Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Signup.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\src\\interfaces\\Signup.cs",
-              "RelativeDocumentMoniker": "Tyre_Shop\\src\\interfaces\\Signup.cs",
-              "ToolTip": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\src\\interfaces\\Signup.cs",
-              "RelativeToolTip": "Tyre_Shop\\src\\interfaces\\Signup.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAuwDEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T00:22:26.67Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Signup.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\src\\interfaces\\Signup.cs",
-              "RelativeDocumentMoniker": "Tyre_Shop\\src\\interfaces\\Signup.cs",
-              "ToolTip": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\src\\interfaces\\Signup.cs [Design]",
-              "RelativeToolTip": "Tyre_Shop\\src\\interfaces\\Signup.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T00:22:24.352Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Bookmark",
@@ -190,39 +76,116 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Main.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\src\\interfaces\\Main.cs",
-              "RelativeDocumentMoniker": "Tyre_Shop\\src\\interfaces\\Main.cs",
-              "ToolTip": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\src\\interfaces\\Main.cs",
-              "RelativeToolTip": "Tyre_Shop\\src\\interfaces\\Main.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAA7wDoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T00:05:47.019Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Main.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\src\\interfaces\\Main.cs",
-              "RelativeDocumentMoniker": "Tyre_Shop\\src\\interfaces\\Main.cs",
-              "ToolTip": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\src\\interfaces\\Main.cs [Design]",
-              "RelativeToolTip": "Tyre_Shop\\src\\interfaces\\Main.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T23:59:16.804Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 5,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\src\\interfaces\\Login.cs",
               "RelativeDocumentMoniker": "Tyre_Shop\\src\\interfaces\\Login.cs",
               "ToolTip": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\src\\interfaces\\Login.cs [Design]",
               "RelativeToolTip": "Tyre_Shop\\src\\interfaces\\Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T23:42:23.991Z",
+              "WhenOpened": "2024-12-02T21:06:04.602Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Login.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\src\\interfaces\\Login.Designer.cs",
+              "RelativeDocumentMoniker": "Tyre_Shop\\src\\interfaces\\Login.Designer.cs",
+              "ToolTip": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\src\\interfaces\\Login.Designer.cs",
+              "RelativeToolTip": "Tyre_Shop\\src\\interfaces\\Login.Designer.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAD4vywAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:02:46.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IRegister.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Interfaces\\IRegister.cs",
+              "RelativeDocumentMoniker": "Tyre_Shop\\models\\Interfaces\\IRegister.cs",
+              "ToolTip": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Interfaces\\IRegister.cs",
+              "RelativeToolTip": "Tyre_Shop\\models\\Interfaces\\IRegister.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T20:43:33.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegisterController.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\Controllers\\RegisterController.cs",
+              "RelativeDocumentMoniker": "Tyre_Shop\\Controllers\\RegisterController.cs",
+              "ToolTip": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\Controllers\\RegisterController.cs",
+              "RelativeToolTip": "Tyre_Shop\\Controllers\\RegisterController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T20:42:32.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Fpm.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Data\\Fpm.cs",
+              "RelativeDocumentMoniker": "Tyre_Shop\\models\\Data\\Fpm.cs",
+              "ToolTip": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Data\\Fpm.cs",
+              "RelativeToolTip": "Tyre_Shop\\models\\Data\\Fpm.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAWwC8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T20:25:58.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Repos\\UserRepo.cs",
+              "RelativeDocumentMoniker": "Tyre_Shop\\models\\Repos\\UserRepo.cs",
+              "ToolTip": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Repos\\UserRepo.cs",
+              "RelativeToolTip": "Tyre_Shop\\models\\Repos\\UserRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T23:30:14.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Signup.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\src\\interfaces\\Signup.Designer.cs",
+              "RelativeDocumentMoniker": "Tyre_Shop\\src\\interfaces\\Signup.Designer.cs",
+              "ToolTip": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\src\\interfaces\\Signup.Designer.cs",
+              "RelativeToolTip": "Tyre_Shop\\src\\interfaces\\Signup.Designer.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAmwJkAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T00:23:49.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Signup.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\src\\interfaces\\Signup.cs",
+              "RelativeDocumentMoniker": "Tyre_Shop\\src\\interfaces\\Signup.cs",
+              "ToolTip": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\src\\interfaces\\Signup.cs",
+              "RelativeToolTip": "Tyre_Shop\\src\\interfaces\\Signup.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAFEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T00:22:26.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Signup.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\src\\interfaces\\Signup.cs",
+              "RelativeDocumentMoniker": "Tyre_Shop\\src\\interfaces\\Signup.cs",
+              "ToolTip": "C:\\Users\\Pedro Duarte\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\src\\interfaces\\Signup.cs [Design]",
+              "RelativeToolTip": "Tyre_Shop\\src\\interfaces\\Signup.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T00:22:24.352Z",
               "EditorCaption": " [Design]"
             }
           ]

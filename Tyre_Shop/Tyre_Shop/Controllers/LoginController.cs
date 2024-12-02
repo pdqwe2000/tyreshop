@@ -8,9 +8,8 @@
 //    <author>Ernesto Casanova</author>​
 //-----------------------------------------------------------------
 
-using LoginRegisterSystem.Models.Entity;
-using LoginRegisterSystem.Models.Services;
-using LoginRegisterSystem.Views.Interfaces;
+
+using Tyre_Shop.models.Interfaces;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -25,8 +24,8 @@ namespace LoginRegisterSystem.Controller
     {
         #region Fields and Properties
 
-        private readonly IViewLogin _view;   // Interface for the Login View
-        private readonly UserService _userService;  // Service to handle user-related operations
+        private readonly ILogin _view;   // Interface for the Login View
+        private readonly UserRepo _userService;  // Service to handle user-related operations
 
         #endregion
 
@@ -36,10 +35,10 @@ namespace LoginRegisterSystem.Controller
         /// Constructor to initialize the LoginController with the specified view.
         /// </summary>
         /// <param name="view">The view that the controller will interact with.</param>
-        public LoginController(IViewLogin view)
+        public LoginController(ILogin view)
         {
             _view = view;  // Assign the view
-            _userService = new UserService();  // Initialize the UserService
+            _userService = new UserRepo();  // Initialize the UserService
         }
 
         #endregion
@@ -62,12 +61,12 @@ namespace LoginRegisterSystem.Controller
             }
 
             // Validate the credentials entered by the user
-            bool loginSuccess = _userService.ValidateCredentials(_view.Username, _view.Password, users);
+            bool loginSuccess = _userService.ValidateCredentials(_view.User, _view.Password, users);
 
             // If login is successful, navigate to the main form
             if (loginSuccess)
             {
-                _view.NavigateToMainForm(_view.Username);
+                _view.NavigateToMainForm(_view.User);
             }
             else
             {
@@ -75,6 +74,7 @@ namespace LoginRegisterSystem.Controller
                 _view.DisplayMessage("Invalid Credentials, please try again.", "Login Failed", MessageBoxIcon.Error);
                 _view.ClearInputs();
             }
+
         }
 
         #endregion

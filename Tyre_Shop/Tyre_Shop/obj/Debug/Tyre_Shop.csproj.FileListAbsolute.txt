@@ -63,8 +63,6 @@ C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Ty
 C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Tyre_Shop.source.interfaces.Login.resources
 C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Tyre_Shop.source.interfaces.Main.resources
 C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Tyre_Shop.source.interfaces.Signup.resources
-C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Tyre_Shop.source.interfaces.UC_Login.resources
-C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Tyre_Shop.source.interfaces.UC_Signup.resources
 C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Tyre_Shop.csproj.GenerateResource.cache
 C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Tyre_Shop.csproj.CoreCompileInputs.cache
 C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Tyre_Shop.csproj.Up2Date

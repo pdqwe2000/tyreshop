@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Text.Json;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tyre_Shop.models.Data;
 
@@ -14,7 +16,10 @@ namespace Tyre_Shop.classes
     {
         #region Properties
 
+       
         private readonly string _usersFilePath = Fpm.Instance.UsersFilePath; // Path to the users data file
+     
+        
         // Root path of the application, determined dynamically based on the location of the executing assembly.  
         //private static string rootPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(Assembly.GetExecutingAssembly().Location).FullName).FullName).FullName;
         //// Path to the JSON file where user data is stored.  
@@ -43,23 +48,71 @@ namespace Tyre_Shop.classes
         /// <summary>  
         /// Method to load a list of users from the JSON file.
         /// </summary>  
-       
-        public List<User> LoadUsers()
+
+        public async Task<List<User>> LoadUsersAsync()
         {
-            // Checks if the JSON file exists at the specified path.  
+            // Check if the users file exists
             if (!File.Exists(_usersFilePath))
+                return new List<User>(); // Return an empty list if no file is found
+
+            // Read the file and deserialize the JSON content into a list of users
+            using (StreamReader reader = new StreamReader(_usersFilePath))
             {
-                // Displays a message box if the file does not exist and returns an empty list of users.  
-                MessageBox.Show("Wrong Path!");
-                return new List<User>();
+                string json = await reader.ReadToEndAsync();
+                return JsonSerializer.Deserialize<List<User>>(json) ?? new List<User>(); // Deserialize and return users
+            }
+        }
+        /// <summary>
+        /// Validates user credentials by checking the username and password against the list of users.
+        /// </summary>
+        /// <param name="username">The username to validate.</param>
+        /// <param name="password">The password to validate.</param>
+        /// <param name="users">The list of users to validate against.</param>
+        /// <returns>True if the credentials are valid, otherwise false.</returns>
+        public bool ValidateCredentials(string username, string password, List<User> users)
+        {
+            return users.Any(user => user.Name == username && user.Password == password); // Check if any user matches
+        }
+
+        /// <summary>
+        /// Asynchronously saves the list of users to the data file.
+        /// </summary>
+        /// <param name="users">The list of users to save.</param>
+        /// <returns>A task that represents the asynchronous operation.</returns>
+        public async Task SaveUsersAsync(List<User> users)
+        {
+            // Serialize the list of users to JSON
+            string json = JsonSerializer.Serialize(users, new JsonSerializerOptions { WriteIndented = true });
+
+            // Write the JSON string to the file
+            using (StreamWriter writer = new StreamWriter(_usersFilePath))
+            {
+                await writer.WriteAsync(json);
+            }
+        }
+
+        /// <summary>
+        /// Asynchronously registers a new user by adding their credentials to the users list.
+        /// </summary>
+        /// <param name="username">The username of the user to register.</param>
+        /// <param name="password">The password of the user to register.</param>
+        /// <returns>True if registration is successful, false if the username already exists.</returns>
+        public async Task<bool> RegisterUserAsync(string username, string password)
+        {
+            var users = await LoadUsersAsync(); // Load existing users
+
+            // Check if the username already exists
+            if (users.Exists(u => u.Name == username))
+            {
+                return false; // Username already exists, return false
             }
 
-            // Reads the content of the JSON file into a string.  
-            string jsonString = File.ReadAllText(_usersFilePath);
-
-            // Deserializes the JSON string into a list of User objects and returns it.  
-            return System.Text.Json.JsonSerializer.Deserialize<List<User>>(jsonString);
+            // Add the new user to the list and save the list back to the file
+            users.Add(new User { Name = username, Password = password });
+            await SaveUsersAsync(users);
+            return true; // Return true to indicate successful registration
         }
+
         #endregion
     }
 }

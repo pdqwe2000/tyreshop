@@ -44,12 +44,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="models\Client.cs" />
     <Compile Include="models\Auth\LoginService.cs" />
     <Compile Include="models\Data\Fpm.cs" />
     <Compile Include="models\Abstract\Person.cs" />
     <Compile Include="models\Enum\Quality.cs" />
-    <Compile Include="models\Interfaces\Ilogin.cs" />
+    <Compile Include="models\Interfaces\ILogin.cs" />
+    <Compile Include="models\Interfaces\IRegister.cs" />
     <Compile Include="models\Repos\TyreRepo.cs" />
     <Compile Include="models\Repos\UserRepo.cs" />
     <Compile Include="models\Sell.cs" />
@@ -88,18 +90,6 @@
     </Compile>
     <Compile Include="src\interfaces\Signup.Designer.cs">
       <DependentUpon>Signup.cs</DependentUpon>
-    </Compile>
-    <Compile Include="src\interfaces\UC_Login.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="src\interfaces\UC_Login.Designer.cs">
-      <DependentUpon>UC_Login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="src\interfaces\UC_Signup.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="src\interfaces\UC_Signup.Designer.cs">
-      <DependentUpon>UC_Signup.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -155,12 +145,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="src\interfaces\Signup.resx">
       <DependentUpon>Signup.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="src\interfaces\UC_Login.resx">
-      <DependentUpon>UC_Login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="src\interfaces\UC_Signup.resx">
-      <DependentUpon>UC_Signup.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
