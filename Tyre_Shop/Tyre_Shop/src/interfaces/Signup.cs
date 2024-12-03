@@ -48,7 +48,7 @@ namespace Tyre_Shop.source.interfaces
         #endregion
 
 
-        #region Public Methods (IViewRegister Implementation)
+        #region Public Methods (IRegister Implementation)
         /// <summary>
         /// Displays a message box with the specified message, caption, and icon.
         /// </summary>

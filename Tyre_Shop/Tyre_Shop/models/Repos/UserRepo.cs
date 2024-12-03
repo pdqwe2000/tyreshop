@@ -27,28 +27,10 @@ namespace Tyre_Shop.classes
         #endregion
 
         #region Methods
-
-        /// <summary>  
-        /// Method to save a list of users to a JSON file.  
-        /// </summary>  
-        /// <param name="users">List of Users to save in JSON.</param>  
-
-        public void SaveUser(List<User> users)
-        {
-            // Serializes the list of users into a JSON-formatted string.  
-            string jsonString = System.Text.Json.JsonSerializer.Serialize(users, new JsonSerializerOptions
-            {
-                WriteIndented = true  // Formats the JSON with indentation for better readability.  
-            });
-
-            // Writes the JSON string to the file specified by the path variable.  
-            File.WriteAllText(_usersFilePath, jsonString);
-        }
-
+               
         /// <summary>  
         /// Method to load a list of users from the JSON file.
         /// </summary>  
-
         public async Task<List<User>> LoadUsersAsync()
         {
             // Check if the users file exists
@@ -97,7 +79,7 @@ namespace Tyre_Shop.classes
         /// <param name="username">The username of the user to register.</param>
         /// <param name="password">The password of the user to register.</param>
         /// <returns>True if registration is successful, false if the username already exists.</returns>
-        public async Task<bool> RegisterUserAsync(string username, string password)
+        public async Task<bool> RegisterUserAsync(string username, string password, string phone, bool admin)
         {
             var users = await LoadUsersAsync(); // Load existing users
 
@@ -108,7 +90,7 @@ namespace Tyre_Shop.classes
             }
 
             // Add the new user to the list and save the list back to the file
-            users.Add(new User { Name = username, Password = password });
+            users.Add(new User { Name = username, Password = password, Phone=phone,Admin=admin});
             await SaveUsersAsync(users);
             return true; // Return true to indicate successful registration
         }

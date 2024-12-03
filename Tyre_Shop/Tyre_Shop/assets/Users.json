@@ -4,17 +4,5 @@
     "Admin": true,
     "Name": "pp",
     "Phone": "1111"
-  },
-  {
-    "Password": "123",
-    "Admin": false,
-    "Name": "dd",
-    "Phone": "1111"
-  },
-  {
-    "Password": "123",
-    "Admin": true,
-    "Name": "tt",
-    "Phone": "888"
   }
 ]

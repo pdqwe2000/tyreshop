@@ -43,7 +43,7 @@ namespace Tyre_Shop.Controllers
             // Check if any required fields are empty
             if (string.IsNullOrWhiteSpace(_view.Username) ||
                 string.IsNullOrWhiteSpace(_view.Password) ||
-                string.IsNullOrWhiteSpace(_view.ConfirmPassword))
+                string.IsNullOrWhiteSpace(_view.ConfirmPassword)||_view.Phone==null)
             {
                 _view.DisplayMessage("Username and Password fields cannot be empty.", "Sign Up Failed", MessageBoxIcon.Error);
                 return;
@@ -60,7 +60,7 @@ namespace Tyre_Shop.Controllers
             try
             {
                 // Attempt to register the user
-                bool registrationSuccess = await _userService.RegisterUserAsync(_view.Username, _view.Password);
+                bool registrationSuccess = await _userService.RegisterUserAsync(_view.Username, _view.Password,_view.Phone,_view.IsAdmin);
 
                 if (registrationSuccess)
                 {
