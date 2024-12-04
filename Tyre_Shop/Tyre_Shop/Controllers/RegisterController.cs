@@ -15,7 +15,7 @@ namespace Tyre_Shop.Controllers
         #region Fields and Properties
 
         private readonly IRegister _view;  // Interface for the Register View
-        private readonly UserRepo _userService;  // Service responsible for user operations
+        private readonly AuthService _userService;  // Service responsible for user operations
 
         #endregion
 
@@ -28,7 +28,7 @@ namespace Tyre_Shop.Controllers
         public RegisterController(IRegister view)
         {
             _view = view;  // Assign the view
-            _userService = new UserRepo();  // Initialize the UserService
+            _userService = new AuthService();  // Initialize the UserService
         }
 
         #endregion

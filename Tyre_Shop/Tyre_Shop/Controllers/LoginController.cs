@@ -25,7 +25,7 @@ namespace LoginRegisterSystem.Controller
         #region Fields and Properties
 
         private readonly ILogin _view;   // Interface for the Login View
-        private readonly UserRepo _userService;  // Service to handle user-related operations
+        private readonly AuthService _userService;  // Service to handle user-related operations
 
         #endregion
 
@@ -38,7 +38,7 @@ namespace LoginRegisterSystem.Controller
         public LoginController(ILogin view)
         {
             _view = view;  // Assign the view
-            _userService = new UserRepo();  // Initialize the UserService
+            _userService = new AuthService();  // Initialize the UserService
         }
 
         #endregion
