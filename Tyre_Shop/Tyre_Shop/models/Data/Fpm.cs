@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Tyre_Shop.models.Data
+namespace Tyre_Shop.classes.data
 {
     internal class Fpm
     {

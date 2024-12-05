@@ -9,13 +9,13 @@
 //-----------------------------------------------------------------
 
 
-using Tyre_Shop.models.Interfaces;
+using Tyre_Shop.classes.interfaces;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Tyre_Shop.classes;
+using Tyre_Shop.classes.auth;
 
-namespace LoginRegisterSystem.Controller
+namespace Tyre_Shop.classes.Controller
 {
     /// <summary>
     /// Controller responsible for handling the login logic.

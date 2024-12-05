@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
-namespace Tyre_Shop.models.Interfaces
+namespace Tyre_Shop.classes.interfaces
 {
     internal interface IMain
     {

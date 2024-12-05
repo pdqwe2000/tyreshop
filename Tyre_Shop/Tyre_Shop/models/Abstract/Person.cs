@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Tyre_Shop.models
+﻿namespace Tyre_Shop.models
 {
     // Abstract base class that represents a person in the system.  
     // This class serves as a foundation for other classes, such as User, that share common properties like Name and Phone.  

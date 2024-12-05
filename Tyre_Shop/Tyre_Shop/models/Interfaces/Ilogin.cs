@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace Tyre_Shop.models.Interfaces
+namespace Tyre_Shop.classes.interfaces
 {
     public interface ILogin
     {

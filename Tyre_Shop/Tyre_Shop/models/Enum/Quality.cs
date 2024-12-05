@@ -1,4 +1,4 @@
-﻿namespace Tyre_Shop.models
+﻿namespace Tyre_Shop.classes
 {
     //Enum used For Tyre Quality
     public enum Quality

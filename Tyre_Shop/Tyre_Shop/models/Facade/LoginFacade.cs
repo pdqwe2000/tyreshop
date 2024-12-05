@@ -8,14 +8,10 @@
 //    <author>Ernesto Casanova</author>​
 //-----------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using Tyre_Shop.classes;
+using Tyre_Shop.classes.auth;
 
-namespace Tyre_Shop.models.Facade
+namespace Tyre_Shop.classes.facade
 {
     public class LoginFacade
     {
