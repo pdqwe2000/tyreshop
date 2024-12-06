@@ -63,34 +63,34 @@
     <Compile Include="models\Auth\User.cs" />
     <Compile Include="main.cs" />
     <Compile Include="models\TyreJson.cs" />
-    <Compile Include="src\interfaces\Dashboard.cs">
+    <Compile Include="src\Forms\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="src\interfaces\Dashboard.Designer.cs">
+    <Compile Include="src\Forms\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="src\interfaces\Dashboard_Admin.cs">
+    <Compile Include="src\Forms\Dashboard_Admin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="src\interfaces\Dashboard_Admin.Designer.cs">
+    <Compile Include="src\Forms\Dashboard_Admin.Designer.cs">
       <DependentUpon>Dashboard_Admin.cs</DependentUpon>
     </Compile>
-    <Compile Include="src\interfaces\Login.cs">
+    <Compile Include="src\Forms\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="src\interfaces\Login.Designer.cs">
+    <Compile Include="src\Forms\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="src\interfaces\Main.cs">
+    <Compile Include="src\Forms\Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="src\interfaces\Main.Designer.cs">
+    <Compile Include="src\Forms\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="src\interfaces\Signup.cs">
+    <Compile Include="src\Forms\Signup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="src\interfaces\Signup.Designer.cs">
+    <Compile Include="src\Forms\Signup.Designer.cs">
       <DependentUpon>Signup.cs</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -133,19 +133,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="src\interfaces\Dashboard.resx">
+    <EmbeddedResource Include="src\Forms\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\interfaces\Dashboard_Admin.resx">
+    <EmbeddedResource Include="src\Forms\Dashboard_Admin.resx">
       <DependentUpon>Dashboard_Admin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\interfaces\Login.resx">
+    <EmbeddedResource Include="src\Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\interfaces\Main.resx">
+    <EmbeddedResource Include="src\Forms\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\interfaces\Signup.resx">
+    <EmbeddedResource Include="src\Forms\Signup.resx">
       <DependentUpon>Signup.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>

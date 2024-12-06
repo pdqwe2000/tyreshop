@@ -45,6 +45,15 @@ namespace Tyre_Shop.classes.auth
         {
             return users.Any(user => user.Name == username && user.Password == password); // Check if any user matches
         }
+        
+        public bool VerifyAdmin(string username, string password, List<User> users) 
+        { 
+            if (users.Any(user => user.Name == username && user.Password == password && user.Admin == true))
+            { 
+                return true;
+            } 
+            return false;
+        }
 
         /// <summary>
         /// Asynchronously saves the list of users to the data file.

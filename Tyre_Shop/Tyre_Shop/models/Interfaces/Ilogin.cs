@@ -15,7 +15,7 @@ namespace Tyre_Shop.classes.interfaces
         /// Navigates to the main form after successful login.
         /// </summary>
         /// <param name="user">The username of the logged-in user.</param>
-        void NavigateToMainForm(string username);
+        void NavigateToMainForm(string username,bool admin);
        
         /// <summary>
         /// Displays a message to the user.

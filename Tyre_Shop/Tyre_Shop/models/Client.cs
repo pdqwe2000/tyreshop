@@ -11,7 +11,7 @@ namespace Tyre_Shop.classes
         private bool Business { get; set; }
 
         #endregion
-
+        
         #region Constructors
 
         // Constructor to initialize a Client object with the given details.  

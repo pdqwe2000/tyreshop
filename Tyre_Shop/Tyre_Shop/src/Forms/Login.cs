@@ -1,15 +1,7 @@
-﻿using LoginRegisterSystem.Controller;
+﻿using Tyre_Shop.classes.Controller;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Tyre_Shop.classes;
-using Tyre_Shop.models.Interfaces;
+using Tyre_Shop.classes.interfaces;
 
 namespace Tyre_Shop.source.interfaces
 {
@@ -68,12 +60,22 @@ namespace Tyre_Shop.source.interfaces
         /// <summary>
         /// Navigates to the main form and updates the username label.
         /// </summary>
-        public void NavigateToMainForm(string username)
+        public void NavigateToMainForm(string username, bool admin)
         {
-            Dashboard mainForm = new Dashboard();
-            mainForm.Show();
-            //Dashboard.instance.lbl.Text = username;
-            Hide();
+            if (admin)
+            {
+                Dashboard_Admin adminForm = new Dashboard_Admin();
+                adminForm.Show();
+                //Dashboard.instance.lbl.Text = username;
+                Hide();
+            }
+            else
+            {
+                Dashboard normalForm = new Dashboard();
+                normalForm.Show();
+                //Dashboard.instance.lbl.Text = username;
+                Hide();
+            }
         }
 
         /// <summary>

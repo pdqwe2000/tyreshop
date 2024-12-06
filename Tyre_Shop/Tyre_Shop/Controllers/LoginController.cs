@@ -8,7 +8,6 @@
 //    <author>Ernesto Casanova</author>​
 //-----------------------------------------------------------------
 
-
 using Tyre_Shop.classes.interfaces;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -62,11 +61,12 @@ namespace Tyre_Shop.classes.Controller
 
             // Validate the credentials entered by the user
             bool loginSuccess = _userService.ValidateCredentials(_view.User, _view.Password, users);
-
+           
             // If login is successful, navigate to the main form
             if (loginSuccess)
             {
-                _view.NavigateToMainForm(_view.User);
+                bool isAdmin = _userService.VerifyAdmin(_view.User, _view.Password, users);
+                _view.NavigateToMainForm(_view.User,isAdmin);
             }
             else
             {
