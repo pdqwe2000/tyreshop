@@ -8,6 +8,7 @@
 //    <author>Ernesto Casanova</author>​
 //-----------------------------------------------------------------
 
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Tyre_Shop.classes.auth;
 
@@ -16,43 +17,47 @@ namespace Tyre_Shop.classes.facade
     public class LoginFacade
     {
 
-        #region Private Fields
-        private readonly AuthService _userService;
-        #endregion
+        private readonly AuthService _authService;
 
-        #region Constructor
         /// <summary>
-        /// Initializes the LoginFacade with necessary services.
+        /// Initializes a new instance of the LoginFacade.
         /// </summary>
         public LoginFacade()
         {
-            _userService = new AuthService(); // Initialize the UserService dependency
+            _authService = new AuthService();
         }
-        #endregion
 
-        #region Public Methods
         /// <summary>
-        /// Authenticates the user asynchronously based on provided username and password.
+        /// Loads the list of users asynchronously.
         /// </summary>
-        /// <param name="username">The username of the user attempting to log in.</param>
-        /// <param name="password">The password of the user attempting to log in.</param>
-        /// <returns>A task that represents the asynchronous operation. The task result is a boolean indicating whether the authentication was successful.</returns>
-        public async Task<bool> AuthenticateAsync(string username, string password)
+        public async Task<List<User>> LoadUsersAsync()
         {
-            // Load the list of users asynchronously
-            var users = await _userService.LoadUsersAsync();
-
-            if (users.Count == 0)
-            {
-                return false;
-            }
-
-            // Validate the credentials using the UserService
-            return _userService.ValidateCredentials(username, password, users);
+            return await _authService.LoadUsersAsync();
         }
-        #endregion
 
+        /// <summary>
+        /// Validates the credentials of a user.
+        /// </summary>
+        /// <param name="username">The username to validate.</param>
+        /// <param name="password">The password to validate.</param>
+        /// <param name="users">The list of users to validate against.</param>
+        /// <returns>True if credentials are valid; otherwise, false.</returns>
+        public bool ValidateCredentials(string username, string password, List<User> users)
+        {
+            return _authService.ValidateCredentials(username, password, users);
+        }
 
+        /// <summary>
+        /// Checks if the provided user has admin privileges.
+        /// </summary>
+        /// <param name="username">The username to check.</param>
+        /// <param name="password">The password to check.</param>
+        /// <param name="users">The list of users to check against.</param>
+        /// <returns>True if the user is an admin; otherwise, false.</returns>
+        public bool VerifyAdmin(string username, string password, List<User> users)
+        {
+            return _authService.VerifyAdmin(username, password, users);
+        }
     }
 }
 

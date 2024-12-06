@@ -13,6 +13,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tyre_Shop.classes.auth;
+using Tyre_Shop.classes.facade;
 
 namespace Tyre_Shop.classes.Controller
 {
@@ -23,8 +24,8 @@ namespace Tyre_Shop.classes.Controller
     {
         #region Fields and Properties
 
-        private readonly ILogin _view;   // Interface for the Login View
-        private readonly AuthService _userService;  // Service to handle user-related operations
+        private readonly ILogin _view;              // Interface for the Login View
+        private readonly LoginFacade _loginFacade;  // Facade for handling login operations
 
         #endregion
 
@@ -36,8 +37,8 @@ namespace Tyre_Shop.classes.Controller
         /// <param name="view">The view that the controller will interact with.</param>
         public LoginController(ILogin view)
         {
-            _view = view;  // Assign the view
-            _userService = new AuthService();  // Initialize the UserService
+            _view = view;                          // Assign the view
+            _loginFacade = new LoginFacade();      // Initialize the LoginFacade
         }
 
         #endregion
@@ -49,8 +50,8 @@ namespace Tyre_Shop.classes.Controller
         /// </summary>
         public async Task HandleLoginAsync()
         {
-            // Load the list of users from the file
-            List<User> users = await _userService.LoadUsersAsync();
+            // Load the list of users from the LoginFacade
+            List<User> users = await _loginFacade.LoadUsersAsync();
 
             // Check if there are no users in the system
             if (users.Count == 0)
@@ -60,13 +61,15 @@ namespace Tyre_Shop.classes.Controller
             }
 
             // Validate the credentials entered by the user
-            bool loginSuccess = _userService.ValidateCredentials(_view.User, _view.Password, users);
-           
-            // If login is successful, navigate to the main form
+            bool loginSuccess = _loginFacade.ValidateCredentials(_view.User, _view.Password, users);
+
             if (loginSuccess)
             {
-                bool isAdmin = _userService.VerifyAdmin(_view.User, _view.Password, users);
-                _view.NavigateToMainForm(_view.User,isAdmin);
+                // Check if the user has admin privileges
+                bool isAdmin = _loginFacade.VerifyAdmin(_view.User, _view.Password, users);
+
+                // Navigate to the main form
+                _view.NavigateToMainForm(_view.User, isAdmin);
             }
             else
             {
@@ -74,7 +77,6 @@ namespace Tyre_Shop.classes.Controller
                 _view.DisplayMessage("Invalid Credentials, please try again.", "Login Failed", MessageBoxIcon.Error);
                 _view.ClearInputs();
             }
-
         }
 
         #endregion

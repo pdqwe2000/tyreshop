@@ -52,6 +52,7 @@
     <Compile Include="models\Abstract\Person.cs" />
     <Compile Include="models\Enum\Quality.cs" />
     <Compile Include="models\Facade\LoginFacade.cs" />
+    <Compile Include="models\Facade\RegisterFacade.cs" />
     <Compile Include="models\Interfaces\ILogin.cs" />
     <Compile Include="models\Interfaces\IMain.cs" />
     <Compile Include="models\Interfaces\IRegister.cs" />

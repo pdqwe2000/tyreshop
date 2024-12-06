@@ -73,6 +73,7 @@
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
             this.toolStripMenuItem1.Text = "Open Bd";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click_1);
             // 
             // saveToolStripMenuItem
             // 
@@ -105,13 +106,13 @@
             // newSellToolStripMenuItem
             // 
             this.newSellToolStripMenuItem.Name = "newSellToolStripMenuItem";
-            this.newSellToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.newSellToolStripMenuItem.Size = new System.Drawing.Size(181, 34);
             this.newSellToolStripMenuItem.Text = "New Sell";
             // 
             // editSelToolStripMenuItem
             // 
             this.editSelToolStripMenuItem.Name = "editSelToolStripMenuItem";
-            this.editSelToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.editSelToolStripMenuItem.Size = new System.Drawing.Size(181, 34);
             this.editSelToolStripMenuItem.Text = "Edit Sell";
             // 
             // helpToolStripMenuItem
