@@ -11,7 +11,7 @@
 using Tyre_Shop.classes.auth;
 using System.Threading.Tasks;
 
-namespace LoginRegisterSystem.Models.Facades
+namespace Tyre_Shop.classes.facade
 {
     /// <summary>
     /// Facade class for handling user registration functionality.
@@ -39,9 +39,9 @@ namespace LoginRegisterSystem.Models.Facades
         /// <param name="username">The username of the user to be registered.</param>
         /// <param name="password">The password of the user to be registered.</param>
         /// <returns>A task that represents the asynchronous operation. The task result is true if registration is successful, false otherwise.</returns>
-        public async Task<bool> RegisterUserAsync(string username, string password)
+        public async Task<bool> RegisterUserAsync(string username, string password, string phone, bool isAdmin)
         {
-            return await _authService.RegisterUserAsync(username, password,"1",true); // Call the service method to register the user
+            return await _authService.RegisterUserAsync(username, password,phone,isAdmin); // Call the service method to register the user
         }
         #endregion
     }

@@ -24,8 +24,8 @@ namespace Tyre_Shop.classes.Controller
     {
         #region Fields and Properties
 
-        private readonly ILogin _view;              // Interface for the Login View
-        private readonly LoginFacade _loginFacade;  // Facade for handling login operations
+        private readonly ILogin _view;                  // Interface for the Login View
+        private readonly LoginFacade _loginFacade;      // Facade for handling login operations
 
         #endregion
 

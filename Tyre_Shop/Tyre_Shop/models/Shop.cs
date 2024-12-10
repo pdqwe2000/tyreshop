@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Tyre_Shop.models.Data;
 
 namespace Tyre_Shop.classes
 {
@@ -26,46 +27,54 @@ namespace Tyre_Shop.classes
             stock.LoadStockFromJson();
         }
 
-        public void AddTyreToStock(Tyre tyre, int quantity)
+        //public void AddTyreToStock(Tyre tyre, int quantity)
+        //{
+        //    stock.AddTyre(tyre,quantity);
+        //    Console.WriteLine($"Product {tyre.Brand} Added To Stock. Quantity: {quantity}");
+        //}
+
+        //public void MakeSell(Client client, Dictionary<Tyre, int> productsToSell)
+        //{
+        //    Sell newSell = new Sell(nextIdSell, client);
+        //    bool sellMade = true;
+
+        //    foreach (var item in productsToSell)
+        //    {
+        //        Tyre tyre = item.Key;
+        //        int quantity = item.Value;
+
+        //        if (stock.RemoveTyre(tyre,quantity))
+        //        {
+        //            for (int i = 0; i < quantity; i++)
+        //            {
+        //                newSell.AddTyre(tyre);
+        //            }
+        //        }
+        //        else
+        //        {
+        //            sellMade = false;
+        //            break;
+        //        }
+        //    }
+
+        //    if (sellMade)
+        //    {
+        //        sellings.Add(newSell);
+        //        nextIdSell++;
+        //        Console.WriteLine($"Sold! {newSell}");
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("Impossible To Finish Sell, Out Of Stock.");
+        //    }
+        //}
+        public async void AddNewTyre(TyreJson newTyre)
         {
-            stock.AddTyre(tyre,quantity);
-            Console.WriteLine($"Product {tyre.Brand} Added To Stock. Quantity: {quantity}");
-        }
+            var stockManager = Tsms.Instance;
+            await stockManager.AddOrUpdateTyreAsync(newTyre);
+            //stockManager.TyreStock.Add(newTyre);
 
-        public void MakeSell(Client client, Dictionary<Tyre, int> productsToSell)
-        {
-            Sell newSell = new Sell(nextIdSell, client);
-            bool sellMade = true;
-
-            foreach (var item in productsToSell)
-            {
-                Tyre tyre = item.Key;
-                int quantity = item.Value;
-
-                if (stock.RemoveTyre(tyre,quantity))
-                {
-                    for (int i = 0; i < quantity; i++)
-                    {
-                        newSell.AddTyre(tyre);
-                    }
-                }
-                else
-                {
-                    sellMade = false;
-                    break;
-                }
-            }
-
-            if (sellMade)
-            {
-                sellings.Add(newSell);
-                nextIdSell++;
-                Console.WriteLine($"Sold! {newSell}");
-            }
-            else
-            {
-                Console.WriteLine("Impossible To Finish Sell, Out Of Stock.");
-            }
+            Console.WriteLine("Novo pneu adicionado ao stock.");
         }
 
         public void ShowStock()

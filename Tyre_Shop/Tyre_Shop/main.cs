@@ -13,6 +13,8 @@ namespace Tyre_Shop
     // Main class that serves as the entry point for the Tyre Shop application.  
     static class Program
     {
+
+
         // Main method where the application begins execution.  
         static void Main()
         {
@@ -50,81 +52,84 @@ namespace Tyre_Shop
             //}  
             //Console.ReadLine();  
 
+
             // Initialize the shop and load stock from a JSON file.  
             Shop shop = new Shop();
             shop.LoadStockFromJson();
-
-            // Example of creating a new tyre object.  
-            Tyre tyre1 = new Tyre();
-            tyre1.Brand = "PT";
-
+            
             // Displaying the current stock.  
             shop.ShowStock();
 
             // Creating sample tyres for the stock.  
-            Tyre tyreA = new Tyre(5, "Continental", "PremiumContact 5", "205/55R16", Quality.AA, 105);
-            Tyre TyreB = new Tyre(1, "Michelin", "X123", "205/55R16", Quality.AA, 110);
+            TyreJson tyreA = new TyreJson(5, "Continental", "PremiumContact 5", "205/55R16", Quality.AA, 105, 20);
+            TyreJson tyreB = new TyreJson(1, "Michelin", "X123", "205/55R16", Quality.AA, 110, 30);
+           
+            shop.AddNewTyre(tyreA);
+            shop.AddNewTyre(tyreB);
 
 
-            // Adding tyres to the shop's stock.  
-            shop.AddTyreToStock(tyreA, 11);
-            shop.AddTyreToStock(TyreB, 12);
+
+            //// Adding tyres to the shop's stock.  
+            //shop.AddTyreToStock(tyreA, 11);
+            //shop.AddTyreToStock(tyreB, 12);
 
             // Displaying the current stock.  
             shop.ShowStock();
 
-            // Creating a client.  
-            Client cliente1 = new Client("João Silva", "99999-9999", false);
-
-            // Performing a sale with a list of tyres and their quantities.  
-            Dictionary<Tyre, int> produtosParaVenda = new Dictionary<Tyre, int>
-            {
-                { tyreA, 2 },
-                { TyreB, 1 }
-            };
-            shop.MakeSell(cliente1, produtosParaVenda);
-
-            // Displaying the list of completed sales.  
-            shop.ShowSellings();
-
-            // Displaying the stock after the sale.  
-            shop.ShowStock();
-
-            Tyre Tyrec = new Tyre(1, "Michelin", "X123", "205/55R16", Quality.AA, 110);
-            Dictionary<Tyre, int> produtosParaVenda1 = new Dictionary<Tyre, int>
-            {
-                { Tyrec, 4 }
-            };
-            shop.MakeSell(cliente1, produtosParaVenda1);
-            // Displaying the list of completed sales.  
-            shop.ShowSellings();
-
-            shop.ShowStock();
-
-            // Root path of the application, determined dynamically based on the location of the executing assembly.  
-            string rootPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(Assembly.GetExecutingAssembly().Location).FullName).FullName).FullName;
-            // Path to the JSON file where user data is stored.  
-            string filePath = Path.Combine(rootPath, "assets", "Data.json");
-            // Checking if the JSON file exists and reading its content.  
-            if (File.Exists(filePath))
-            {
-                string contentJson = File.ReadAllText(filePath);
-
-                // Deserializing a list of tyres from the JSON file if it contains an array.  
-                List<Tyre> listTyres = JsonConvert.DeserializeObject<List<Tyre>>(contentJson);
-                foreach (var t in listTyres)
-                {
-                    Console.WriteLine($"Brand: {t.Brand}, Model: {t.Model}, Size: {t.Size}, Quality: {t.Quality}, Price: {t.Price}");
-                }
-            }
-            else
-            {
-                // Displaying a message if the JSON file is not found.  
-                Console.WriteLine("JSON Not Found.");
-            }
-
-            // Waiting for the user to close the console.  
             Console.ReadLine();
+
+            //    // Creating a client.  
+            //    Client cliente1 = new Client("João Silva", "99999-9999", false);
+
+            //    // Performing a sale with a list of tyres and their quantities.  
+            //    Dictionary<Tyre, int> produtosParaVenda = new Dictionary<Tyre, int>
+            //    {
+            //        { tyreA, 2 },
+            //        { tyreB, 1 }
+            //    };
+            //    shop.MakeSell(cliente1, produtosParaVenda);
+
+            //    // Displaying the list of completed sales.  
+            //    shop.ShowSellings();
+
+            //    // Displaying the stock after the sale.  
+            //    shop.ShowStock();
+
+            //    Tyre Tyrec = new Tyre(1, "Michelin", "X123", "205/55R16", Quality.AA, 110);
+            //    Dictionary<Tyre, int> produtosParaVenda1 = new Dictionary<Tyre, int>
+            //    {
+            //        { Tyrec, 4 }
+            //    };
+            //    shop.MakeSell(cliente1, produtosParaVenda1);
+            //    // Displaying the list of completed sales.  
+            //    shop.ShowSellings();
+
+            //    shop.ShowStock();
+
+            //    // Root path of the application, determined dynamically based on the location of the executing assembly.  
+            //    string rootPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(Assembly.GetExecutingAssembly().Location).FullName).FullName).FullName;
+            //    // Path to the JSON file where user data is stored.  
+            //    string filePath = Path.Combine(rootPath, "assets", "Data.json");
+            //    // Checking if the JSON file exists and reading its content.  
+            //    if (File.Exists(filePath))
+            //    {
+            //        string contentJson = File.ReadAllText(filePath);
+
+            //        // Deserializing a list of tyres from the JSON file if it contains an array.  
+            //        List<Tyre> listTyres = JsonConvert.DeserializeObject<List<Tyre>>(contentJson);
+            //        foreach (var t in listTyres)
+            //        {
+            //            Console.WriteLine($"Brand: {t.Brand}, Model: {t.Model}, Size: {t.Size}, Quality: {t.Quality}, Price: {t.Price}");
+            //        }
+            //    }
+            //    else
+            //    {
+            //        // Displaying a message if the JSON file is not found.  
+            //        Console.WriteLine("JSON Not Found.");
+            //    }
+
+            //    // Waiting for the user to close the console.  
+            //    Console.ReadLine();
         }
     }
 }

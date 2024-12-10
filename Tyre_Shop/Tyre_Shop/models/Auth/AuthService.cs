@@ -91,7 +91,7 @@ namespace Tyre_Shop.classes.auth
             }
 
             // Add the new user to the list and save the list back to the file
-            users.Add(new User { Name = username, Password = password, Phone=phone,Admin=isAdmin });
+            users.Add(new User {  Password = password, Admin = isAdmin, Name = username, Phone =phone });
             await SaveUsersAsync(users);
             return true; // Return true to indicate successful registration
         }

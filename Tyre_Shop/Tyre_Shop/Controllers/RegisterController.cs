@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tyre_Shop.classes.auth;
+using Tyre_Shop.classes.facade;
 using Tyre_Shop.classes.interfaces;
 
 namespace Tyre_Shop.classes.Controller
@@ -12,7 +13,7 @@ namespace Tyre_Shop.classes.Controller
         #region Fields and Properties
 
         private readonly IRegister _view;  // Interface for the Register View
-        private readonly AuthService _userService;  // Service responsible for user operations
+        private readonly RegisterFacade _registerFacade; // Facade for handling register operations
 
         #endregion
 
@@ -25,7 +26,7 @@ namespace Tyre_Shop.classes.Controller
         public RegisterController(IRegister view)
         {
             _view = view;  // Assign the view
-            _userService = new AuthService();  // Initialize the UserService
+            _registerFacade = new RegisterFacade();
         }
 
         #endregion
@@ -57,7 +58,7 @@ namespace Tyre_Shop.classes.Controller
             try
             {
                 // Attempt to register the user
-                bool registrationSuccess = await _userService.RegisterUserAsync(_view.Username, _view.Password,_view.Phone,_view.IsAdmin);
+                bool registrationSuccess = await _registerFacade.RegisterUserAsync(_view.Username, _view.Password,_view.Phone,_view.IsAdmin);
 
                 if (registrationSuccess)
                 {

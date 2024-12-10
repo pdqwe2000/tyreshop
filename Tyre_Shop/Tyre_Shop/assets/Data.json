@@ -1,24 +1,6 @@
 [
   {
-    "Quantity": 10,
-    "Id": 1,
-    "Brand": "Michelin",
-    "Model": "X123",
-    "Size": "205/55R16",
-    "Quality": 100,
-    "Price": 110
-  },
-  {
-    "Quantity": 10,
-    "Id": 2,
-    "Brand": "Pirelli",
-    "Model": "P400",
-    "Size": "195/65R15",
-    "Quality": 100,
-    "Price": 80
-  },
-  {
-    "Quantity": 97,
+    "Quantity": 9,
     "Id": 5,
     "Brand": "Continental",
     "Model": "PremiumContact 5",
@@ -27,7 +9,7 @@
     "Price": 105
   },
   {
-    "Quantity": 107,
+    "Quantity": 11,
     "Id": 1,
     "Brand": "Michelin",
     "Model": "X123",

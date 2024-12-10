@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Threading.Tasks;
 using Newtonsoft.Json;
+using Tyre_Shop.models.Data;
 
 namespace Tyre_Shop.classes
 {
@@ -11,8 +13,8 @@ namespace Tyre_Shop.classes
     {
         #region Properties
 
-        private TyreRepo repos = new TyreRepo();
-        private Dictionary<Tyre, int> tyresInStock;
+        private TyreService repos = new TyreService();
+        private TyreJson tyresInStock;
 
         // Root path of the application, determined dynamically based on the location of the executing assembly.  
         private static string rootPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(Assembly.GetExecutingAssembly().Location).FullName).FullName).FullName;
@@ -26,7 +28,7 @@ namespace Tyre_Shop.classes
 
         public Stock()
         {
-            tyresInStock = new Dictionary<Tyre, int>();
+            tyresInStock = new TyreJson();
         }
 
         #endregion
@@ -36,41 +38,56 @@ namespace Tyre_Shop.classes
         /// <summary>
         /// Load the stock from the JSON file.
         /// </summary>
-        public void LoadStockFromJson()
+        public async Task LoadStockFromJson()
         {
-            if (!File.Exists(path))
+            // Obter a instância do TyreStockManager
+            var stockManager = Tsms.Instance;
+
+            // Carregar os pneus do JSON
+            await stockManager.LoadTyresFromJsonAsync();
+
+            // Exemplo: Exibir os pneus carregados
+            var tyres = stockManager.GetTyreStock();
+            foreach (var tyre in tyres)
             {
-                Console.WriteLine("JSON Not Found.");
-                return;
+                Console.WriteLine($"Marca: {tyre.Brand}, Modelo: {tyre.Model}, Quantidade: {tyre.Quantity}, Preço: {tyre.Price}");
             }
 
-            try
-            {
-                // Load the tyres from the repository or JSON
-                var tyreList = repos.LoadTyres();
+            //if (!File.Exists(path))
+            //{
+            //    Console.WriteLine("JSON Not Found.");
+            //    return;
+            //}
 
-                foreach (var tyreJson in tyreList)
-                {
-                    // Convert TyreJson to Tyre and add to the stock
-                    var tyre = new Tyre
-                    {
-                        Id = tyreJson.Id,
-                        Brand = tyreJson.Brand,
-                        Model = tyreJson.Model,
-                        Size = tyreJson.Size,
-                        Quality = tyreJson.Quality,
-                        Price = tyreJson.Price
-                    };
+            //try
+            //{
+            //    // Load the tyres from the repository or JSON
+            //    var tyreList = await repos.LoadTyresAsync();
 
-                    AddTyre(tyre, tyreJson.Quantity);
-                }
+            //    tyreList.Add()
 
-                Console.WriteLine("Stock Loaded From JSON.");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error Loading JSON File: " + ex.Message);
-            }
+            //    foreach (var tyreJson in tyreList)
+            //    {
+            //        // Convert TyreJson to Tyre and add to the stock
+            //        var tyre = new Tyre
+            //        {
+            //            Id = tyreJson.Id,
+            //            Brand = tyreJson.Brand,
+            //            Model = tyreJson.Model,
+            //            Size = tyreJson.Size,
+            //            Quality = tyreJson.Quality,
+            //            Price = tyreJson.Price
+            //        };
+
+            //        AddTyre(tyre, tyreJson.Quantity);
+            //    }
+
+            //    Console.WriteLine("Stock Loaded From JSON.");
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine("Error Loading JSON File: " + ex.Message);
+            //}
         }
 
         /// <summary>
@@ -80,99 +97,111 @@ namespace Tyre_Shop.classes
         /// Add a tyre to the stock and update the JSON file.
         /// If a tyre with the same properties exists, only update the quantity.
         /// </summary>
-        public void AddTyre(Tyre tyre, int quantity)
-        {
-            // Check if an equivalent tyre already exists in stock
-            var existingTyre = tyresInStock.Keys.FirstOrDefault(t =>
-                t.Brand == tyre.Brand &&
-                t.Model == tyre.Model &&
-                t.Size == tyre.Size &&
-                t.Quality == tyre.Quality &&
-                t.Price == tyre.Price);
+        //public void AddTyre(Tyre tyre, int quantity)
+        //{
+        //    // Check if an equivalent tyre already exists in stock
+        //    var existingTyre = tyresInStock.Keys.FirstOrDefault(t =>
+        //        t.Brand == tyre.Brand &&
+        //        t.Model == tyre.Model &&
+        //        t.Size == tyre.Size &&
+        //        t.Quality == tyre.Quality &&
+        //        t.Price == tyre.Price);
 
-            if (existingTyre != null)
-            {
-                // Update quantity of the existing tyre
-                tyresInStock[existingTyre] += quantity;
-            }
-            else
-            {
-                // Add new tyre to the stock
-                tyresInStock[tyre] = quantity;
-            }
+        //    if (existingTyre != null)
+        //    {
+        //        // Update quantity of the existing tyre
+        //        tyresInStock[existingTyre] += quantity;
+        //    }
+        //    else
+        //    {
+        //        // Add new tyre to the stock
+        //        tyresInStock[tyre] = quantity;
+        //    }
 
-            // Save the updated stock to JSON
-            SaveStockToJson();
-        }
+        //    // Save the updated stock to JSON
+        //    SaveStockToJson();
+        //}
 
         /// <summary>
         /// Remove a tyre from the stock and update the JSON file.
         /// </summary>
-        public bool RemoveTyre(Tyre tyre, int quantity)
-        {
-            if (tyresInStock.ContainsKey(tyre) && tyresInStock[tyre] >= quantity)
-            {
-                tyresInStock[tyre] -= quantity;
+        //public bool RemoveTyre(Tyre tyre, int quantity)
+        //{
+        //    if (tyresInStock.ContainsKey(tyre) && tyresInStock[tyre] >= quantity)
+        //    {
+        //        tyresInStock[tyre] -= quantity;
 
-                SaveStockToJson(); // Save the updated stock to JSON
-                return true;
-            }
+        //        SaveStockToJson(); // Save the updated stock to JSON
+        //        return true;
+        //    }
 
-            Console.WriteLine($"Insufficient Stock: {tyre.Brand}");
-            return false;
-        }
+        //    Console.WriteLine($"Insufficient Stock: {tyre.Brand}");
+        //    return false;
+        //}
 
         /// <summary>
         /// Check the quantity of a tyre in stock.
         /// </summary>
-        public int VerifyQuantity(Tyre tyre)
-        {
-            return tyresInStock.ContainsKey(tyre) ? tyresInStock[tyre] : 0;
-        }
+        //public int VerifyQuantity(Tyre tyre)
+        //{
+        //    return tyresInStock.ContainsKey(tyre) ? tyresInStock[tyre] : 0;
+        //}
 
         /// <summary>
         /// Display the current tyres in stock.
         /// </summary>
+        //public void ShowTyres()
+        //{
+        //    foreach (var tyre in tyresInStock)
+        //    {
+        //        Console.WriteLine($"Tyre: {tyre.Key.Brand} {tyre.Key.Model} Size: {tyre.Key.Size} Quality: {tyre.Key.Quality} - Quantity: {tyre.Value} Price: {tyre.Key.Price}");
+        //    }
+        //}
+
         public void ShowTyres()
         {
-            foreach (var tyre in tyresInStock)
+            var stockManager = Tsms.Instance;
+            var tyres = stockManager.GetTyreStock();
+
+            Console.WriteLine("Pneus em Stock:");
+            foreach (var tyre in tyres)
             {
-                Console.WriteLine($"Tyre: {tyre.Key.Brand} {tyre.Key.Model} Size: {tyre.Key.Size} Quality: {tyre.Key.Quality} - Quantity: {tyre.Value} Price: {tyre.Key.Price}");
+                Console.WriteLine($"Tyre: {tyre.Brand} {tyre.Model}, Size: {tyre.Size}, Quality: {tyre.Quality}, Quantity: {tyre.Quantity}, Price: {tyre.Price}");
             }
         }
 
         /// <summary>
         /// Save the current stock to the JSON file.
         /// </summary>
-        private void SaveStockToJson()
-        {
-            try
-            {
-                // Convert the stock dictionary to a list of TyreJson
-                var stockList = tyresInStock.Select(item => new TyreJson
-                {
-                    Id = item.Key.Id,
-                    Brand = item.Key.Brand,
-                    Model = item.Key.Model,
-                    Size = item.Key.Size,
-                    Quality = item.Key.Quality,
-                    Price = item.Key.Price,
-                    Quantity = item.Value
-                }).ToList();
+        //private void SaveStockToJson()
+        //{
+        //    try
+        //    {
+        //        // Convert the stock dictionary to a list of TyreJson
+        //        var stockList = tyresInStock.Select(item => new TyreJson
+        //        {
+        //            Id = item.Key.Id,
+        //            Brand = item.Key.Brand,
+        //            Model = item.Key.Model,
+        //            Size = item.Key.Size,
+        //            Quality = item.Key.Quality,
+        //            Price = item.Key.Price,
+        //            Quantity = item.Value
+        //        }).ToList();
 
-                // Serialize the list to JSON
-                string json = JsonConvert.SerializeObject(stockList, Formatting.Indented);
+        //        // Serialize the list to JSON
+        //        string json = JsonConvert.SerializeObject(stockList, Formatting.Indented);
 
-                // Save the JSON to the file
-                File.WriteAllText(path, json);
+        //        // Save the JSON to the file
+        //        File.WriteAllText(path, json);
 
-                Console.WriteLine("Stock saved to JSON.");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error saving stock to JSON: " + ex.Message);
-            }
-        }
+        //        Console.WriteLine("Stock saved to JSON.");
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine("Error saving stock to JSON: " + ex.Message);
+        //    }
+        //}
 
         #endregion
     }
