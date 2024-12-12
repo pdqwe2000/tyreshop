@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
 using Tyre_Shop.classes;
@@ -16,10 +17,10 @@ namespace Tyre_Shop.models.Data
         private static readonly object _lock = new object(); // Lock para threads simultâneas
         #endregion
 
-        #region Public Properties
+        #region Private Properties
         private readonly string _dataFilePath = Fpm.Instance.DataFilePath; // Path to the users data file
         #endregion
-        
+
         #region Public Properties
         /// <summary>
         /// The base path where the application data files will be stored.
@@ -44,6 +45,7 @@ namespace Tyre_Shop.models.Data
         /// <param name="path">Caminho do arquivo JSON.</param>
         public async Task LoadTyresFromJsonAsync()
         {
+            
             if (!File.Exists(_dataFilePath))
             {
                 Console.WriteLine("Arquivo JSON não encontrado.");
@@ -55,16 +57,17 @@ namespace Tyre_Shop.models.Data
                 using (StreamReader reader = new StreamReader(_dataFilePath))
                 {
                     string json = await reader.ReadToEndAsync();
-                    TyreStock = JsonSerializer.Deserialize<List<TyreJson>>(json) ?? new List<TyreJson>(); // Deserialize and return users
+                    TyreStock = JsonSerializer.Deserialize<List<TyreJson>>(json) ?? new List<TyreJson>();
                 }
-                
 
                 Console.WriteLine("Stock de pneus carregado com sucesso.");
+
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Erro ao carregar stock de pneus: {ex.Message}");
             }
+
         }
         public async Task SaveTyresToJsonAsync()
         {
@@ -97,8 +100,11 @@ namespace Tyre_Shop.models.Data
 
             var existingTyre = TyreStock.Find(t =>
                 t.Brand.Equals(newTyre.Brand, StringComparison.OrdinalIgnoreCase) &&
-                t.Model.Equals(newTyre.Model, StringComparison.OrdinalIgnoreCase));
-
+                t.Model.Equals(newTyre.Model, StringComparison.OrdinalIgnoreCase) &&
+                t.Size.Equals(newTyre.Size, StringComparison.OrdinalIgnoreCase) &&
+                t.Quality == newTyre.Quality &&
+                t.Price == newTyre.Price);
+            
             if (existingTyre != null)
             {
                 existingTyre.Quantity += newTyre.Quantity;
@@ -106,8 +112,14 @@ namespace Tyre_Shop.models.Data
             }
             else
             {
+                //TyreStock.Add(newTyre);
+                //Console.WriteLine($"Added new tyre: {newTyre.Brand} {newTyre.Model}");
+                // Assign a new unique Id for the new tyre (based on the maximum existing Id).
+                newTyre.Id = TyreStock.Count > 0 ? TyreStock.Max(t => t.Id) + 1 : 1;
+
+                // Add the new tyre to the stock.
                 TyreStock.Add(newTyre);
-                Console.WriteLine($"Added new tyre: {newTyre.Brand} {newTyre.Model}");
+                Console.WriteLine($"Added new tyre: {newTyre.Brand} {newTyre.Model} with Id {newTyre.Id}");
             }
 
             await SaveTyresToJsonAsync();

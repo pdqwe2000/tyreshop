@@ -74,7 +74,7 @@ namespace Tyre_Shop
             //shop.AddTyreToStock(tyreB, 12);
 
             // Displaying the current stock.  
-            shop.ShowStock();
+            //shop.ShowStock();
 
             Console.ReadLine();
 

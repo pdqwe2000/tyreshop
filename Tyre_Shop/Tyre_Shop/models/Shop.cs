@@ -22,10 +22,7 @@ namespace Tyre_Shop.classes
         #endregion
 
         #region Methods
-        public void LoadStockFromJson()
-        {
-            stock.LoadStockFromJson();
-        }
+        public async void LoadStockFromJson() => await stock.LoadStockFromJson();
 
         //public void AddTyreToStock(Tyre tyre, int quantity)
         //{
