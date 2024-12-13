@@ -1,8 +1,8 @@
-﻿namespace Tyre_Shop.models
+﻿namespace Tyre_Shop.Classes
 {
     // Abstract base class that represents a person in the system.  
     // This class serves as a foundation for other classes, such as User, that share common properties like Name and Phone.  
-    public abstract class Person
+    public class Person
     {
         #region Private Properties  
         // Property to store the person's name.

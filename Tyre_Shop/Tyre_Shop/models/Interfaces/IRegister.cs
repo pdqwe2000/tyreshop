@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace Tyre_Shop.classes.interfaces
+namespace Tyre_Shop.Classes.Interfaces
 {
     internal interface IRegister
     {

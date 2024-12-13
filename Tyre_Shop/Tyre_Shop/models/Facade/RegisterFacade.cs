@@ -8,10 +8,10 @@
 //    <author>Ernesto Casanova</author>​
 //-----------------------------------------------------------------
 
-using Tyre_Shop.classes.auth;
+using Tyre_Shop.Classes.Auth;
 using System.Threading.Tasks;
 
-namespace Tyre_Shop.classes.facade
+namespace Tyre_Shop.Classes.Facade
 {
     /// <summary>
     /// Facade class for handling user registration functionality.

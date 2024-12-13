@@ -1,6 +1,4 @@
-﻿using Tyre_Shop.models;
-
-namespace Tyre_Shop.classes
+﻿namespace Tyre_Shop.Classes
 {
     // This class represents a Client in the Tyre Shop system.  
     // It inherits from the Person class and adds specific properties related to clients.  

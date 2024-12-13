@@ -46,6 +46,7 @@
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\MainController.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
+    <Compile Include="Controllers\TyreController.cs" />
     <Compile Include="models\Client.cs" />
     <Compile Include="models\Auth\AuthService.cs" />
     <Compile Include="models\Data\Fpm.cs" />
@@ -54,6 +55,7 @@
     <Compile Include="models\Enum\Quality.cs" />
     <Compile Include="models\Facade\LoginFacade.cs" />
     <Compile Include="models\Facade\RegisterFacade.cs" />
+    <Compile Include="models\Facade\TyreFacade.cs" />
     <Compile Include="models\Interfaces\ILogin.cs" />
     <Compile Include="models\Interfaces\IMain.cs" />
     <Compile Include="models\Interfaces\IRegister.cs" />

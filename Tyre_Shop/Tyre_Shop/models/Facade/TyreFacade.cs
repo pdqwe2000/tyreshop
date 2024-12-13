@@ -1,0 +1,56 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Tyre_Shop.Classes.Data;
+
+namespace Tyre_Shop.Classes.Facade
+{
+    public class TyreFacade
+    {
+
+        private readonly Tsms _tsms;
+
+        public TyreFacade()
+        {
+            _tsms = Tsms.Instance; // Singleton instance
+        }
+
+        /// <summary>
+        /// Adds or updates a tyre in the stock.
+        /// </summary>
+        /// <param name="newTyre">The tyre to be added or updated.</param>
+        public async Task AddOrUpdateTyreAsync(TyreJson newTyre)
+        {
+            await _tsms.AddOrUpdateTyreAsync(newTyre);
+        }
+
+        /// <summary>
+        /// Loads tyres from the JSON file.
+        /// </summary>
+        public async Task LoadTyresFromFileAsync()
+        {
+            await _tsms.LoadTyresFromJsonAsync();
+        }
+
+        /// <summary>
+        /// Displays all tyres in the stock.
+        /// </summary>
+        public void DisplayTyres()
+        {
+            var tyres = _tsms.GetTyreStock();
+            if (tyres.Count == 0)
+            {
+                Console.WriteLine("No tyres available in stock.");
+                return;
+            }
+
+            Console.WriteLine("Current Tyre Stock:");
+            foreach (var tyre in tyres)
+            {
+                Console.WriteLine($"- {tyre.Brand} {tyre.Model}, Size: {tyre.Size}, Quality: {tyre.Quality}, Quantity: {tyre.Quantity}, Price: {tyre.Price}");
+            }
+        }
+    }
+}

@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Tyre_Shop.classes.auth;
-using Tyre_Shop.classes.facade;
-using Tyre_Shop.classes.interfaces;
+using Tyre_Shop.Classes.Facade;
+using Tyre_Shop.Classes.Interfaces;
 
-namespace Tyre_Shop.classes.Controller
+namespace Tyre_Shop.Classes.Controller
 {
     internal class RegisterController
     {

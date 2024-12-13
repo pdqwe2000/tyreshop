@@ -8,14 +8,14 @@
 //    <author>Ernesto Casanova</author>​
 //-----------------------------------------------------------------
 
-using Tyre_Shop.classes.interfaces;
+using Tyre_Shop.Classes.Interfaces;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Tyre_Shop.classes.auth;
-using Tyre_Shop.classes.facade;
+using Tyre_Shop.Classes.Auth;
+using Tyre_Shop.Classes.Facade;
 
-namespace Tyre_Shop.classes.Controller
+namespace Tyre_Shop.Classes.Controller
 {
     /// <summary>
     /// Controller responsible for handling the login logic.

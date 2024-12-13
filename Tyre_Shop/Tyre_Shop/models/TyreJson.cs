@@ -1,8 +1,4 @@
-﻿using System.Diagnostics;
-using System.Drawing;
-using System.Reflection;
-using Tyre_Shop.classes;
-using Tyre_Shop.source.interfaces;
+﻿using Tyre_Shop.Classes;
 
 public class TyreJson : Tyre
 {

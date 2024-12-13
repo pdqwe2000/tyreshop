@@ -2,9 +2,9 @@
 using System.IO;
 using System.Text.Json;
 using System.Threading.Tasks;
-using Tyre_Shop.classes.data;
+using Tyre_Shop.Classes.Data;
 
-namespace Tyre_Shop.classes
+namespace Tyre_Shop.Classes
 {
     public class TyreService
     {

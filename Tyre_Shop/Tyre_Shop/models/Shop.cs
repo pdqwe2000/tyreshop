@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Tyre_Shop.models.Data;
+using Tyre_Shop.Classes.Data;
 
-namespace Tyre_Shop.classes
+namespace Tyre_Shop.Classes
 {
     internal class Shop
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 
-namespace Tyre_Shop.classes
+namespace Tyre_Shop.Classes
 {
     internal class Sell
     {

@@ -3,9 +3,9 @@ using System.IO;
 using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
-using Tyre_Shop.classes.data;
+using Tyre_Shop.Classes.Data;
 
-namespace Tyre_Shop.classes.auth
+namespace Tyre_Shop.Classes.Auth
 {
     // This class provides services related to user authentication and registration.  
     // It interacts with the UserRepo class to load, save, and validate user data.  

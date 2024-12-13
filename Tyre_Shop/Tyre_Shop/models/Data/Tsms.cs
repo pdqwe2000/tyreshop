@@ -4,11 +4,8 @@ using System.IO;
 using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
-using Tyre_Shop.classes;
-using Tyre_Shop.classes.auth;
-using Tyre_Shop.classes.data;
 
-namespace Tyre_Shop.models.Data
+namespace Tyre_Shop.Classes.Data
 {
     internal class Tsms
     {

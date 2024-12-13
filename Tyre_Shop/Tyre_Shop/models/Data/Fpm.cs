@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Tyre_Shop.classes.data
+namespace Tyre_Shop.Classes.Data
 {
     internal class Fpm
     {

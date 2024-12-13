@@ -1,6 +1,4 @@
-﻿using Tyre_Shop.models;
-
-namespace Tyre_Shop.classes.auth
+﻿namespace Tyre_Shop.Classes.Auth
 {
     // This class represents a User in the Tyre Shop system, inheriting from the Person class.
     public class User : Person
@@ -36,5 +34,6 @@ namespace Tyre_Shop.classes.auth
         /// <returns></returns>  
         public User() { }
         #endregion
+        
     }
 }

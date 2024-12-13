@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
-using System.IO;
-using Newtonsoft.Json;
-using Tyre_Shop.classes;
+using Tyre_Shop.Classes;
 using Tyre_Shop.source.interfaces;
-using Tyre_Shop.models;
-using System.Reflection;
 
 namespace Tyre_Shop
 {

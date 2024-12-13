@@ -10,9 +10,9 @@
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Tyre_Shop.classes.auth;
+using Tyre_Shop.Classes.Auth;
 
-namespace Tyre_Shop.classes.facade
+namespace Tyre_Shop.Classes.Facade
 {
     public class LoginFacade
     {

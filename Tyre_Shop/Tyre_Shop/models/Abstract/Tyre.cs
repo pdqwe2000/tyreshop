@@ -1,4 +1,4 @@
-﻿namespace Tyre_Shop.classes
+﻿namespace Tyre_Shop.Classes
 {
     // This class represents a Tyre entity in the Tyre Shop system.
     public class Tyre
