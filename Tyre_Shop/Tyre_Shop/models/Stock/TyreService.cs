@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System.Linq;
+using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -8,61 +10,142 @@ namespace Tyre_Shop.Classes
 {
     public class TyreService
     {
+        #region Singleton Implementation
+        private static TyreService _instance; // Única instância da classe
+        private static readonly object _lock = new object(); // Lock para threads simultâneas
+        #endregion
+
         #region Private Fields
         private readonly string _dataFilePath = Fpm.Instance.DataFilePath; // Path to the users data file
         #endregion
-        #region Properties
-        
+
+        #region Public Properties
+        /// <summary>
+        /// The base path where the application data files will be stored.
+        /// </summary>
+        public List<TyreJson> TyreStock { get; private set; } // Lista de pneus carregada
         #endregion
 
-        #region Methods
-
-        /// <summary>  
-        /// Method to save a list of users to a JSON file.  
-        /// </summary>  
-        /// <param name="tyres">List of Users to save in JSON.</param>  
-
-        public void SaveTyres(List<Tyre> tyres)
+        #region Private Constructor
+        /// <summary>
+        /// Private constructor to initialize file paths and ensure the necessary directories exist.
+        /// </summary>
+        private TyreService()
         {
-            // Serializes the list of users into a JSON-formatted string.  
-            string jsonString = System.Text.Json.JsonSerializer.Serialize(tyres, new JsonSerializerOptions
-            {
-                WriteIndented = true  // Formats the JSON with indentation for better readability.  
-            });
-
-            // Writes the JSON string to the file specified by the path variable.  
-            File.WriteAllText(_dataFilePath, jsonString);
+            TyreStock = new List<TyreJson>();
         }
+        #endregion
 
-        /// <summary>  
-        /// Method to load a list of users from the JSON file.
-        /// </summary>  
-
-        public async Task<List<TyreJson>> LoadTyresAsync()
+        #region Public Methods
+        /// <summary>
+        /// Carrega pneus de um arquivo JSON para memória.
+        /// </summary>
+        /// <param name="path">Caminho do arquivo JSON.</param>
+        public async Task LoadTyresFromJsonAsync()
         {
-           
-            // Checks if the JSON file exists at the specified path.  
-            if (!File.Exists(_dataFilePath))
-                return new List<TyreJson>();
 
-            // Read the file and deserialize the JSON content into a list of users
-            using (StreamReader reader = new StreamReader(_dataFilePath))
+            if (!File.Exists(_dataFilePath))
             {
-                string json = await reader.ReadToEndAsync();
-                var tyreStock = JsonSerializer.Deserialize<List<TyreJson>>(json) ?? new List<TyreJson>(); // Deserialize and return users
-                return tyreStock;
+                Console.WriteLine("Arquivo JSON não encontrado.");
+                return;
             }
 
-            
+            try
+            {
+                using (StreamReader reader = new StreamReader(_dataFilePath))
+                {
+                    string json = await reader.ReadToEndAsync();
+                    TyreStock = JsonSerializer.Deserialize<List<TyreJson>>(json) ?? new List<TyreJson>();
+                }
 
-            //// Reads the content of the JSON file into a string.  
-            //string jsonString = File.ReadAllText(_dataFilePath);
+                Console.WriteLine("Stock de pneus carregado com sucesso.");
 
-            //var tyreStock = JsonConvert.DeserializeObject<List<TyreJson>>(jsonString);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao carregar stock de pneus: {ex.Message}");
+            }
 
-            //// Deserializes the JSON string into a list of User objects and returns it.  
-            //return tyreStock;
+        }
+        public async Task SaveTyresToJsonAsync()
+        {
+            try
+            {
+                // Serialize the list of users to JSON
+                string json = JsonSerializer.Serialize(TyreStock, new JsonSerializerOptions { WriteIndented = true });
+
+                // Write the JSON string to the file
+                using (StreamWriter writer = new StreamWriter(_dataFilePath))
+                {
+                    await writer.WriteAsync(json);
+                }
+
+                Console.WriteLine("Stock de pneus salvo com sucesso.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao salvar stock de pneus: {ex.Message}");
+            }
+        }
+
+        public async Task AddOrUpdateTyreAsync(TyreJson newTyre)
+        {
+            if (TyreStock.Count == 0)
+            {
+                Console.WriteLine("Stock is empty, loading from file...");
+                await LoadTyresFromJsonAsync();
+            }
+
+            var existingTyre = TyreStock.Find(t =>
+                t.Brand.Equals(newTyre.Brand, StringComparison.OrdinalIgnoreCase) &&
+                t.Model.Equals(newTyre.Model, StringComparison.OrdinalIgnoreCase) &&
+                t.Size.Equals(newTyre.Size, StringComparison.OrdinalIgnoreCase) &&
+                t.Quality == newTyre.Quality &&
+                t.Price == newTyre.Price);
+
+            if (existingTyre != null)
+            {
+                existingTyre.Quantity += newTyre.Quantity;
+                Console.WriteLine($"Updated quantity for {existingTyre.Brand} {existingTyre.Model}. New quantity: {existingTyre.Quantity}");
+            }
+            else
+            {
+                //TyreStock.Add(newTyre);
+                //Console.WriteLine($"Added new tyre: {newTyre.Brand} {newTyre.Model}");
+                // Assign a new unique Id for the new tyre (based on the maximum existing Id).
+                newTyre.Id = TyreStock.Count > 0 ? TyreStock.Max(t => t.Id) + 1 : 1;
+
+                // Add the new tyre to the stock.
+                TyreStock.Add(newTyre);
+                Console.WriteLine($"Added new tyre: {newTyre.Brand} {newTyre.Model} with Id {newTyre.Id}");
+            }
+
+            await SaveTyresToJsonAsync();
+        }
+
+        /// <summary>
+        /// Obtém o stock de pneus atual.
+        /// </summary>
+        /// <returns>Lista de pneus.</returns>
+        public List<TyreJson> GetTyreStock()
+        {
+            return TyreStock;
         }
         #endregion
+
+        public static TyreService Instance
+        {
+            get
+            {
+                lock (_lock) // Garante thread safety
+                {
+                    if (_instance == null)
+                    {
+                        _instance = new TyreService();
+                    }
+                    return _instance;
+                }
+            }
+        }
     }
 }

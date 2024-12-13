@@ -16,7 +16,7 @@ namespace Tyre_Shop
             // Initializes and starts the Windows Forms application.  
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main());
+            Application.Run(new Login2());
 
             // The following commented-out section showcases a basic login flow for the application.  
             // It demonstrates the process of registering or logging in a user, though it is not currently active.  

@@ -67,7 +67,7 @@ namespace Tyre_Shop.Classes
         //}
         public async void AddNewTyre(TyreJson newTyre)
         {
-            var stockManager = Tsms.Instance;
+            var stockManager = TyreService.Instance;
             await stockManager.AddOrUpdateTyreAsync(newTyre);
             //stockManager.TyreStock.Add(newTyre);
 

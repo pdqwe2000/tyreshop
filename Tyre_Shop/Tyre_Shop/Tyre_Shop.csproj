@@ -51,7 +51,6 @@
     <Compile Include="models\Auth\AuthService.cs" />
     <Compile Include="models\Data\Fpm.cs" />
     <Compile Include="models\Abstract\Person.cs" />
-    <Compile Include="models\Data\Tsms.cs" />
     <Compile Include="models\Enum\Quality.cs" />
     <Compile Include="models\Facade\LoginFacade.cs" />
     <Compile Include="models\Facade\RegisterFacade.cs" />
@@ -67,6 +66,12 @@
     <Compile Include="models\Auth\User.cs" />
     <Compile Include="main.cs" />
     <Compile Include="models\TyreJson.cs" />
+    <Compile Include="src\Forms\Auth\Login2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Forms\Auth\Login2.Designer.cs">
+      <DependentUpon>Login2.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Forms\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +142,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="src\Forms\Auth\Login2.resx">
+      <DependentUpon>Login2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\Forms\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>

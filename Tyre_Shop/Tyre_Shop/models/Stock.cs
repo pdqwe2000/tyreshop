@@ -10,7 +10,7 @@ namespace Tyre_Shop.Classes
     {
         #region Properties
 
-        private TyreService repos = new TyreService();
+        private TyreService repos = TyreService.Instance;
         private TyreJson tyresInStock;
 
         // Root path of the application, determined dynamically based on the location of the executing assembly.  
@@ -38,7 +38,7 @@ namespace Tyre_Shop.Classes
         public async Task LoadStockFromJson()
         {
             // Obter a instância do TyreStockManager
-            var stockManager = Tsms.Instance;
+            var stockManager = TyreService.Instance;
 
             // Carregar os pneus do JSON
             await stockManager.LoadTyresFromJsonAsync();
@@ -157,7 +157,7 @@ namespace Tyre_Shop.Classes
 
         public void ShowTyres()
         {
-            var stockManager = Tsms.Instance;
+            var stockManager = TyreService.Instance;
             var tyres = stockManager.GetTyreStock();
 
             Console.WriteLine("Pneus em Stock:");

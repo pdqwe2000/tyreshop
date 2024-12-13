@@ -1,7 +1,7 @@
-﻿using Tyre_Shop.classes.Controller;
+﻿using Tyre_Shop.Classes.Controller;
 using System;
 using System.Windows.Forms;
-using Tyre_Shop.classes.interfaces;
+using Tyre_Shop.Classes.Interfaces;
 
 namespace Tyre_Shop.source.interfaces
 {

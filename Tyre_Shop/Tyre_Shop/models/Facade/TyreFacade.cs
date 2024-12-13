@@ -10,11 +10,12 @@ namespace Tyre_Shop.Classes.Facade
     public class TyreFacade
     {
 
-        private readonly Tsms _tsms;
+        //private readonly Tsms _service;
+        private readonly TyreService _service;
 
         public TyreFacade()
         {
-            _tsms = Tsms.Instance; // Singleton instance
+            _service = TyreService.Instance; // Singleton instance
         }
 
         /// <summary>
@@ -23,7 +24,7 @@ namespace Tyre_Shop.Classes.Facade
         /// <param name="newTyre">The tyre to be added or updated.</param>
         public async Task AddOrUpdateTyreAsync(TyreJson newTyre)
         {
-            await _tsms.AddOrUpdateTyreAsync(newTyre);
+            await _service.AddOrUpdateTyreAsync(newTyre);
         }
 
         /// <summary>
@@ -31,7 +32,7 @@ namespace Tyre_Shop.Classes.Facade
         /// </summary>
         public async Task LoadTyresFromFileAsync()
         {
-            await _tsms.LoadTyresFromJsonAsync();
+            await _service.LoadTyresFromJsonAsync();
         }
 
         /// <summary>
@@ -39,7 +40,7 @@ namespace Tyre_Shop.Classes.Facade
         /// </summary>
         public void DisplayTyres()
         {
-            var tyres = _tsms.GetTyreStock();
+            var tyres = _service.GetTyreStock();
             if (tyres.Count == 0)
             {
                 Console.WriteLine("No tyres available in stock.");
