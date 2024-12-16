@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Tyre_Shop.Classes
 {
-    internal class Sell
+    internal class Sale
     {
         #region Properties
         public int Id { get; private set; }
@@ -15,7 +15,7 @@ namespace Tyre_Shop.Classes
         #endregion
 
         #region Constructors
-        public Sell(int id, Client cliente)
+        public Sale(int id, Client cliente)
         {
             Id = id;
             Client = cliente;

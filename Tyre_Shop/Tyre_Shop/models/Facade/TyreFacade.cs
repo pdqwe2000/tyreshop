@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tyre_Shop.Classes.Data;
+using Tyre_Shop.Classes.Services;
 
 namespace Tyre_Shop.Classes.Facade
 {

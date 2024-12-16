@@ -8,7 +8,8 @@
 //    <author>Ernesto Casanova</author>​
 //-----------------------------------------------------------------
 
-using Tyre_Shop.Classes.Auth;
+
+using Tyre_Shop.Classes.Services;
 using System.Threading.Tasks;
 
 namespace Tyre_Shop.Classes.Facade

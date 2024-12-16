@@ -6,7 +6,8 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using Tyre_Shop.Classes.Data;
 
-namespace Tyre_Shop.Classes
+namespace Tyre_Shop.Classes.Services
+
 {
     public class TyreService
     {

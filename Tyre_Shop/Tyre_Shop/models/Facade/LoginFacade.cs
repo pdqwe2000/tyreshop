@@ -11,6 +11,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Tyre_Shop.Classes.Auth;
+using Tyre_Shop.Classes.Services;
 
 namespace Tyre_Shop.Classes.Facade
 {
