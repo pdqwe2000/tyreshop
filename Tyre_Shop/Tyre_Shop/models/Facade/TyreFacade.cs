@@ -40,7 +40,7 @@ namespace Tyre_Shop.Classes.Facade
         /// </summary>
         public void DisplayTyres()
         {
-            var tyres = _service.GetTyreStock();
+            var tyres = GetStock();
             if (tyres.Count == 0)
             {
                 Console.WriteLine("No tyres available in stock.");
@@ -52,6 +52,15 @@ namespace Tyre_Shop.Classes.Facade
             {
                 Console.WriteLine($"- {tyre.Brand} {tyre.Model}, Size: {tyre.Size}, Quality: {tyre.Quality}, Quantity: {tyre.Quantity}, Price: {tyre.Price}");
             }
+        }
+        public List<TyreJson> GetStock()
+        {
+            return _service.GetTyreStock();
+        }
+
+        public async Task SaveToJson()
+        {
+            await _service.SaveTyresToJsonAsync();
         }
     }
 }

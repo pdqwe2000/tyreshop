@@ -9,7 +9,7 @@
     "Price": 105
   },
   {
-    "Quantity": 10,
+    "Quantity": 190,
     "Id": 1,
     "Brand": "Michelin",
     "Model": "X123",
@@ -90,7 +90,7 @@
     "Price": 90
   },
   {
-    "Quantity":20,
+    "Quantity": 120,
     "Id": 13,
     "Brand": "Continental",
     "Model": "PremiumContact 5",

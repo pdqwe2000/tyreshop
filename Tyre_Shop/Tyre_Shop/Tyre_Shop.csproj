@@ -61,6 +61,7 @@
     <Compile Include="models\Interfaces\IMain.cs" />
     <Compile Include="models\Interfaces\IRegister.cs" />
     <Compile Include="models\Interfaces\ISale.cs" />
+    <Compile Include="models\Services\SaleServices.cs" />
     <Compile Include="models\Services\TyreService.cs" />
     <Compile Include="models\Sale.cs" />
     <Compile Include="models\Abstract\Tyre.cs" />

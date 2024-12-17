@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace Tyre_Shop.models.Interfaces
+namespace Tyre_Shop.Classes.Interfaces
 {
     internal interface ISale
     {
+        void AddSale(Sale sale);
+        List<Sale> GetAllSales();
+        Sale GetSaleById(int id);
+        decimal CalculateTotal(List<TyreJson> items);
     }
 }

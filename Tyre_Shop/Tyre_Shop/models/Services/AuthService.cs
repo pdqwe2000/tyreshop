@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
 using Tyre_Shop.Classes.Data;
+using Tyre_Shop.Classes.Auth;
 
 namespace Tyre_Shop.Classes.Services
 {
