@@ -3,22 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using Tyre_Shop.Classes.Interfaces;
 using Tyre_Shop.Classes.Facade;
+using System.Threading.Tasks;
+using Tyre_Shop.Classes.Services;
 
 namespace Tyre_Shop.Classes.Controller
 {
     internal class SaleController
     {
-        private readonly ISale _saleService;
+        private readonly SaleServices _saleService;
+        private readonly SaleFacade _saleFacade;
         private readonly TyreFacade _facade;
+        private readonly TyreService _serviceTyre;
 
-        public SaleController(ISale saleService)
+        public SaleController()
         {
-            _saleService = saleService;
+            _saleFacade= new SaleFacade();
             _facade = new TyreFacade(); // Serviço do stock
+            _serviceTyre = TyreService.Instance;
+            _saleService=SaleServices.Instance;
         }
 
-        public async void RegisterSale(Client client, List<TyreJson> tyresToSell)
+        public async Task RegisterSale(Client client, List<TyreJson> tyresToSell)
         {
+            
             // Atualizar stock
             foreach (var tyre in tyresToSell)
             {
@@ -42,10 +49,10 @@ namespace Tyre_Shop.Classes.Controller
                 Date = DateTime.Now,
                 Client = client,
                 TyreSold = tyresToSell,
-                TotalPrice = _saleService.CalculateTotal(tyresToSell)
+                TotalPrice = _saleFacade.CalculateTotal(tyresToSell)
             };
 
-            _saleService.AddSale(sale);
+            _saleFacade.AddSale(sale);
 
             Console.WriteLine($"Sale completed. Total: {sale.TotalPrice:C}");
             await _facade.SaveToJson(); // Salvar o stock atualizado

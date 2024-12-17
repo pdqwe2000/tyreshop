@@ -26,6 +26,8 @@ namespace Tyre_Shop
             // Initialize load stock from a JSON file.  
             ISale sale;
             TyreController tyreController = new TyreController();
+            SaleController saleController = new SaleController();
+
             SaleFacade _saleFacade = new SaleFacade();
             //SaleController saleController = new SaleController(sale);
             TyreFacade _tyreFacade = new TyreFacade();
@@ -42,9 +44,10 @@ namespace Tyre_Shop
             await tyreController.AddOrUpdateTyreAsync(tyreB);
 
             int quantity = 4;
+            int tyreId = 13;
 
             // Obter pneu do stock
-            var tyreToSell = _tyreFacade.GetStock().FirstOrDefault(t => t.Id == 12);
+            var tyreToSell = _tyreFacade.GetStock().FirstOrDefault(t => t.Id == tyreId);
 
                 
 
@@ -63,7 +66,7 @@ namespace Tyre_Shop
             };
 
             // Realizar a venda usando a fachada
-            _saleFacade.PerformSale(client1, tyresToSell);
+            await saleController.RegisterSale(client1, tyresToSell);
             MessageBox.Show("Venda realizada com sucesso!");
 
                 //// Atualizar UI

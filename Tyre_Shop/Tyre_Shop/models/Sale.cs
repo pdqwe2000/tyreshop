@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Tyre_Shop.Classes
 {
-    internal class Sale
+    public class Sale
     {
         #region Properties
         public int Id { get; set; }
