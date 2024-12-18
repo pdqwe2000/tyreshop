@@ -15,7 +15,7 @@
         // Quality of the tyre, represented by an enum (e.g., AAA, AA, etc.).
         public Quality Quality { get; set; }
         // Price of the tyre in the system.
-        public int Price { get; set; }
+        public decimal Price { get; set; }
         #endregion
 
         #region Constructors
@@ -24,7 +24,7 @@
         {
         }
         // Parameterized constructor to create a Tyre object with specific details.
-        public Tyre(int id, string brand, string model, string size, Quality quality, int price)
+        public Tyre(int id, string brand, string model, string size, Quality quality, decimal price)
         {
             this.Id = id;          // Assigns the unique ID to the tyre.
             this.Brand = brand;    // Assigns the brand name.

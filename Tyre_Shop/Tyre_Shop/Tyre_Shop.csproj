@@ -68,6 +68,12 @@
     <Compile Include="models\Auth\User.cs" />
     <Compile Include="main.cs" />
     <Compile Include="models\TyreJson.cs" />
+    <Compile Include="src\Forms\AddTyre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Forms\AddTyre.Designer.cs">
+      <DependentUpon>AddTyre.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Forms\Auth\Login2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,18 @@
     </Compile>
     <Compile Include="src\Forms\Auth\Signup.Designer.cs">
       <DependentUpon>Signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Forms\Sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Forms\Sales.Designer.cs">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Forms\ShowStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Forms\ShowStock.Designer.cs">
+      <DependentUpon>ShowStock.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

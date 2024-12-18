@@ -15,7 +15,7 @@ public class TyreJson : Tyre
     /// <param name="pass">Value entered by the user.</param>  
     /// <param name="admin">Specifies whether the user is an admin (not currently validated in this method).</param>  
     /// <returns>It calls the base constructor from the Person class to initialize shared properties (name,phone,).</returns>  
-    public TyreJson(int id, string brand, string model, string size, Quality quality, int price, int quantity) : base(id, brand, model, size, quality, price)
+    public TyreJson(int id, string brand, string model, string size, Quality quality, decimal price, int quantity) : base(id, brand, model, size, quality, price)
     {
         Quantity = quantity;       // Assigns quantity.
     }

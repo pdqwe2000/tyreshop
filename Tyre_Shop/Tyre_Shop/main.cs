@@ -8,6 +8,7 @@ using Tyre_Shop.Classes.Interfaces;
 using System.Collections.Generic;
 using Tyre_Shop.Classes.Facade;
 using System.Linq;
+using Tyre_Shop.src.Forms;
 
 
 namespace Tyre_Shop
@@ -26,7 +27,7 @@ namespace Tyre_Shop
             // Initializes and starts the Windows Forms application.  
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main());
+            Application.Run(new AddTyre());
 
             _tyreController.ShowTyres();
 
