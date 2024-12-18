@@ -16,9 +16,7 @@ namespace Tyre_Shop.Classes.Facade
 
         public SaleFacade()
         {
-
             _service = SaleServices.Instance;
-
         }
 
         public async Task PerformSale(Client client, List<TyreJson> tyresToSell)

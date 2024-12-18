@@ -1,0 +1,35 @@
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Release\Tyre Shop.exe.config
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Release\Tyre Shop.exe
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Release\Tyre Shop.pdb
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Release\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Release\Newtonsoft.Json.dll
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Release\System.Buffers.dll
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Release\System.Memory.dll
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Release\System.Numerics.Vectors.dll
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Release\System.Text.Encodings.Web.dll
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Release\System.Text.Json.dll
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Release\System.Threading.Tasks.Extensions.dll
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Release\System.ValueTuple.dll
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Release\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Release\Newtonsoft.Json.xml
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Release\System.Buffers.xml
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Release\System.Memory.xml
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Release\System.Numerics.Vectors.xml
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Release\System.Text.Encodings.Web.xml
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Release\System.Text.Json.xml
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Release\System.Threading.Tasks.Extensions.xml
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\bin\Release\System.ValueTuple.xml
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Release\Tyre_Shop.csproj.AssemblyReference.cache
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Release\Tyre_Shop.source.interfaces.Login2.resources
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Release\Tyre_Shop.source.interfaces.Dashboard.resources
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Release\Tyre_Shop.source.interfaces.Dashboard_Admin.resources
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Release\Tyre_Shop.source.interfaces.Login.resources
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Release\Tyre_Shop.source.interfaces.Main.resources
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Release\Tyre_Shop.source.interfaces.Signup.resources
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Release\Tyre_Shop.csproj.GenerateResource.cache
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Release\Tyre_Shop.csproj.CoreCompileInputs.cache
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Release\Tyre_Shop.csproj.Up2Date
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Release\Tyre Shop.exe
+C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Release\Tyre Shop.pdb

@@ -5,6 +5,7 @@ using Tyre_Shop.Classes.Interfaces;
 using Tyre_Shop.Classes.Facade;
 using System.Threading.Tasks;
 using Tyre_Shop.Classes.Services;
+using System.Windows.Forms;
 
 namespace Tyre_Shop.Classes.Controller
 {
@@ -21,6 +22,30 @@ namespace Tyre_Shop.Classes.Controller
             _facade = new TyreFacade(); // Serviço do stock
             _serviceTyre = TyreService.Instance;
             _saleService=SaleServices.Instance;
+        }
+        public async Task VerifyExistenceTyre(int id, Client client,int quantity)
+        {
+            // Obter pneu do stock
+            var tyreToSell = _facade.GetStock().FirstOrDefault(t => t.Id == id);
+
+            // Criar uma lista com os itens vendidos
+            var tyresToSell = new List<TyreJson>
+            {
+                new TyreJson
+                {
+                    Id = tyreToSell.Id,
+                    Brand = tyreToSell.Brand,
+                    Model = tyreToSell.Model,
+                    Size = tyreToSell.Size,
+                    Price = tyreToSell.Price,
+                    Quantity = quantity
+                }
+            };
+
+            // Realizar a venda usando a fachada
+            await RegisterSale(client, tyresToSell);
+            MessageBox.Show("Venda realizada com sucesso!");
+
         }
 
         public async Task RegisterSale(Client client, List<TyreJson> tyresToSell)
