@@ -68,3 +68,4 @@ C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Ty
 C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Tyre Shop.pdb
 C:\Users\Pedro Duarte\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Tyre_Shop.source.interfaces.Login2.resources
 C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Tyre_Shop.source.interfaces.Login2.resources
+C:\Users\Fujimota\Documents\GitHub\tyreshop\Tyre_Shop\Tyre_Shop\obj\Debug\Tyre_Shop.src.Forms.AddTyre.resources

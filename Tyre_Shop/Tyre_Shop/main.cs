@@ -27,7 +27,7 @@ namespace Tyre_Shop
             // Initializes and starts the Windows Forms application.  
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AddTyre());
+            Application.Run(new Sales());
 
             _tyreController.ShowTyres();
 

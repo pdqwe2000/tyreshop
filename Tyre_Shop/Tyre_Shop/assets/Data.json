@@ -1,6 +1,6 @@
 [
   {
-    "Quantity": 10,
+    "Quantity": 9,
     "Id": 12,
     "Brand": "Continental",
     "Model": "PremiumContact 5",
@@ -9,7 +9,7 @@
     "Price": 105
   },
   {
-    "Quantity": 10,
+    "Quantity": 40,
     "Id": 1,
     "Brand": "Michelin",
     "Model": "X123",
@@ -23,7 +23,7 @@
     "Brand": "Pirelli",
     "Model": "Cinturato P7",
     "Size": "225/45R17",
-    "Quality": 85,
+    "Quality": 60,
     "Price": 120
   },
   {
@@ -32,16 +32,16 @@
     "Brand": "Goodyear",
     "Model": "Eagle F1 Asymmetric 5",
     "Size": "225/40R18",
-    "Quality": 92,
+    "Quality": 50,
     "Price": 150
   },
   {
-    "Quantity": 20,
+    "Quantity": 15,
     "Id": 4,
     "Brand": "Bridgestone",
     "Model": "Turanza T005",
     "Size": "195/65R15",
-    "Quality": 88,
+    "Quality": 70,
     "Price": 100
   },
   {
@@ -50,7 +50,7 @@
     "Brand": "Dunlop",
     "Model": "Sport Maxx RT2",
     "Size": "235/45R18",
-    "Quality": 93,
+    "Quality": 90,
     "Price": 140
   },
   {
@@ -59,7 +59,7 @@
     "Brand": "Hankook",
     "Model": "Ventus Prime 3",
     "Size": "205/55R16",
-    "Quality": 87,
+    "Quality": 90,
     "Price": 95
   },
   {
@@ -68,7 +68,7 @@
     "Brand": "Nokian",
     "Model": "WR D4",
     "Size": "215/55R17",
-    "Quality": 89,
+    "Quality": 90,
     "Price": 110
   },
   {
@@ -77,25 +77,34 @@
     "Brand": "Falken",
     "Model": "Azenis FK510",
     "Size": "225/50R17",
-    "Quality": 85,
+    "Quality": 100,
     "Price": 115
   },
   {
-    "Quantity": 18,
+    "Quantity": 15,
     "Id": 10,
     "Brand": "Firestone",
     "Model": "RoadHawk",
-    "Size": "195/60R15",
-    "Quality": 83,
+    "Size": "195/60R16",
+    "Quality": 80,
     "Price": 90
   },
   {
-    "Quantity":20,
+    "Quantity": 196,
     "Id": 13,
     "Brand": "Continental",
     "Model": "PremiumContact 5",
     "Size": "205/55R16",
     "Quality": 90,
     "Price": 105
+  },
+  {
+    "Quantity": 4,
+    "Id": 14,
+    "Brand": "Continental",
+    "Model": "ContiSportContact 6",
+    "Size": "225/45R17",
+    "Quality": 90,
+    "Price": 120
   }
 ]

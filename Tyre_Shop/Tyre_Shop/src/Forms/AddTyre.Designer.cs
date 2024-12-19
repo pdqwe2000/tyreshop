@@ -42,59 +42,79 @@ namespace Tyre_Shop.src.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            // TextBox for Brand
-            this.txtBrand = new TextBox();
+            this.txtBrand = new System.Windows.Forms.TextBox();
+            this.txtModel = new System.Windows.Forms.TextBox();
+            this.txtSize = new System.Windows.Forms.TextBox();
+            this.cmbQuality = new System.Windows.Forms.ComboBox();
+            this.nudPrice = new System.Windows.Forms.NumericUpDown();
+            this.nudQuantity = new System.Windows.Forms.NumericUpDown();
+            this.btnAdd = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPrice)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudQuantity)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // txtBrand
+            // 
             this.txtBrand.Location = new System.Drawing.Point(20, 20);
+            this.txtBrand.Name = "txtBrand";
             this.txtBrand.Size = new System.Drawing.Size(300, 20);
-           // this.txtBrand.PlaceholderText = "Brand";
-
-            // TextBox for Model
-            this.txtModel = new TextBox();
+            this.txtBrand.TabIndex = 0;
+            // 
+            // txtModel
+            // 
             this.txtModel.Location = new System.Drawing.Point(20, 60);
+            this.txtModel.Name = "txtModel";
             this.txtModel.Size = new System.Drawing.Size(300, 20);
-           // this.txtModel.PlaceholderText = "Model";
-
-            // TextBox for Size
-            this.txtSize = new TextBox();
+            this.txtModel.TabIndex = 1;
+            // 
+            // txtSize
+            // 
             this.txtSize.Location = new System.Drawing.Point(20, 100);
+            this.txtSize.Name = "txtSize";
             this.txtSize.Size = new System.Drawing.Size(300, 20);
-            //this.txtSize.PlaceholderText = "Size (e.g., 225/45R17)";
-
-            // ComboBox for Quality
-            this.cmbQuality = new ComboBox();
+            this.txtSize.TabIndex = 2;
+            // 
+            // cmbQuality
+            // 
+            this.cmbQuality.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbQuality.Items.AddRange(new object[] {50,60,70,80,90,100});
             this.cmbQuality.Location = new System.Drawing.Point(20, 140);
-            this.cmbQuality.Size = new System.Drawing.Size(300, 20);
-            this.cmbQuality.DropDownStyle = ComboBoxStyle.DropDownList;
-            foreach (var quality in Enum.GetValues(typeof(Quality)))
-            {
-                this.cmbQuality.Items.Add(quality);
-            }
-            this.cmbQuality.SelectedIndex = 0; // Default selection
-
-            // NumericUpDown for Price
-            this.nudPrice = new NumericUpDown();
-            this.nudPrice.Location = new System.Drawing.Point(20, 180);
-            this.nudPrice.Size = new System.Drawing.Size(300, 20);
+            this.cmbQuality.Name = "cmbQuality";
+            this.cmbQuality.Size = new System.Drawing.Size(300, 21);
+            this.cmbQuality.TabIndex = 3;
+            // 
+            // nudPrice
+            // 
             this.nudPrice.DecimalPlaces = 2;
-            this.nudPrice.Minimum = 0;
-            this.nudPrice.Maximum = 10000;
-            this.nudPrice.Increment = 0.50M;
-
-            // NumericUpDown for Quantity
-            this.nudQuantity = new NumericUpDown();
+            this.nudPrice.Increment = new decimal(new int[] {50,0,0,131072});
+            this.nudPrice.Location = new System.Drawing.Point(20, 180);
+            this.nudPrice.Maximum = new decimal(new int[] {10000,0,0,0});
+            this.nudPrice.Name = "nudPrice";
+            this.nudPrice.Size = new System.Drawing.Size(300, 20);
+            this.nudPrice.TabIndex = 4;
+            // 
+            // nudQuantity
+            // 
             this.nudQuantity.Location = new System.Drawing.Point(20, 220);
+            this.nudQuantity.Maximum = new decimal(new int[] {1000,0,0,0});
+            this.nudQuantity.Minimum = new decimal(new int[] {1,0,0,0});
+            this.nudQuantity.Name = "nudQuantity";
             this.nudQuantity.Size = new System.Drawing.Size(300, 20);
-            this.nudQuantity.Minimum = 1;
-            this.nudQuantity.Maximum = 1000;
-
-            // Add Button
-            this.btnAdd = new Button();
+            this.nudQuantity.TabIndex = 5;
+            this.nudQuantity.Value = new decimal(new int[] {1,0,0,0});
+            // 
+            // btnAdd
+            // 
             this.btnAdd.Location = new System.Drawing.Point(20, 260);
+            this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(300, 40);
+            this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "Add Tyre";
             this.btnAdd.Click += BtnAdd_Click;
-
-            // Add controls to the form
+            // 
+            // AddTyre
+            // 
+            this.ClientSize = new System.Drawing.Size(360, 330);
             this.Controls.Add(this.txtBrand);
             this.Controls.Add(this.txtModel);
             this.Controls.Add(this.txtSize);
@@ -102,11 +122,14 @@ namespace Tyre_Shop.src.Forms
             this.Controls.Add(this.nudPrice);
             this.Controls.Add(this.nudQuantity);
             this.Controls.Add(this.btnAdd);
-
-            // Configure the form
+            this.Name = "AddTyre";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Tyre";
-            this.ClientSize = new System.Drawing.Size(360, 330);
-            this.StartPosition = FormStartPosition.CenterScreen;
+            ((System.ComponentModel.ISupportInitialize)(this.nudPrice)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudQuantity)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

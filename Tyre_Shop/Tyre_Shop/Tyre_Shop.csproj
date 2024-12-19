@@ -162,6 +162,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="src\Forms\AddTyre.resx">
+      <DependentUpon>AddTyre.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\Forms\Auth\Login2.resx">
       <DependentUpon>Login2.cs</DependentUpon>
     </EmbeddedResource>
