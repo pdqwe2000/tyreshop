@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 using Tyre_Shop.Classes.Controller;
 using Tyre_Shop.Classes.Facade;
 
@@ -14,6 +15,7 @@ namespace Tyre_Shop.src.Forms
         private ListView lvTyres;
         private NumericUpDown nudQuantity;
         private Button btnSell;
+        public event Action StockUpdated;
 
         /// <summary>
         /// Required designer variable.

@@ -55,6 +55,7 @@ namespace Tyre_Shop.src.Forms
                 "Tyre Added",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
+            StockUpdated?.Invoke();
 
             // Clear form for new entry
             txtBrand.Clear();

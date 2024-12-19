@@ -1,4 +1,7 @@
-﻿namespace Tyre_Shop.source.interfaces
+﻿using System.Windows.Forms;
+using Tyre_Shop.Classes.Facade;
+
+namespace Tyre_Shop.source.interfaces
 {
     partial class Dashboard_Admin
     {
@@ -6,7 +9,7 @@
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-
+       
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
@@ -28,13 +31,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.dgvStock = new System.Windows.Forms.DataGridView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.changeUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.changeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sellToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newSellToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editSelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,12 +50,22 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contactUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportProblemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.changeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStock)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // dgvStock
+            // 
+            this.dgvStock.AllowUserToAddRows = false;
+            this.dgvStock.AllowUserToDeleteRows = false;
+            this.dgvStock.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvStock.ColumnHeadersHeight = 34;
+            this.dgvStock.Location = new System.Drawing.Point(12, 36);
+            this.dgvStock.Name = "dgvStock";
+            this.dgvStock.ReadOnly = true;
+            this.dgvStock.RowHeadersWidth = 62;
+            this.dgvStock.Size = new System.Drawing.Size(760, 400);
+            this.dgvStock.TabIndex = 0;
             // 
             // menuStrip1
             // 
@@ -71,32 +86,11 @@
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.toolStripMenuItem2,
-            this.saveToolStripMenuItem,
             this.changeUserToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(54, 29);
             this.fileToolStripMenuItem.Text = "File";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
-            this.toolStripMenuItem1.Text = "Open Bd";
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(270, 34);
-            this.toolStripMenuItem2.Text = "New Bd";
-            // 
-            // saveToolStripMenuItem
-            // 
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.saveToolStripMenuItem.Text = "Save";
             // 
             // changeUserToolStripMenuItem
             // 
@@ -109,6 +103,34 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.exitToolStripMenuItem.Text = "Exit";
+            // 
+            // userToolStripMenuItem
+            // 
+            this.userToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.deleteToolStripMenuItem,
+            this.changeToolStripMenuItem,
+            this.addToolStripMenuItem});
+            this.userToolStripMenuItem.Name = "userToolStripMenuItem";
+            this.userToolStripMenuItem.Size = new System.Drawing.Size(63, 29);
+            this.userToolStripMenuItem.Text = "User";
+            // 
+            // deleteToolStripMenuItem
+            // 
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.deleteToolStripMenuItem.Text = "Delete";
+            // 
+            // changeToolStripMenuItem
+            // 
+            this.changeToolStripMenuItem.Name = "changeToolStripMenuItem";
+            this.changeToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.changeToolStripMenuItem.Text = "Change";
+            // 
+            // addToolStripMenuItem
+            // 
+            this.addToolStripMenuItem.Name = "addToolStripMenuItem";
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.addToolStripMenuItem.Text = "Add";
             // 
             // sellToolStripMenuItem
             // 
@@ -124,6 +146,7 @@
             this.newSellToolStripMenuItem.Name = "newSellToolStripMenuItem";
             this.newSellToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.newSellToolStripMenuItem.Text = "New Sell";
+            this.newSellToolStripMenuItem.Click += new System.EventHandler(this.newSellToolStripMenuItem_Click);
             // 
             // editSelToolStripMenuItem
             // 
@@ -146,6 +169,7 @@
             this.addTyreToolStripMenuItem.Name = "addTyreToolStripMenuItem";
             this.addTyreToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.addTyreToolStripMenuItem.Text = "Add Tyre";
+            this.addTyreToolStripMenuItem.Click += new System.EventHandler(this.addTyreToolStripMenuItem_Click);
             // 
             // removeTyreToolStripMenuItem
             // 
@@ -180,42 +204,16 @@
             this.reportProblemToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.reportProblemToolStripMenuItem.Text = "Report Problem";
             // 
-            // userToolStripMenuItem
-            // 
-            this.userToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.deleteToolStripMenuItem,
-            this.changeToolStripMenuItem,
-            this.addToolStripMenuItem});
-            this.userToolStripMenuItem.Name = "userToolStripMenuItem";
-            this.userToolStripMenuItem.Size = new System.Drawing.Size(63, 29);
-            this.userToolStripMenuItem.Text = "User";
-            // 
-            // deleteToolStripMenuItem
-            // 
-            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.deleteToolStripMenuItem.Text = "Delete";
-            // 
-            // changeToolStripMenuItem
-            // 
-            this.changeToolStripMenuItem.Name = "changeToolStripMenuItem";
-            this.changeToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.changeToolStripMenuItem.Text = "Change";
-            // 
-            // addToolStripMenuItem
-            // 
-            this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.addToolStripMenuItem.Text = "Add";
-            // 
             // Dashboard_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dgvStock);
             this.Controls.Add(this.menuStrip1);
             this.Name = "Dashboard_Admin";
             this.Text = "Dashboard_Admin";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStock)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -224,12 +222,10 @@
         }
 
         #endregion
-
+        private readonly TyreFacade _facade;
+        private DataGridView dgvStock;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem changeUserToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sellToolStripMenuItem;

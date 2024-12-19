@@ -15,6 +15,7 @@ namespace Tyre_Shop.src.Forms
         private NumericUpDown nudPrice;
         private NumericUpDown nudQuantity;
         private Button btnAdd;
+        public event Action StockUpdated;
 
         /// <summary>
         /// Required designer variable.

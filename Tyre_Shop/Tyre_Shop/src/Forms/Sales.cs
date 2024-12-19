@@ -66,6 +66,7 @@ namespace Tyre_Shop.src.Forms
                     "Sale Successful",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
+                StockUpdated?.Invoke();
             }
             catch (InvalidOperationException ex)
             {

@@ -97,6 +97,47 @@ namespace Tyre_Shop.Classes.Services
             return true; // Return true to indicate successful registration
         }
 
+        /// <summary>
+        /// Asynchronously changes the credentials of an existing user.
+        /// </summary>
+        /// <param name="username">The username of the user to update.</param>
+        /// <param name="newPassword">The new password to set (optional).</param>
+        /// <param name="newPhone">The new phone number to set (optional).</param>
+        /// <param name="isAdmin">Optional: Whether to change the admin status.</param>
+        /// <returns>True if the user's credentials were successfully updated, false if the user was not found.</returns>
+        public async Task<bool> ChangeUserCredentialsAsync(string username, string? newPassword = null, string? newPhone = null, bool? isAdmin = null)
+        {
+            // Load the existing users
+            var users = await LoadUsersAsync();
+
+            // Find the user by username
+            var user = users.FirstOrDefault(u => u.Name == username);
+            if (user == null)
+            {
+                return false; // User not found
+            }
+
+            // Update the user's credentials if provided
+            if (!string.IsNullOrEmpty(newPassword))
+            {
+                user.Password = newPassword;
+            }
+
+            if (!string.IsNullOrEmpty(newPhone))
+            {
+                user.Phone = newPhone;
+            }
+
+            if (isAdmin.HasValue)
+            {
+                user.Admin = isAdmin.Value;
+            }
+
+            // Save the updated user list back to the file
+            await SaveUsersAsync(users);
+            return true; // Indicate that the update was successful
+        }
+
         #endregion
     }
 }
