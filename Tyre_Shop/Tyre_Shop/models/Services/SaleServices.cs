@@ -16,6 +16,9 @@ using Tyre_Shop.Classes.Interfaces;
 
 namespace Tyre_Shop.Classes.Services
 {
+    /// <summary>
+    /// Provides services related to sales made.
+    /// </summary>
     internal class SaleServices:ISale
     {
         #region Singleton Implementation
@@ -30,11 +33,14 @@ namespace Tyre_Shop.Classes.Services
         private readonly List<Sale> _sales = new List<Sale>();
         private static int _currentId = 1;
 
-
+        #region Constructor
         private SaleServices()
         {
             _sales = new List<Sale>();
         }
+        #endregion
+
+        #region Methods
         public void AddSale(Sale sale)
         {
             sale.Id = _currentId++;
@@ -71,6 +77,8 @@ namespace Tyre_Shop.Classes.Services
                 }
             }
         }
+
+        #endregion
     }
 }
 

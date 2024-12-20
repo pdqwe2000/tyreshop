@@ -19,6 +19,9 @@ using Tyre_Shop.Classes.Data;
 namespace Tyre_Shop.Classes.Services
 
 {
+    /// <summary>
+    /// Provides services related to tyre addition, removal and update.
+    /// </summary>
     public class TyreService
     {
         #region Singleton Implementation
