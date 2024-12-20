@@ -21,6 +21,7 @@ namespace Tyre_Shop.Classes.Controller
 {
     /// <summary>
     /// Controller responsible for handling the login logic.
+    /// This includes user authentication, admin verification, and error handling during login attempts.
     /// </summary>
     public class LoginController
     {
@@ -34,7 +35,7 @@ namespace Tyre_Shop.Classes.Controller
         #region Constructor
 
         /// <summary>
-        /// Constructor to initialize the LoginController with the specified view.
+        /// Initializes a new instance of the <see cref="LoginController"/> class.
         /// </summary>
         /// <param name="view">The view that the controller will interact with.</param>
         public LoginController(ILogin view)
@@ -49,6 +50,7 @@ namespace Tyre_Shop.Classes.Controller
 
         /// <summary>
         /// Handles the login process asynchronously.
+        /// Validates the user credentials, checks admin privileges, and navigates to the main form.
         /// </summary>
         public async Task HandleLoginAsync()
         {

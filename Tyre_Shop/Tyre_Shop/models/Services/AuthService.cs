@@ -19,21 +19,32 @@ using System;
 
 namespace Tyre_Shop.Classes.Services
 {
-    // This class provides services related to user authentication and registration.  
-    // It interacts with the UserRepo class to load, save, and validate user data.  
+    /// <summary>
+    /// Provides services related to user authentication, registration, and user data management.
+    /// </summary>
     public class AuthService
     {
         #region Private Fields
-        private readonly string _usersFilePath = Fpm.Instance.UsersFilePath; // Path to the users data file
+
+        private readonly string _usersFilePath = Fpm.Instance.UsersFilePath; // Path to the users' data file
+
         #endregion
 
+        #region Properties
+
+        /// <summary>
+        /// Gets the list of users currently loaded.
+        /// </summary>
         public List<User> UsersList { get; private set; }
 
+        #endregion
+
         #region Public Methods
+
         /// <summary>
         /// Asynchronously loads the list of users from the data file.
         /// </summary>
-        /// <returns>A task that represents the asynchronous operation. The task result contains a list of users.</returns>
+        /// <returns>A task containing the list of users.</returns>
         public async Task<List<User>> LoadUsersAsync()
         {
             // Check if the users file exists
@@ -49,23 +60,30 @@ namespace Tyre_Shop.Classes.Services
         }
 
         /// <summary>
-        /// Validates user credentials by checking the username and password against the list of users.
+        /// Validates the credentials of a user.
         /// </summary>
         /// <param name="username">The username to validate.</param>
         /// <param name="password">The password to validate.</param>
         /// <param name="users">The list of users to validate against.</param>
-        /// <returns>True if the credentials are valid, otherwise false.</returns>
+        /// <returns>True if the credentials are valid; otherwise, false.</returns>
         public bool ValidateCredentials(string username, string password, List<User> users)
         {
             return users.Any(user => user.Name == username && user.Password == password); // Check if any user matches
         }
-        
-        public bool VerifyAdmin(string username, string password, List<User> users) 
-        { 
+
+        /// <summary>
+        /// Checks if a user has administrator privileges.
+        /// </summary>
+        /// <param name="username">The username to check.</param>
+        /// <param name="password">The password to check.</param>
+        /// <param name="users">The list of users to validate against.</param>
+        /// <returns>True if the user is an admin; otherwise, false.</returns>
+        public bool VerifyAdmin(string username, string password, List<User> users)
+        {
             if (users.Any(user => user.Name == username && user.Password == password && user.Admin == true))
-            { 
+            {
                 return true;
-            } 
+            }
             return false;
         }
 
@@ -73,7 +91,7 @@ namespace Tyre_Shop.Classes.Services
         /// Asynchronously saves the list of users to the data file.
         /// </summary>
         /// <param name="users">The list of users to save.</param>
-        /// <returns>A task that represents the asynchronous operation.</returns>
+        /// <returns>A task representing the save operation.</returns>
         public async Task SaveUsersAsync(List<User> users)
         {
             // Serialize the list of users to JSON
@@ -87,14 +105,14 @@ namespace Tyre_Shop.Classes.Services
         }
 
         /// <summary>
-        /// Asynchronously registers a new user by adding their credentials to the users list.
+        /// Asynchronously registers a new user.
         /// </summary>
-        /// <param name="username">The username of the user to register.</param>
-        /// <param name="password">The password of the user to register.</param>
-        /// <param name="phone"></param>
-        /// <param name="isAdmin"></param>
-        /// <returns>True if registration is successful, false if the username already exists.</returns>
-        public async Task<bool> RegisterUserAsync(string username, string password,string phone, bool isAdmin)
+        /// <param name="username">The username to register.</param>
+        /// <param name="password">The password to register.</param>
+        /// <param name="phone">The phone number of the user.</param>
+        /// <param name="isAdmin">Indicates if the user has admin privileges.</param>
+        /// <returns>True if the registration is successful; otherwise, false.</returns>
+        public async Task<bool> RegisterUserAsync(string username, string password, string phone, bool isAdmin)
         {
             var users = await LoadUsersAsync(); // Load existing users
 
@@ -105,7 +123,7 @@ namespace Tyre_Shop.Classes.Services
             }
 
             // Add the new user to the list and save the list back to the file
-            users.Add(new User {  Password = password, Admin = isAdmin, Name = username, Phone =phone });
+            users.Add(new User { Password = password, Admin = isAdmin, Name = username, Phone = phone });
             await SaveUsersAsync(users);
             return true; // Return true to indicate successful registration
         }
@@ -116,8 +134,8 @@ namespace Tyre_Shop.Classes.Services
         /// <param name="username">The username of the user to update.</param>
         /// <param name="newPassword">The new password to set (optional).</param>
         /// <param name="newPhone">The new phone number to set (optional).</param>
-        /// <param name="isAdmin">Optional: Whether to change the admin status.</param>
-        /// <returns>True if the user's credentials were successfully updated, false if the user was not found.</returns>
+        /// <param name="isAdmin">Indicates whether to change admin status (optional).</param>
+        /// <returns>True if the credentials were updated successfully; otherwise, false.</returns>
         public async Task<bool> ChangeUserCredentialsAsync(string username, string newPassword = null, string newPhone = null, bool? isAdmin = null)
         {
             // Load the existing users
@@ -155,7 +173,7 @@ namespace Tyre_Shop.Classes.Services
         /// Asynchronously deletes a user by username.
         /// </summary>
         /// <param name="username">The username of the user to delete.</param>
-        /// <returns>True if the user was successfully deleted, false if the user was not found.</returns>
+        /// <returns>True if the user was deleted successfully; otherwise, false.</returns>
         public async Task<bool> DeleteUserAsync(string username)
         {
             try

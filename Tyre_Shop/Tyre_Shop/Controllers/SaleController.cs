@@ -6,39 +6,64 @@
 //    <time>23:00</time>​
 //    <version>0.1</version>​
 //    <author>Pedro Duarte</author>​
-//-----------------------------------------------------------------
+//-----------------------------------------------------------------​
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Tyre_Shop.Classes.Interfaces;
-using Tyre_Shop.Classes.Facade;
 using System.Threading.Tasks;
-using Tyre_Shop.Classes.Services;
 using System.Windows.Forms;
+using Tyre_Shop.Classes.Facade;
 
 namespace Tyre_Shop.Classes.Controller
 {
+    /// <summary>
+    /// Controller responsible for handling sales operations, including verifying tyre stock,
+    /// updating inventory, and registering sales.
+    /// </summary>
     internal class SaleController
     {
-        private readonly SaleServices _saleService;
-        private readonly SaleFacade _saleFacade;
-        private readonly TyreFacade _facade;
-        private readonly TyreService _serviceTyre;
+        #region Private Fields
 
+        private readonly SaleFacade _saleFacade;        // Facade for managing sale-related tasks.
+        private readonly TyreFacade _facade;            // Facade for managing tyre stock.
+
+        #endregion
+
+        #region Constructor
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="SaleController"/> class.
+        /// Sets up services and facades required for sales operations.
+        /// </summary>
         public SaleController()
         {
-            _saleFacade= new SaleFacade();
-            _facade = new TyreFacade(); // Serviço do stock
-            _serviceTyre = TyreService.Instance;
-            _saleService=SaleServices.Instance;
+            _saleFacade = new SaleFacade();
+            _facade = new TyreFacade();
         }
-        public async Task VerifyExistenceTyre(int id, Client client,int quantity)
+
+        #endregion
+
+        #region Public Methods
+
+        /// <summary>
+        /// Verifies if a tyre exists in stock, creates a sale, and updates the inventory.
+        /// </summary>
+        /// <param name="id">The ID of the tyre to sell.</param>
+        /// <param name="client">The client purchasing the tyre.</param>
+        /// <param name="quantity">The quantity of tyres being sold.</param>
+        public async Task VerifyExistenceTyre(int id, Client client, int quantity)
         {
-            // Obter pneu do stock
+            // Get the tyre from the stock
             var tyreToSell = _facade.GetStock().FirstOrDefault(t => t.Id == id);
 
-            // Criar uma lista com os itens vendidos
+            if (tyreToSell == null || tyreToSell.Quantity < quantity)
+            {
+                MessageBox.Show("Stock insufficient or tyre not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Create a list with the items to sell
             var tyresToSell = new List<TyreJson>
             {
                 new TyreJson
@@ -52,20 +77,22 @@ namespace Tyre_Shop.Classes.Controller
                 }
             };
 
-            // Realizar a venda usando a fachada
+            // Perform the sale
             await RegisterSale(client, tyresToSell);
-            MessageBox.Show("Venda realizada com sucesso!");
-
+            MessageBox.Show("Sale completed successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        /// <summary>
+        /// Registers a sale, updates the stock, and saves the updated inventory to a file.
+        /// </summary>
+        /// <param name="client">The client purchasing the tyres.</param>
+        /// <param name="tyresToSell">The list of tyres being sold.</param>
         public async Task RegisterSale(Client client, List<TyreJson> tyresToSell)
         {
-            
-            // Atualizar stock
+            // Update stock quantities
             foreach (var tyre in tyresToSell)
             {
-                var existingTyre = _facade.GetStock()
-                    .FirstOrDefault(t => t.Id == tyre.Id);
+                var existingTyre = _facade.GetStock().FirstOrDefault(t => t.Id == tyre.Id);
 
                 if (existingTyre != null && existingTyre.Quantity >= tyre.Quantity)
                 {
@@ -73,12 +100,13 @@ namespace Tyre_Shop.Classes.Controller
                 }
                 else
                 {
-                    Console.WriteLine($"Stock insuficiente para {tyre.Brand} {tyre.Model}");
+                    Console.WriteLine($"Insufficient stock for {tyre.Brand} {tyre.Model}.");
+                    MessageBox.Show($"Insufficient stock for {tyre.Brand} {tyre.Model}.", "Stock Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
             }
 
-            // Registrar venda
+            // Register the sale
             var sale = new Sale
             {
                 Date = DateTime.Now,
@@ -89,8 +117,13 @@ namespace Tyre_Shop.Classes.Controller
 
             _saleFacade.AddSale(sale);
 
+            // Log and save updates
             Console.WriteLine($"Sale completed. Total: {sale.TotalPrice:C}");
-            await _facade.SaveToJson(); // Salvar o stock atualizado
+            MessageBox.Show($"Sale completed. Total: {sale.TotalPrice:C}", "Sale Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            await _facade.SaveToJson(); // Save the updated stock
         }
+
+        #endregion
     }
 }

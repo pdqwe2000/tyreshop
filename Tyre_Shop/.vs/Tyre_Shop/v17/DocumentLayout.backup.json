@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\fujimota\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\fujimota\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\models\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\models\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\fujimota\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\src\\forms\\auth\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\src\\forms\\auth\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|c:\\users\\fujimota\\documents\\github\\tyreshop\\tyre_shop\\tyre_shop\\src\\forms\\auth\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{848914E5-7BCA-4439-A042-70E4DC3C6AB5}|Tyre_Shop\\Tyre_Shop.csproj|solutionrelative:tyre_shop\\src\\forms\\auth\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,15 +38,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "Tyre_Shop\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "Tyre_Shop\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Signup.cs",
+              "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\src\\Forms\\Auth\\Signup.cs",
+              "RelativeDocumentMoniker": "Tyre_Shop\\src\\Forms\\Auth\\Signup.cs",
+              "ToolTip": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\src\\Forms\\Auth\\Signup.cs",
+              "RelativeToolTip": "Tyre_Shop\\src\\Forms\\Auth\\Signup.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAFUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T00:02:13.109Z",
+              "WhenOpened": "2024-12-20T17:40:57.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Signup.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\src\\Forms\\Auth\\Signup.cs",
+              "RelativeDocumentMoniker": "Tyre_Shop\\src\\Forms\\Auth\\Signup.cs",
+              "ToolTip": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\src\\Forms\\Auth\\Signup.cs [Design]",
+              "RelativeToolTip": "Tyre_Shop\\src\\Forms\\Auth\\Signup.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T17:40:56.027Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Tyre_Shop\\models\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\Fujimota\\Documents\\GitHub\\tyreshop\\Tyre_Shop\\Tyre_Shop\\models\\Services\\AuthService.cs",
+              "RelativeToolTip": "Tyre_Shop\\models\\Services\\AuthService.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T17:37:03.333Z",
               "EditorCaption": ""
             }
           ]

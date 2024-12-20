@@ -16,20 +16,23 @@ using Tyre_Shop.Classes.Interfaces;
 
 namespace Tyre_Shop.Classes.Controller
 {
+    /// <summary>
+    /// Controller responsible for handling user registration logic, including
+    /// input validation, password confirmation, and communication with AuthService using the RegisterFacade.
+    /// </summary>
     internal class RegisterController
     {
-
         #region Fields and Properties
 
-        private readonly IRegister _view;  // Interface for the Register View
-        private readonly RegisterFacade _registerFacade; // Facade for handling register operations
+        private readonly IRegister _view;                   // Interface for the Register View
+        private readonly RegisterFacade _registerFacade;    // Facade for handling registration operations
 
         #endregion
 
         #region Constructor
 
         /// <summary>
-        /// Constructor to initialize the RegisterController with the specified view.
+        /// Initializes a new instance of the <see cref="RegisterController"/> class.
         /// </summary>
         /// <param name="view">The view that the controller will interact with.</param>
         public RegisterController(IRegister view)
@@ -44,15 +47,17 @@ namespace Tyre_Shop.Classes.Controller
 
         /// <summary>
         /// Handles the user registration process asynchronously.
+        /// Validates input, ensures password confirmation, and registers the user.
         /// </summary>
         public async Task HandleRegistrationAsync()
         {
             // Check if any required fields are empty
             if (string.IsNullOrWhiteSpace(_view.Username) ||
                 string.IsNullOrWhiteSpace(_view.Password) ||
-                string.IsNullOrWhiteSpace(_view.ConfirmPassword)||_view.Phone==null)
+                string.IsNullOrWhiteSpace(_view.ConfirmPassword) ||
+                _view.Phone == null)
             {
-                _view.DisplayMessage("Username and Password fields cannot be empty.", "Sign Up Failed", MessageBoxIcon.Error);
+                _view.DisplayMessage("Username, Password, and Phone fields cannot be empty.", "Sign Up Failed", MessageBoxIcon.Error);
                 return;
             }
 
@@ -67,7 +72,7 @@ namespace Tyre_Shop.Classes.Controller
             try
             {
                 // Attempt to register the user
-                bool registrationSuccess = await _registerFacade.RegisterUserAsync(_view.Username, _view.Password,_view.Phone,_view.IsAdmin);
+                bool registrationSuccess = await _registerFacade.RegisterUserAsync(_view.Username, _view.Password, _view.Phone, _view.IsAdmin);
 
                 if (registrationSuccess)
                 {

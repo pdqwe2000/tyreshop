@@ -15,15 +15,26 @@ namespace Tyre_Shop.Classes.Controller
 {
     public class TyreController
     {
-        private readonly TyreFacade _facade;
+        #region Private Fields
+        private readonly TyreFacade _facade; // Facade to handle tyre operations.
+        #endregion
 
+        #region Constructor
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TyreController"/> class.
+        /// </summary>
         public TyreController()
         {
             _facade = new TyreFacade();
         }
 
+        #endregion
+
+        #region Public Methods
+
         /// <summary>
-        /// Adds or updates a tyre in the stock.
+        /// Adds or updates a tyre in the stock asynchronously.
         /// </summary>
         /// <param name="newTyre">The tyre to be added or updated.</param>
         public async Task AddOrUpdateTyreAsync(TyreJson newTyre)
@@ -42,12 +53,14 @@ namespace Tyre_Shop.Classes.Controller
         }
 
         /// <summary>
-        /// Loads tyres from the JSON file.
+        /// Loads tyres from the JSON file asynchronously.
         /// </summary>
         public async Task LoadTyresAsync()
         {
             Console.WriteLine("Loading tyre stock from file...");
             await _facade.LoadTyresFromFileAsync();
         }
+
+        #endregion
     }
 }
