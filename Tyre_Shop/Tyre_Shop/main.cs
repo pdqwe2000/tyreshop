@@ -1,4 +1,14 @@
-﻿using System;
+﻿//-----------------------------------------------------------------​
+//    <copyright file="main.cs" company="FujiSoft">​
+//     Copyright IPCA-EST. All rights reserved.​
+//    </copyright>​
+//    <date>19-12-2024</date>​
+//    <time>23:00</time>​
+//    <version>0.1</version>​
+//    <author>Pedro Duarte</author>​
+//-----------------------------------------------------------------
+
+using System;
 using System.Windows.Forms;
 using Tyre_Shop.Classes;
 using Tyre_Shop.source.interfaces;
@@ -9,6 +19,7 @@ using System.Collections.Generic;
 using Tyre_Shop.Classes.Facade;
 using System.Linq;
 using Tyre_Shop.src.Forms;
+using Tyre_Shop.src.Forms.Auth;
 
 
 namespace Tyre_Shop
@@ -27,7 +38,7 @@ namespace Tyre_Shop
             // Initializes and starts the Windows Forms application.  
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            Application.Run(new Main());
 
             _tyreController.ShowTyres();
 

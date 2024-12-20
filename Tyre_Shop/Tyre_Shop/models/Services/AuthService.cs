@@ -1,10 +1,21 @@
-﻿using System.Collections.Generic;
+﻿//-----------------------------------------------------------------​
+//    <copyright file="AuthService.cs" company="FujiSoft">​
+//     Copyright IPCA-EST. All rights reserved.​
+//    </copyright>​
+//    <date>19-12-2024</date>​
+//    <time>23:00</time>​
+//    <version>0.1</version>​
+//    <author>Pedro Duarte</author>​
+//-----------------------------------------------------------------
+
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
 using Tyre_Shop.Classes.Data;
 using Tyre_Shop.Classes.Auth;
+using System;
 
 namespace Tyre_Shop.Classes.Services
 {
@@ -15,6 +26,8 @@ namespace Tyre_Shop.Classes.Services
         #region Private Fields
         private readonly string _usersFilePath = Fpm.Instance.UsersFilePath; // Path to the users data file
         #endregion
+
+        public List<User> UsersList { get; private set; }
 
         #region Public Methods
         /// <summary>
@@ -105,7 +118,7 @@ namespace Tyre_Shop.Classes.Services
         /// <param name="newPhone">The new phone number to set (optional).</param>
         /// <param name="isAdmin">Optional: Whether to change the admin status.</param>
         /// <returns>True if the user's credentials were successfully updated, false if the user was not found.</returns>
-        public async Task<bool> ChangeUserCredentialsAsync(string username, string? newPassword = null, string? newPhone = null, bool? isAdmin = null)
+        public async Task<bool> ChangeUserCredentialsAsync(string username, string newPassword = null, string newPhone = null, bool? isAdmin = null)
         {
             // Load the existing users
             var users = await LoadUsersAsync();
@@ -138,6 +151,33 @@ namespace Tyre_Shop.Classes.Services
             return true; // Indicate that the update was successful
         }
 
+        /// <summary>
+        /// Asynchronously deletes a user by username.
+        /// </summary>
+        /// <param name="username">The username of the user to delete.</param>
+        /// <returns>True if the user was successfully deleted, false if the user was not found.</returns>
+        public async Task<bool> DeleteUserAsync(string username)
+        {
+            try
+            {
+                var users = await LoadUsersAsync();
+                var userToDelete = users.FirstOrDefault(u => u.Name == username);
+                if (userToDelete == null)
+                {
+                    return false; // User not found
+                }
+
+                users.Remove(userToDelete);
+                await SaveUsersAsync(users);
+                return true; // User deleted successfully
+            }
+            catch (Exception ex)
+            {
+                // Log the error
+                Console.WriteLine($"Error deleting user: {ex.Message}");
+                return false; // Indicate failure
+            }
+        }
         #endregion
     }
 }

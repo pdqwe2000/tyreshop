@@ -1,4 +1,14 @@
-﻿using Tyre_Shop.Classes;
+﻿//-----------------------------------------------------------------​
+//    <copyright file="TyreJson.cs" company="FujiSoft">​
+//     Copyright IPCA-EST. All rights reserved.​
+//    </copyright>​
+//    <date>19-12-2024</date>​
+//    <time>23:00</time>​
+//    <version>0.1</version>​
+//    <author>Pedro Duarte</author>​
+//-----------------------------------------------------------------
+
+using Tyre_Shop.Classes;
 
 public class TyreJson : Tyre
 {

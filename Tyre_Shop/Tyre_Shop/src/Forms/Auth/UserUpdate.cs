@@ -1,4 +1,14 @@
-﻿using System;
+﻿//-----------------------------------------------------------------​
+//    <copyright file="UserUpdate.cs" company="FujiSoft">​
+//     Copyright IPCA-EST. All rights reserved.​
+//    </copyright>​
+//    <date>19-12-2024</date>​
+//    <time>23:00</time>​
+//    <version>0.1</version>​
+//    <author>Pedro Duarte</author>​
+//-----------------------------------------------------------------
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +17,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tyre_Shop.Classes.Facade;
 using Tyre_Shop.Classes.Services;
 
 namespace Tyre_Shop.src.Forms.Auth
@@ -32,7 +43,7 @@ namespace Tyre_Shop.src.Forms.Auth
             }
 
             // Call the service to update the user credentials
-            bool success = await _authService.ChangeUserCredentialsAsync(username, newPassword, newPhone, isAdmin);
+            bool success = await _registerFacade.ChangeUserCredentialsAsync(username, newPassword, newPhone, isAdmin);
 
             if (success)
             {

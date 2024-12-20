@@ -1,16 +1,18 @@
 ﻿//-----------------------------------------------------------------​
-//    <copyright file="LoginRegisterSystem.cs" company="IPCA">​
+//    <copyright file="RegisterFacade.cs" company="FujiSoft">​
 //     Copyright IPCA-EST. All rights reserved.​
 //    </copyright>​
-//    <date>24-11-2024</date>​
-//    <time>21:00</time>​
+//    <date>19-12-2024</date>​
+//    <time>23:00</time>​
 //    <version>0.1</version>​
-//    <author>Ernesto Casanova</author>​
+//    <author>Pedro Duarte</author>​
 //-----------------------------------------------------------------
 
 
 using Tyre_Shop.Classes.Services;
 using System.Threading.Tasks;
+using System.Collections.Generic;
+using Tyre_Shop.Classes.Auth;
 
 namespace Tyre_Shop.Classes.Facade
 {
@@ -44,6 +46,20 @@ namespace Tyre_Shop.Classes.Facade
         {
             return await _authService.RegisterUserAsync(username, password,phone,isAdmin); // Call the service method to register the user
         }
-        #endregion
-    }
+        public async Task<bool> ChangeUserCredentialsAsync(string username, string newPassword = null, string newPhone = null, bool? isAdmin = null)
+        {
+            if (await _authService.ChangeUserCredentialsAsync(username, newPassword, newPhone, isAdmin))return true;
+
+            return false;
+        }
+        public async Task<List<User>> LoadUsersAsync()
+        {
+            return await _authService.LoadUsersAsync();
+        }
+        public async Task<bool> DeleteUserAsync(string username)
+        {
+            return await _authService.DeleteUserAsync(username);
+        }
+            #endregion
+        }
 }

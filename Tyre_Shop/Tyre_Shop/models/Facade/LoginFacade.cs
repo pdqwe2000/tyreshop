@@ -1,11 +1,11 @@
 ﻿//-----------------------------------------------------------------​
-//    <copyright file="LoginRegisterSystem.cs" company="IPCA">​
+//    <copyright file="LoginFacade.cs" company="FujiSoft">​
 //     Copyright IPCA-EST. All rights reserved.​
 //    </copyright>​
-//    <date>24-11-2024</date>​
-//    <time>21:00</time>​
+//    <date>19-12-2024</date>​
+//    <time>23:00</time>​
 //    <version>0.1</version>​
-//    <author>Ernesto Casanova</author>​
+//    <author>Pedro Duarte</author>​
 //-----------------------------------------------------------------
 
 using System.Collections.Generic;

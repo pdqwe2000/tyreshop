@@ -1,4 +1,14 @@
-﻿using System;
+﻿//-----------------------------------------------------------------​
+//    <copyright file="Signup.cs" company="FujiSoft">​
+//     Copyright IPCA-EST. All rights reserved.​
+//    </copyright>​
+//    <date>19-12-2024</date>​
+//    <time>23:00</time>​
+//    <version>0.1</version>​
+//    <author>Pedro Duarte</author>​
+//-----------------------------------------------------------------
+
+using System;
 using System.Windows.Forms;
 using Tyre_Shop.Classes.Controller;
 using Tyre_Shop.Classes.Interfaces;

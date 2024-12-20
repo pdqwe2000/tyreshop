@@ -1,4 +1,14 @@
-﻿namespace Tyre_Shop.Classes.Auth
+﻿//-----------------------------------------------------------------​
+//    <copyright file="User.cs" company="FujiSoft">​
+//     Copyright IPCA-EST. All rights reserved.​
+//    </copyright>​
+//    <date>19-12-2024</date>​
+//    <time>23:00</time>​
+//    <version>0.1</version>​
+//    <author>Pedro Duarte</author>​
+//-----------------------------------------------------------------
+
+namespace Tyre_Shop.Classes.Auth
 {
     // This class represents a User in the Tyre Shop system, inheriting from the Person class.
     public class User : Person

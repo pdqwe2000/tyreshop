@@ -1,4 +1,14 @@
-﻿namespace Tyre_Shop.Classes
+﻿//-----------------------------------------------------------------​
+//    <copyright file="Person.cs" company="FujiSoft">​
+//     Copyright IPCA-EST. All rights reserved.​
+//    </copyright>​
+//    <date>19-12-2024</date>​
+//    <time>23:00</time>​
+//    <version>0.1</version>​
+//    <author>Pedro Duarte</author>​
+//-----------------------------------------------------------------
+
+namespace Tyre_Shop.Classes
 {
     // Abstract base class that represents a person in the system.  
     // This class serves as a foundation for other classes, such as User, that share common properties like Name and Phone.  

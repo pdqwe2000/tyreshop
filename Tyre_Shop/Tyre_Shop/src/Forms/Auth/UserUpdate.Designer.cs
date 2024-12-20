@@ -1,4 +1,5 @@
-﻿using Tyre_Shop.Classes.Services;
+﻿using Tyre_Shop.Classes.Facade;
+using Tyre_Shop.Classes.Services;
 
 namespace Tyre_Shop.src.Forms.Auth
 {
@@ -30,7 +31,8 @@ namespace Tyre_Shop.src.Forms.Auth
         /// </summary>
         private void InitializeComponent()
         {
-            this._authService=new AuthService();
+
+            this._registerFacade = new RegisterFacade();
             this.lblUsername = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.lblNewPassword = new System.Windows.Forms.Label();
@@ -126,7 +128,8 @@ namespace Tyre_Shop.src.Forms.Auth
             this.ResumeLayout(false);
             this.PerformLayout();
         }
-        private AuthService _authService;
+
+        private RegisterFacade _registerFacade;
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label lblNewPassword;

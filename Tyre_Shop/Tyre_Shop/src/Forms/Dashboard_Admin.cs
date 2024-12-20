@@ -1,4 +1,14 @@
-﻿using System;
+﻿//-----------------------------------------------------------------​
+//    <copyright file="Dashboard_Admin.cs" company="FujiSoft">​
+//     Copyright IPCA-EST. All rights reserved.​
+//    </copyright>​
+//    <date>19-12-2024</date>​
+//    <time>23:00</time>​
+//    <version>0.1</version>​
+//    <author>Pedro Duarte</author>​
+//-----------------------------------------------------------------
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +19,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tyre_Shop.Classes.Facade;
 using Tyre_Shop.src.Forms;
+using Tyre_Shop.src.Forms.Auth;
 
 namespace Tyre_Shop.source.interfaces
 {
@@ -17,6 +28,7 @@ namespace Tyre_Shop.source.interfaces
         
         public Dashboard_Admin()
         {
+            
             _facade = new TyreFacade(); // Serviço do stock
             InitializeComponent();
             
@@ -51,6 +63,18 @@ namespace Tyre_Shop.source.interfaces
             // Reload the stock and update the grid
             var updatedStock = _facade.GetStock();
             LoadStockToGrid(updatedStock);
+        }
+
+        private void changeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserUpdate userUpdate = new UserUpdate();
+            userUpdate.Show();
+        }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserDelete userDelete = new UserDelete();
+            userDelete.Show(); 
         }
     }
 }

@@ -1,4 +1,14 @@
-﻿using System.Windows.Forms;
+﻿//-----------------------------------------------------------------​
+//    <copyright file="Register.cs" company="FujiSoft">​
+//     Copyright IPCA-EST. All rights reserved.​
+//    </copyright>​
+//    <date>19-12-2024</date>​
+//    <time>23:00</time>​
+//    <version>0.1</version>​
+//    <author>Pedro Duarte</author>​
+//-----------------------------------------------------------------
+
+using System.Windows.Forms;
 
 namespace Tyre_Shop.Classes.Interfaces
 {

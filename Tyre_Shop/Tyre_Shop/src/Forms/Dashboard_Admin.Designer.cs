@@ -60,16 +60,16 @@ namespace Tyre_Shop.source.interfaces
             this.dgvStock.AllowUserToDeleteRows = false;
             this.dgvStock.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvStock.ColumnHeadersHeight = 34;
-            this.dgvStock.Location = new System.Drawing.Point(12, 36);
+            this.dgvStock.Location = new System.Drawing.Point(8, 23);
+            this.dgvStock.Margin = new System.Windows.Forms.Padding(2);
             this.dgvStock.Name = "dgvStock";
             this.dgvStock.ReadOnly = true;
             this.dgvStock.RowHeadersWidth = 62;
-            this.dgvStock.Size = new System.Drawing.Size(760, 400);
+            this.dgvStock.Size = new System.Drawing.Size(507, 260);
             this.dgvStock.TabIndex = 0;
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
@@ -79,7 +79,8 @@ namespace Tyre_Shop.source.interfaces
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 33);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(533, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -89,19 +90,19 @@ namespace Tyre_Shop.source.interfaces
             this.changeUserToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(54, 29);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 22);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // changeUserToolStripMenuItem
             // 
             this.changeUserToolStripMenuItem.Name = "changeUserToolStripMenuItem";
-            this.changeUserToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.changeUserToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.changeUserToolStripMenuItem.Text = "Change User";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // userToolStripMenuItem
@@ -111,25 +112,27 @@ namespace Tyre_Shop.source.interfaces
             this.changeToolStripMenuItem,
             this.addToolStripMenuItem});
             this.userToolStripMenuItem.Name = "userToolStripMenuItem";
-            this.userToolStripMenuItem.Size = new System.Drawing.Size(63, 29);
+            this.userToolStripMenuItem.Size = new System.Drawing.Size(42, 22);
             this.userToolStripMenuItem.Text = "User";
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.deleteToolStripMenuItem.Text = "Delete";
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
             // changeToolStripMenuItem
             // 
             this.changeToolStripMenuItem.Name = "changeToolStripMenuItem";
-            this.changeToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.changeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.changeToolStripMenuItem.Text = "Change";
+            this.changeToolStripMenuItem.Click += new System.EventHandler(this.changeToolStripMenuItem_Click);
             // 
             // addToolStripMenuItem
             // 
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.addToolStripMenuItem.Text = "Add";
             // 
             // sellToolStripMenuItem
@@ -138,20 +141,20 @@ namespace Tyre_Shop.source.interfaces
             this.newSellToolStripMenuItem,
             this.editSelToolStripMenuItem});
             this.sellToolStripMenuItem.Name = "sellToolStripMenuItem";
-            this.sellToolStripMenuItem.Size = new System.Drawing.Size(55, 29);
+            this.sellToolStripMenuItem.Size = new System.Drawing.Size(37, 22);
             this.sellToolStripMenuItem.Text = "Sell";
             // 
             // newSellToolStripMenuItem
             // 
             this.newSellToolStripMenuItem.Name = "newSellToolStripMenuItem";
-            this.newSellToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.newSellToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.newSellToolStripMenuItem.Text = "New Sell";
             this.newSellToolStripMenuItem.Click += new System.EventHandler(this.newSellToolStripMenuItem_Click);
             // 
             // editSelToolStripMenuItem
             // 
             this.editSelToolStripMenuItem.Name = "editSelToolStripMenuItem";
-            this.editSelToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.editSelToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.editSelToolStripMenuItem.Text = "Edit Sell";
             // 
             // stockToolStripMenuItem
@@ -161,26 +164,26 @@ namespace Tyre_Shop.source.interfaces
             this.removeTyreToolStripMenuItem,
             this.editToolStripMenuItem});
             this.stockToolStripMenuItem.Name = "stockToolStripMenuItem";
-            this.stockToolStripMenuItem.Size = new System.Drawing.Size(71, 29);
+            this.stockToolStripMenuItem.Size = new System.Drawing.Size(48, 22);
             this.stockToolStripMenuItem.Text = "Stock";
             // 
             // addTyreToolStripMenuItem
             // 
             this.addTyreToolStripMenuItem.Name = "addTyreToolStripMenuItem";
-            this.addTyreToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.addTyreToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.addTyreToolStripMenuItem.Text = "Add Tyre";
             this.addTyreToolStripMenuItem.Click += new System.EventHandler(this.addTyreToolStripMenuItem_Click);
             // 
             // removeTyreToolStripMenuItem
             // 
             this.removeTyreToolStripMenuItem.Name = "removeTyreToolStripMenuItem";
-            this.removeTyreToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.removeTyreToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.removeTyreToolStripMenuItem.Text = "Remove Tyre";
             // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.editToolStripMenuItem.Text = "Edit";
             // 
             // helpToolStripMenuItem
@@ -189,28 +192,29 @@ namespace Tyre_Shop.source.interfaces
             this.contactUsToolStripMenuItem,
             this.reportProblemToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(65, 29);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 22);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // contactUsToolStripMenuItem
             // 
             this.contactUsToolStripMenuItem.Name = "contactUsToolStripMenuItem";
-            this.contactUsToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.contactUsToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.contactUsToolStripMenuItem.Text = "Contact Us";
             // 
             // reportProblemToolStripMenuItem
             // 
             this.reportProblemToolStripMenuItem.Name = "reportProblemToolStripMenuItem";
-            this.reportProblemToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.reportProblemToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.reportProblemToolStripMenuItem.Text = "Report Problem";
             // 
             // Dashboard_Admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(533, 292);
             this.Controls.Add(this.dgvStock);
             this.Controls.Add(this.menuStrip1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Dashboard_Admin";
             this.Text = "Dashboard_Admin";
             ((System.ComponentModel.ISupportInitialize)(this.dgvStock)).EndInit();

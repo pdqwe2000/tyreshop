@@ -1,4 +1,14 @@
-﻿namespace Tyre_Shop.Classes
+﻿//-----------------------------------------------------------------​
+//    <copyright file="Client.cs" company="FujiSoft">​
+//     Copyright IPCA-EST. All rights reserved.​
+//    </copyright>​
+//    <date>19-12-2024</date>​
+//    <time>23:00</time>​
+//    <version>0.1</version>​
+//    <author>Pedro Duarte</author>​
+//-----------------------------------------------------------------
+
+namespace Tyre_Shop.Classes
 {
     // This class represents a Client in the Tyre Shop system.  
     // It inherits from the Person class and adds specific properties related to clients.  
