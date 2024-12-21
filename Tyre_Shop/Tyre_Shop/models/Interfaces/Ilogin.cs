@@ -19,6 +19,10 @@ namespace Tyre_Shop.Classes.Interfaces
         string Password { get; }
         #endregion
 
+        #region Methods
+        /// <summary>
+        /// Navigates to the register form.
+        /// </summary>
         void NavigateToRegister();
 
         /// <summary>
@@ -39,6 +43,6 @@ namespace Tyre_Shop.Classes.Interfaces
         /// Clears the input fields for username and password.
         /// </summary>
         void ClearInputs();
-
+        #endregion
     }
 }

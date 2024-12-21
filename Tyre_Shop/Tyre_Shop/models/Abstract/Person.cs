@@ -10,8 +10,9 @@
 
 namespace Tyre_Shop.Classes
 {
-    // Abstract base class that represents a person in the system.  
-    // This class serves as a foundation for other classes, such as User, that share common properties like Name and Phone.  
+    /// <summary>
+    /// This class serves as a foundation for other classes, such as User, that share common properties like Name and Phone.
+    /// </summary>
     public class Person
     {
         #region Private Properties  
@@ -22,12 +23,20 @@ namespace Tyre_Shop.Classes
         #endregion
 
         #region Constructors
-        // Constructor to initialize a Person object with a name and phone number.
+        /// <summary>
+        /// Constructor to initialize a Person object with a name and phone number.
+        /// <param name="name">Property to store the person's name.</param>
+        /// <param name="phone">Property to store the person's phone number.</param>
+        /// </summary>
         public Person(string name, string phone)
         {
             Name = name;      // Assigns the given name to the Name property.
             Phone = phone;    // Assigns the given phone number to the Phone property.
         }
+        /// <summary>
+        /// Default constructor for creating a Person object with no initial data.
+        /// <param name="">Empty constructer</param>
+        /// </summary>
         public Person() { }
         #endregion
     }

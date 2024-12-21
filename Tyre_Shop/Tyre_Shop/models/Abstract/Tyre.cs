@@ -10,30 +10,37 @@
 
 namespace Tyre_Shop.Classes
 {
-    // This class represents a Tyre entity in the Tyre Shop system.
+    /// <summary>
+    /// This class represents a Tyre entity in the Tyre Shop system.
+    /// </summary>
     public class Tyre
     {
         #region Properties
-        // Unique identifier for the tyre.
         public int Id { get; set; }
-        // Brand of the tyre (e.g., Michelin, Bridgestone).
         public string Brand { get; set; }
-        // Model of the tyre (e.g., Pilot Sport 4, Turanza T005).
         public string Model { get; set; }
-        // Size of the tyre (e.g., 205/55 R16).
         public string Size { get; set; }
-        // Quality of the tyre, represented by an enum (e.g., AAA, AA, etc.).
         public Quality Quality { get; set; }
-        // Price of the tyre in the system.
         public decimal Price { get; set; }
         #endregion
 
         #region Constructors
-        // Default constructor for creating a Tyre object with no initial data.
+        /// <summary>
+        /// Default constructor for creating a Tyre object with no initial data.
+        /// <param name="">Empty constructer</param>
+        /// </summary>
         public Tyre()
         {
         }
-        // Parameterized constructor to create a Tyre object with specific details.
+        /// <summary>
+        /// Parameterized constructor to create a Tyre object with specific details.
+        /// <param name="id"> Unique identifier for the tyre.</param>
+        /// <param name="brand">Brand of the tyre (e.g., Michelin, Bridgestone).</param>
+        /// <param name="model">Model of the tyre (e.g., Pilot Sport 4, Turanza T005).</param>
+        /// <param name="size">Size of the tyre (e.g., 205/55 R16).</param>
+        /// <param name="quality">Quality of the tyre, represented by an enum (e.g., AAA, AA, etc.).</param>
+        /// <param name="price">Price of the tyre in the system.</param>
+        /// </summary>
         public Tyre(int id, string brand, string model, string size, Quality quality, decimal price)
         {
             this.Id = id;          // Assigns the unique ID to the tyre.

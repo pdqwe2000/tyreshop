@@ -10,7 +10,9 @@
 
 namespace Tyre_Shop.Classes
 {
-    //Enum used For Tyre Quality
+    /// <summary>
+    /// Enum used For Tyre Quality
+    /// </summary>
     public enum Quality
     {
         AAA=100,

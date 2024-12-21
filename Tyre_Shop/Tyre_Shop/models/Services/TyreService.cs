@@ -1,107 +1,130 @@
-﻿//-----------------------------------------------------------------​
-//    <copyright file="TyreService.cs" company="FujiSoft">​
-//     Copyright IPCA-EST. All rights reserved.​
-//    </copyright>​
-//    <date>19-12-2024</date>​
-//    <time>23:00</time>​
-//    <version>0.1</version>​
-//    <author>Pedro Duarte</author>​
+﻿//-----------------------------------------------------------------
+//    <copyright file="TyreService.cs" company="FujiSoft">
+//     Copyright IPCA-EST. All rights reserved.
+//    </copyright>
+//    <date>19-12-2024</date>
+//    <time>23:00</time>
+//    <version>0.1</version>
+//    <author>Pedro Duarte</author>
 //-----------------------------------------------------------------
 
-using System.Linq;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
 using Tyre_Shop.Classes.Data;
 
 namespace Tyre_Shop.Classes.Services
-
 {
     /// <summary>
-    /// Provides services related to tyre addition, removal and update.
+    /// Provides services for managing tyres, including adding, removing, updating, and loading tyres.
     /// </summary>
     public class TyreService
     {
         #region Singleton Implementation
-        private static TyreService _instance; // Única instância da classe
-        private static readonly object _lock = new object(); // Lock para threads simultâneas
+
+        private static TyreService _instance; // Singleton instance
+        private static readonly object _lock = new object(); // Lock for thread safety
+
+        /// <summary>
+        /// Gets the singleton instance of the TyreService class.
+        /// </summary>
+        public static TyreService Instance
+        {
+            get
+            {
+                lock (_lock) // Ensures thread safety
+                {
+                    if (_instance == null)
+                    {
+                        _instance = new TyreService();
+                    }
+                    return _instance; 
+                }
+            }
+        }
+
         #endregion
 
         #region Private Fields
-        private readonly string _dataFilePath = Fpm.Instance.DataFilePath; // Path to the users data file
+
+        private readonly string _dataFilePath = Fpm.Instance.DataFilePath; // Path to the tyre data file
+
         #endregion
 
         #region Public Properties
+
         /// <summary>
-        /// The base path where the application data files will be stored.
+        /// The current stock of tyres.
         /// </summary>
-        public List<TyreJson> TyreStock { get; private set; } // Lista de pneus carregada
+        public List<TyreJson> TyreStock { get; private set; }
+
         #endregion
 
         #region Private Constructor
+
         /// <summary>
-        /// Private constructor to initialize file paths and ensure the necessary directories exist.
+        /// Private constructor to initialize the TyreService and load an empty tyre stock.
         /// </summary>
         private TyreService()
         {
             TyreStock = new List<TyreJson>();
         }
+
         #endregion
 
         #region Public Methods
+
         /// <summary>
-        /// Carrega pneus de um arquivo JSON para memória.
+        /// Asynchronously loads tyres from a JSON file into memory.
         /// </summary>
-        /// <param name="path">Caminho do arquivo JSON.</param>
         public async Task LoadTyresFromJsonAsync()
         {
-
             if (!File.Exists(_dataFilePath))
             {
-                Console.WriteLine("Arquivo JSON não encontrado.");
+                Console.WriteLine("JSON file not found.");
                 return;
             }
 
             try
             {
-                using (StreamReader reader = new StreamReader(_dataFilePath))
-                {
-                    string json = await reader.ReadToEndAsync();
-                    TyreStock = JsonSerializer.Deserialize<List<TyreJson>>(json) ?? new List<TyreJson>();
-                }
-
-                Console.WriteLine("Stock de pneus carregado com sucesso.");
-
+                var reader = new StreamReader(_dataFilePath);
+                string json = await reader.ReadToEndAsync();
+                TyreStock = JsonSerializer.Deserialize<List<TyreJson>>(json) ?? new List<TyreJson>();
+                Console.WriteLine("Tyre stock loaded successfully.");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Erro ao carregar stock de pneus: {ex.Message}");
+                Console.WriteLine($"Error loading tyre stock: {ex.Message}");
             }
-
         }
+
+        /// <summary>
+        /// Asynchronously saves the current tyre stock to a JSON file.
+        /// </summary>
         public async Task SaveTyresToJsonAsync()
         {
             try
             {
-                // Serialize the list of users to JSON
                 string json = JsonSerializer.Serialize(TyreStock, new JsonSerializerOptions { WriteIndented = true });
 
-                // Write the JSON string to the file
-                using (StreamWriter writer = new StreamWriter(_dataFilePath))
-                {
-                    await writer.WriteAsync(json);
-                }
+                var writer = new StreamWriter(_dataFilePath);
+                await writer.WriteAsync(json);
 
-                Console.WriteLine("Stock de pneus salvo com sucesso.");
+                Console.WriteLine("Tyre stock saved successfully.");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Erro ao salvar stock de pneus: {ex.Message}");
+                Console.WriteLine($"Error saving tyre stock: {ex.Message}");
             }
         }
 
+        /// <summary>
+        /// Asynchronously adds a new tyre to the stock or updates the quantity of an existing tyre.
+        /// </summary>
+        /// <param name="newTyre">The new tyre to be added or updated.</param>
         public async Task AddOrUpdateTyreAsync(TyreJson newTyre)
         {
             if (TyreStock.Count == 0)
@@ -110,6 +133,7 @@ namespace Tyre_Shop.Classes.Services
                 await LoadTyresFromJsonAsync();
             }
 
+            // Check if the tyre already exists in stock
             var existingTyre = TyreStock.Find(t =>
                 t.Brand.Equals(newTyre.Brand, StringComparison.OrdinalIgnoreCase) &&
                 t.Model.Equals(newTyre.Model, StringComparison.OrdinalIgnoreCase) &&
@@ -119,47 +143,32 @@ namespace Tyre_Shop.Classes.Services
 
             if (existingTyre != null)
             {
-                existingTyre.Quantity += newTyre.Quantity;
+                existingTyre.Quantity += newTyre.Quantity; // Update quantity
                 Console.WriteLine($"Updated quantity for {existingTyre.Brand} {existingTyre.Model}. New quantity: {existingTyre.Quantity}");
             }
             else
             {
-                //TyreStock.Add(newTyre);
-                //Console.WriteLine($"Added new tyre: {newTyre.Brand} {newTyre.Model}");
-                // Assign a new unique Id for the new tyre (based on the maximum existing Id).
+                // Assign a unique ID for the new tyre
                 newTyre.Id = TyreStock.Count > 0 ? TyreStock.Max(t => t.Id) + 1 : 1;
 
-                // Add the new tyre to the stock.
+                // Add the new tyre to the stock
                 TyreStock.Add(newTyre);
                 Console.WriteLine($"Added new tyre: {newTyre.Brand} {newTyre.Model} with Id {newTyre.Id}");
             }
 
+            // Save the updated tyre stock to the JSON file
             await SaveTyresToJsonAsync();
         }
 
         /// <summary>
-        /// Obtém o stock de pneus atual.
+        /// Retrieves the current tyre stock.
         /// </summary>
-        /// <returns>Lista de pneus.</returns>
+        /// <returns>The list of tyres in stock.</returns>
         public List<TyreJson> GetTyreStock()
         {
             return TyreStock;
         }
-        #endregion
 
-        public static TyreService Instance
-        {
-            get
-            {
-                lock (_lock) // Garante thread safety
-                {
-                    if (_instance == null)
-                    {
-                        _instance = new TyreService();
-                    }
-                    return _instance;
-                }
-            }
-        }
+        #endregion
     }
 }

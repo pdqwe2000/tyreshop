@@ -10,14 +10,13 @@
 
 namespace Tyre_Shop.Classes.Auth
 {
-    // This class represents a User in the Tyre Shop system, inheriting from the Person class.
+    /// <summary>
+    /// This class represents a User in the Tyre Shop system, inheriting from the Person class.
+    /// </summary>
     public class User : Person
     {
         #region Properties
-        // Property to store the user's password.
         public string Password { get; set; }
-
-        // Boolean property to indicate whether the user has administrative privileges (true for Admin, false for regular users).
         public bool Admin { get; set; }
         #endregion
 
@@ -40,7 +39,6 @@ namespace Tyre_Shop.Classes.Auth
         /// Constructor  
         /// </summary>  
         /// <param name="">Empty constructer</param>
-        /// <
         /// <returns></returns>  
         public User() { }
         #endregion

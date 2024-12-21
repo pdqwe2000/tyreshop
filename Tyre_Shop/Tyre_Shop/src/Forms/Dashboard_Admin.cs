@@ -31,7 +31,9 @@ namespace Tyre_Shop.source.interfaces
             
             _facade = new TyreFacade(); // Serviço do stock
             InitializeComponent();
-            
+            LoadStockToGrid(_facade.GetStock());
+
+
         }
 
         private void newSellToolStripMenuItem_Click(object sender, EventArgs e)

@@ -14,6 +14,9 @@ using System.Collections.Generic;
 
 namespace Tyre_Shop.Classes
 {
+    /// <summary>
+    /// This class represents a Sale in the Tyre Shop system.
+    /// </summary>
     public class Sale
     {
         #region Properties
@@ -25,23 +28,16 @@ namespace Tyre_Shop.Classes
         #endregion
 
         #region Constructors
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Sale"/> class.
+        /// Has the sold tyres.
+        /// </summary>
         public Sale()
         {
             TyreSold = new List<TyreJson>();
         }
         #endregion
 
-        #region Methods
-        //public void AddTyre(Tyre tyre)
-        //{
-        //    TyreSold.Add(tyre);
-        //    TotalPrice += tyre.Price;
-        //}
-
-        //public override string ToString()
-        //{
-        //    return $"Selling #{Id} - Client: {Client.Name} - Date: {SellDate} - Total: {TotalPrice}E";
-        //}
-        #endregion
+       
     }
 }

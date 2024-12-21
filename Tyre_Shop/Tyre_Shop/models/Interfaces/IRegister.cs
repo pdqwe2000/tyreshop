@@ -29,9 +29,15 @@ namespace Tyre_Shop.Classes.Interfaces
         /// Gets the confirmed password entered by the user during registration.
         /// </summary>
         string ConfirmPassword { get; }
-
+        
+        /// <summary>
+        /// Gets the phone entered by the user during registration.
+        /// </summary>
         string Phone {  get; }
 
+        /// <summary>
+        /// Gets the admin status entered by the user during registration.
+        /// </summary>
         bool IsAdmin {  get; }
 
         #endregion

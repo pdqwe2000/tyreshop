@@ -10,6 +10,10 @@
 
 using Tyre_Shop.Classes;
 
+/// <summary>
+/// This class represents a TyreJson in the Tyre Shop system.
+/// It inherits from the Tyre class and adds specific properties related to tyres.
+/// </summary>
 public class TyreJson : Tyre
 {
     #region Properties
@@ -17,14 +21,16 @@ public class TyreJson : Tyre
     #endregion
 
     #region Constructor
-    /// <summary>  
-    /// Constructor  
-    /// </summary>  
-    /// <param name="name">Hereditary from de Person class. Value entered by the user.</param>  
-    /// <param name="phone">Hereditary from de Person class. Value entered by the user.</param>
-    /// <param name="pass">Value entered by the user.</param>  
-    /// <param name="admin">Specifies whether the user is an admin (not currently validated in this method).</param>  
-    /// <returns>It calls the base constructor from the Person class to initialize shared properties (name,phone,).</returns>  
+    /// <summary>
+    /// Parameterized constructor to create a Tyre object with specific details.
+    /// <param name="id"> Unique identifier for the tyre.</param>
+    /// <param name="brand">Brand of the tyre (e.g., Michelin, Bridgestone).</param>
+    /// <param name="model">Model of the tyre (e.g., Pilot Sport 4, Turanza T005).</param>
+    /// <param name="size">Size of the tyre (e.g., 205/55 R16).</param>
+    /// <param name="quality">Quality of the tyre, represented by an enum (e.g., AAA, AA, etc.).</param>
+    /// <param name="price">Price of the tyre in the system.</param>
+    /// <param name="quantity">Quantity of tyres in stock</param>
+    /// </summary>
     public TyreJson(int id, string brand, string model, string size, Quality quality, decimal price, int quantity) : base(id, brand, model, size, quality, price)
     {
         Quantity = quantity;       // Assigns quantity.
